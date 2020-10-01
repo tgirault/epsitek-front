@@ -1,0 +1,93 @@
+<h3 style="text-align: center">Contactez-moi</h3>
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+  <!-- Première colonne -->
+  <div class="item item-1" fxFlex="15%">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Thomas Girault</mat-card-title>
+        <mat-card-subtitle>Ingénieur logiciel - Freelance</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour garantir une expérience utilisateur optimale.</p>
+        <mat-divider></mat-divider>
+        <mat-list>
+          <div mat-subheader>Coordonnées</div>
+          <mat-list-item role="listitem">
+            <mat-icon aria-hidden="false" aria-label="Phone number icon">smartphone</mat-icon>
+            <div mat-line>+33 (0)6 03 37 59 38</div>
+          </mat-list-item>
+          <mat-list-item role="listitem">
+            <mat-icon aria-hidden="false" aria-label="Email adress icon">mail</mat-icon>
+            <div mat-line><a href="mailto:thomas.girault@epsitek.fr">thomas.girault@epsitek.fr</a></div>
+          </mat-list-item>
+          <mat-list-item role="listitem">
+            <mat-icon aria-hidden="false" aria-label="Place icon">place</mat-icon>
+            <div mat-line>Sur Nantes et ses environs</div>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+      <img mat-card-image src="/assets/images/google-map.JPG" alt="Google Maps Nantes" />
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+        <li>
+          <a class="linkedin" href="https://www.linkedin.com/in/thomasgirault/" target="_blank"><fa-icon [icon]="['fab', 'linkedin']"></fa-icon></a>
+        </li>
+        <li>
+          <a class="github" href="https://github.com/tgirault" target="_blank"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>
+        </li>
+        <li>
+          <a class="twitter" href="https://twitter.com/thomas_girault" target="_blank"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
+        </li>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <!-- Deuxième colonne -->
+  <div class="item item-2" fxFlex="20%" fxFlexOrder="3">
+    <form fxLayout="column" [formGroup]="contactForm">
+      <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Prénom</mat-label>
+          <input matInput type="text" placeholder="Prénom" formControlName="firstName" required />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Nom</mat-label>
+          <input matInput type="text" placeholder="Nom" formControlName="lastName" required />
+        </mat-form-field>
+      </div>
+
+      <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Société</mat-label>
+          <input matInput type="text" placeholder="Société" formControlName="society" required />
+        </mat-form-field>
+      </div>
+
+      <div class="input-row">
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email" [formControl]="email" required />
+          <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="input-row">
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Votre message</mat-label>
+          <textarea matInput #message type="text" placeholder="Laissez-moi un message" formControlName="message" maxlength="1000" required></textarea>
+          <mat-hint align="end">{{ message.value?.length || 0 }}/1000</mat-hint>
+        </mat-form-field>
+      </div>
+
+      <div class="input-row">
+        <button mat-icon-button color="primary" aria-label="Envoyer mon message">
+          Envoyer
+          <mat-icon>send</mat-icon>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

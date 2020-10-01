@@ -1,0 +1,23 @@
+{
+  "printWidth": 200,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": true,
+  "arrowParens": "always",
+  "filePath": "src/{app,environments,themes}/**/*{.html,.ts,.scss}",
+  "requirePragma": false,
+  "insertPragma": false,
+  "proseWrap": "always",
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}
