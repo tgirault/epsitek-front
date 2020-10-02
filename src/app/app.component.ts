@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +10,14 @@ import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-ic
 })
 export class AppComponent {
   title = 'Epsitek';
+  isShow = false;
 
   constructor(private library: FaIconLibrary) {
-    library.addIcons(faGithub, faLinkedin, faTwitter);
+    library.addIcons(faGithub, faLinkedin, faTwitter, faQuoteLeft);
+  }
+
+  toggleDisplay(): void {
+    this.isShow = !this.isShow;
   }
 
   scroll(el: HTMLElement): void {

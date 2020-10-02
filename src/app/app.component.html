@@ -1,29 +1,34 @@
 <!-- Header -->
 <header>
-  <mat-toolbar color="primary">
-    <button mat-icon-button aria-label="Home icon">
-      <mat-icon>home</mat-icon>
-    </button>
-    <span>Epsitek</span>
-    <span class="spacer"></span>
-    <div fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
-      <div>
+  <mat-toolbar class="menu" color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button aria-label="Menu icon" (click)="toggleDisplay()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="Home icon" (click)="scroll(about)">
+        <mat-icon>home</mat-icon>
+      </button>
+      <span>Epsitek</span>
+      <span class="spacer"></span>
+      <div fxShow="true" fxHide.lt-md>
         <button mat-button color="accent" (click)="scroll(about)">A propos</button>
-      </div>
-      <div>
         <button mat-button color="accent" (click)="scroll(services)">Prestations</button>
-      </div>
-      <div>
         <button mat-button color="accent" (click)="scroll(skills)">Compétences</button>
-      </div>
-      <div>
         <button mat-button color="accent" (click)="scroll(experiences)">Expériences</button>
-      </div>
-      <div>
         <button mat-button color="accent" (click)="scroll(contacts)">Contacts</button>
       </div>
-    </div>
+    </mat-toolbar-row>
   </mat-toolbar>
+
+  <div class="menu-nav" fxFlexFill #sidenav fxHide.gt-sm [hidden]="isShow">
+    <mat-nav-list role="list">
+      <a mat-list-item (click)="scroll(about)">A propos</a>
+      <a mat-list-item (click)="scroll(services)">Prestations</a>
+      <a mat-list-item (click)="scroll(skills)">Compétences</a>
+      <a mat-list-item (click)="scroll(experiences)">Expériences</a>
+      <a mat-list-item (click)="scroll(contacts)">Contacts</a>
+    </mat-nav-list>
+  </div>
 </header>
 
 <!-- Content -->
@@ -51,42 +56,43 @@
 
 <!-- Footer -->
 <footer class="site-footer">
-  <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="80px" fxLayoutGap.xs="0">
-    <div fxFlex="70%">
-      <h6>A propos</h6>
-      <p class="text-justify">
-        Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour garantir une expérience utilisateur optimale.
-      </p>
-    </div>
+  <div class="container">
+    <div fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="80px" fxLayoutGap.xs="0">
+      <div fxFlex="70%">
+        <h6>A propos</h6>
+        <fa-icon [icon]="['fas', 'quote-left']"></fa-icon>
+        <p>Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour garantir une expérience utilisateur optimale.</p>
+      </div>
 
-    <div fxFlex="30%">
-      <h6>Liens rapides</h6>
-      <ul class="footer-links">
-        <li><a (click)="scroll(about)">A propos</a></li>
-        <li><a (click)="scroll(services)">Prestations</a></li>
-        <li><a (click)="scroll(skills)">Compétences</a></li>
-        <li><a (click)="scroll(experiences)">Expériences</a></li>
-        <li><a (click)="scroll(contacts)">Contacts</a></li>
-      </ul>
+      <div fxFlex="30%">
+        <h6>Liens rapides</h6>
+        <ul class="footer-links">
+          <li><a (click)="scroll(about)">A propos</a></li>
+          <li><a (click)="scroll(services)">Prestations</a></li>
+          <li><a (click)="scroll(skills)">Compétences</a></li>
+          <li><a (click)="scroll(experiences)">Expériences</a></li>
+          <li><a (click)="scroll(contacts)">Contacts</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.xs="0">
-    <div fxFlex="70%">
-      <p class="copyright-text">Copyright &copy; 2020 <a href="#">Epsitek</a>. Tous droits réservés.</p>
-    </div>
+    <div fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.xs="0">
+      <div fxFlex="70%">
+        <p class="copyright-text">Copyright &copy; 2020 <a href="#">Epsitek</a>. Tous droits réservés.</p>
+      </div>
 
-    <div fxFlex="30%">
-      <ul class="social-icons">
-        <li>
-          <a class="linkedin" href="https://www.linkedin.com/in/thomasgirault/" target="_blank"><fa-icon [icon]="['fab', 'linkedin']"></fa-icon></a>
-        </li>
-        <li>
-          <a class="github" href="https://github.com/tgirault" target="_blank"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>
-        </li>
-        <li>
-          <a class="twitter" href="https://twitter.com/thomas_girault" target="_blank"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
-        </li>
-      </ul>
+      <div fxFlex="30%">
+        <ul class="social-icons">
+          <li>
+            <a class="linkedin" href="https://www.linkedin.com/in/thomasgirault/" target="_blank"><fa-icon [icon]="['fab', 'linkedin']"></fa-icon></a>
+          </li>
+          <li>
+            <a class="github" href="https://github.com/tgirault" target="_blank"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>
+          </li>
+          <li>
+            <a class="twitter" href="https://twitter.com/thomas_girault" target="_blank"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </footer>

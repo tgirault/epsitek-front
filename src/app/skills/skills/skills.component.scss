@@ -4,3 +4,14 @@
   background-image: url('/assets/images/background-skills.jpg');
   min-height: 250px;
 }
+
+table.skills {
+  min-width: 250px;
+}
+
+table.skills caption {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 16px 0;
+}
