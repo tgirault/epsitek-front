@@ -1,11 +1,11 @@
 <div class="background background-skills">
   <div class="caption">
-    <span class="border">COMPETENCES</span>
+    <span class="border">&lt;COMPETENCES /&gt;</span>
   </div>
 </div>
 
 <div class="container light-container">
-  <h3>Compétences</h3>
+  <h3>Mes compétences</h3>
 
   <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutGap.xs="0px">
     <div *ngFor="let category of categories">
@@ -28,6 +28,15 @@
 
 <div style="position: relative">
   <div class="container dark-container">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    <h3>Technologies</h3>
+
+    <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutGap.xs="0px">
+      <table class="technologies">
+        <tr *ngFor="let technology of technologies">
+          <td class="label">{{ technology.name }}</td>
+          <td>{{ technology.description }}</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </div>

@@ -15,3 +15,12 @@ table.skills caption {
   font-weight: 500;
   margin: 16px 0;
 }
+
+table.technologies td {
+  padding: 2px 10px;
+}
+
+table.technologies td.label {
+  text-align: right;
+  font-weight: 500;
+}

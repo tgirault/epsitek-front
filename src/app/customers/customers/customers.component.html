@@ -1,16 +1,55 @@
 <div class="background background-experiences">
   <div class="caption">
-    <span class="border">EXPERIENCES</span>
+    <span class="border">&lt;EXPERIENCES/&gt;</span>
   </div>
 </div>
 
 <div class="container light-container">
-  <h3>Clients</h3>
-  <p>
-    Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero
-    turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum
-    dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris
-    ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis
-    ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.
-  </p>
+  <h3>Mes exp&eacute;riences professionnelles</h3>
+  <mat-vertical-stepper #stepper>
+    <mat-step *ngFor="let experience of experiences">
+      <ng-template matStepLabel>{{ experience.startDate }} – {{ experience.endDate }}</ng-template>
+      <mat-card class="experience-card">
+        <mat-card-header>
+          <div mat-card-avatar class="{{ experience.company.logo }}"></div>
+          <mat-card-title>{{ experience.title }}</mat-card-title>
+          <mat-card-subtitle><mat-icon>place</mat-icon> {{ experience.company.name }}, {{ experience.place }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ experience.description }}</p>
+          <ul>
+            <li *ngFor="let task of experience.tasks">{{ task }}</li>
+          </ul>
+        </mat-card-content>
+        <mat-card-actions>
+          <mat-list>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <mat-chip-list aria-label="Technologies">
+                <mat-chip *ngFor="let technology of experience.technologies" color="primary" selected>{{ technology }}</mat-chip>
+              </mat-chip-list>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <mat-chip-list aria-label="Outils">
+                <mat-chip *ngFor="let tool of experience.tools">{{ tool }}</mat-chip>
+              </mat-chip-list>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <mat-chip-list aria-label="DevOps">
+                <mat-chip *ngFor="let devOps of experience.devOps" color="warn" selected>{{ devOps }}</mat-chip>
+              </mat-chip-list>
+            </mat-list-item>
+          </mat-list>
+        </mat-card-actions>
+      </mat-card>
+    </mat-step>
+  </mat-vertical-stepper>
+</div>
+
+<div style="position: relative">
+  <div class="container dark-container">
+    <h3>Ils me font confiance</h3>
+  </div>
 </div>

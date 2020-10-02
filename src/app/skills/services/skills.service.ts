@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Category } from '../model/category.data';
 import { Skill } from '../model/skill.data';
+import { Technology } from '../model/technology.data';
 
 /**
  * Service métier de gestion des compétences.
@@ -9,6 +10,21 @@ import { Skill } from '../model/skill.data';
     providedIn: 'root',
 })
 export class SkillsService {
+
+    /**
+     * Rechercher toutes les technologies.
+     */
+    findAllTechnologies(): Array<Technology> {
+        return Array.from([
+            new Technology('Moteurs d’indexation', 'Elasticsearch, Apache Solr'),
+            new Technology('Bus d’entreprise', 'Oracle Service Bus'),
+            new Technology('Systèmes de Gestion de Base de Données', 'Oracle 12c, PostgreSQL, MySQL, MariaDB'),
+            new Technology('Brokers JMS', 'ActiveMQ, MQSeries'),
+            new Technology('Serveurs d’application', 'Tomcat, JBoss'),
+            new Technology('Gestion de configuration logicielle', 'Git (GitLab, Bitbucket), SVN'),
+            new Technology('DevOps', 'Docker, Ansible, Jenkins'),
+        ]);
+    }
 
     /**
      * Rechercher toutes les catégories de compétences et les compétences associées.

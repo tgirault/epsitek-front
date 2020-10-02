@@ -12,7 +12,7 @@
       <span class="spacer"></span>
       <div fxShow="true" fxHide.lt-md>
         <button mat-button color="accent" (click)="scroll(about)">A propos</button>
-        <button mat-button color="accent" (click)="scroll(services)">Prestations</button>
+        <button mat-button color="accent" (click)="scroll(services)">Services</button>
         <button mat-button color="accent" (click)="scroll(skills)">Compétences</button>
         <button mat-button color="accent" (click)="scroll(experiences)">Expériences</button>
         <button mat-button color="accent" (click)="scroll(contacts)">Contacts</button>
@@ -23,7 +23,7 @@
   <div class="menu-nav" fxFlexFill fxHide.gt-sm [hidden]="isShow">
     <mat-nav-list>
       <a mat-list-item (click)="scroll(about)">A propos</a>
-      <a mat-list-item (click)="scroll(services)">Prestations</a>
+      <a mat-list-item (click)="scroll(services)">Services</a>
       <a mat-list-item (click)="scroll(skills)">Compétences</a>
       <a mat-list-item (click)="scroll(experiences)">Expériences</a>
       <a mat-list-item (click)="scroll(contacts)">Contacts</a>
@@ -68,7 +68,7 @@
         <h6>Liens rapides</h6>
         <ul class="footer-links">
           <li><a (click)="scroll(about)">A propos</a></li>
-          <li><a (click)="scroll(services)">Prestations</a></li>
+          <li><a (click)="scroll(services)">Services</a></li>
           <li><a (click)="scroll(skills)">Compétences</a></li>
           <li><a (click)="scroll(experiences)">Expériences</a></li>
           <li><a (click)="scroll(contacts)">Contacts</a></li>

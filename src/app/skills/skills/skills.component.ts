@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Category } from '../model/category.data';
+import { Technology } from '../model/technology.data';
 import { SkillsService } from '../services/skills.service';
 
 /**
@@ -14,6 +15,8 @@ export class SkillsComponent implements OnInit {
 
   /** Liste des catégories de compétences. */
   categories: Array<Category>;
+  /** Liste des technologies */
+  technologies: Array<Technology>;
 
   /**
    * Constructeur du composant des compétences.
@@ -26,5 +29,6 @@ export class SkillsComponent implements OnInit {
    */
   ngOnInit(): void {
     this.categories = this.skillsService.findAllCategoriesWithSkills();
+    this.technologies = this.skillsService.findAllTechnologies();
   }
 }

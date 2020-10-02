@@ -1,18 +1,107 @@
 <div #services class="background background-services">
   <div class="caption">
-    <span class="border">PRESTATIONS</span>
+    <span class="border">&lt;SERVICES/&gt;</span>
   </div>
 </div>
 
 <div class="container light-container">
-  <h3>Prestations</h3>
-  <p>
-    Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero
-    turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum
-    dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris
-    ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis
-    ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.
-  </p>
+  <h3>Quels sont les services que je propose ?</h3>
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Conception technique et fonctionnelle</mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul>
+        <li>R&eacute;daction de documentation technique (sp&eacute;cifications techniques d&eacute;taill&eacute;es, dossier d'architecture logicielle, dossier d'architecture technique)</li>
+        <li>
+          Mod&eacute;lisation UML (diagramme de cas d'utilisation, diagrammes de s&eacute;quence, diagramme de classes), mod&eacute;lisation de workflow BPMN, maîtrise des principaux patrons de
+          conception (GoF)
+        </li>
+        <li>Mod&eacute;lisation de bases de donn&eacute;es relationnelles (BCNF)</li>
+      </ul>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Architecture</mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>
+        Plusieurs exp&eacute;riences sur des architectures en haute disponibilit&eacute;, avec une scalabilit&eacute; horizontale et r&eacute;partition de charge. Etude techniques sur des
+        probl&eacute;matiques de d&eacute;ploiement &agrave; chaud. Veille technologique et int&eacute;rêt pour les architectures micro-services (Docker, IaaS, PaaS, Saas, DBaaS).
+      </p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Lead d'&eacute;quipe</mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>
+        Leader technique dans des &eacute;quipes de 4 &agrave; 10 d&eacute;veloppeurs. Suivi des d&eacute;veloppements, revus de code, suivi des indicateurs, support, mont&eacute;e en
+        comp&eacute;tence des d&eacute;veloppeurs juniors, animation de Webinar, chiffrages techniques, r&eacute;partition des t&acirc;ches et suivi op&eacute;rationnel (plannification, suivi des
+        charges).
+      </p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>D&eacute;veloppement</mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul>
+        <li>Choix des technologies/frameworks adapt&eacute;s au besoin</li>
+        <li>Mise en place de socles techniques s&eacute;curis&eacute;s et performants</li>
+        <li>D&eacute;veloppement de fonctionnalit&eacute;s full-stack Java/Angular</li>
+        <li>D&eacute;veloppement de traitements batch robustes et performants</li>
+        <li>D&eacute;veloppement d'interfaces utilisateur ergonomiques avec des contraintes de responsive design et d'accessibilit&eacute; (RGAA)</li>
+        <li>Veille technologique</li>
+      </ul>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Qualit&eacute; logicielle</mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>
+        Mise en application des bonnes pratiques et des principes de qualit&eacute; logicielle : Tests unitaires (Junit), tests d'int&eacute;gration automatis&eacute;s (Fitnesse), revue de code, suivi
+        des indicateurs de qualim&eacute;trie (Sonar), r&eacute;daction de cas de tests.
+      </p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Performances</mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>
+        R&eacute;daction d'un cahier des charges (Test de degradation des transactions, tests de mont&eacute;e en charge, tests de performances), pr&eacute;paration et ex&eacute;cution des campagnes
+        de tests (JMeter), relev&eacute; des m&eacute;triques et analyse des r&eacute;sultats (ElasticSearch, Logstash, Kibana), optimisation des performances (JProfiler).
+      </p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>S&eacute;curit&eacute;</mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Sensibilis&eacute; &agrave; la s&eacute;curit&eacute; et exp&eacute;rience d'auditeur en s&eacute;curit&eacute; (OWASP ZAP).</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>M&eacute;thodologie</mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>
+        Familiaris&eacute; avec les m&eacute;thodologies SCRUM et Agile &agrave; l'&eacute;chelle (Safe). Participation aux c&eacute;r&eacute;monies agiles : PI Planning, Daily meeting, Backlog
+        refinement, Sprint planning, Poker Planning, D&eacute;monstration, R&eacute;trospective. Exp&eacute;rience de Scrum master dans une &eacute;quipe de 7 personnes. Mise en place et animation des
+        c&eacute;r&eacute;monies agiles, du board Jira, alimentation des sprints pour l'&eacute;quipe, calcul de la capacit&eacute;, etc.
+      </p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>DevOps</mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>
+        Mise en place de l'int&eacute;gration continue, d'un pipeline de d&eacute;ploiement continue avec Jenkins. Conteneurisation de briques logicielles avec Docker, Installation automatis&eacute;e
+        des briques logicielles avec Ansible.
+      </p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Administration syst&egrave;me</mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Administration syst&egrave;me et r&eacute;seau des VMs. Bonnes connaissances Unix/Linux. D&eacute;veloppement de scripts Shell.</p>
+    </mat-expansion-panel>
+  </mat-accordion>
 </div>
 
 <div style="position: relative">
