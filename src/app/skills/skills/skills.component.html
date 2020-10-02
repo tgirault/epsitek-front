@@ -1,18 +1,29 @@
-<h3 style="text-align: center">Compétences</h3>
+<div class="background background-skills">
+  <div class="caption">
+    <span class="border">COMPETENCES</span>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <td>Java</td>
-    <td>
-      <mat-icon color="primary">star_rate</mat-icon><mat-icon color="primary">star_rate</mat-icon><mat-icon color="primary">star_rate</mat-icon><mat-icon color="primary">star_rate</mat-icon
-      ><mat-icon color="primary">star_rate</mat-icon>
-    </td>
-  </tr>
-  <tr>
-    <td>Typescript</td>
-    <td>
-      <mat-icon color="primary">star_rate</mat-icon><mat-icon color="primary">star_rate</mat-icon><mat-icon color="primary">star_rate</mat-icon><mat-icon color="primary">star_rate</mat-icon
-      ><mat-icon color="accent">star_rate</mat-icon>
-    </td>
-  </tr>
-</table>
+<div style="color: #777; background-color: white; text-align: center; padding: 50px 80px; text-align: justify">
+  <h3 style="text-align: center">Compétences</h3>
+
+  <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutGap.xs="0px">
+    <div *ngFor="let category of categories">
+      <h4>{{ category.name }}</h4>
+      <table>
+        <tr *ngFor="let skill of category.skills">
+          <td>{{ skill.name }}</td>
+          <td>
+            <app-rating rate="{{ skill.rate }}"></app-rating>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div style="position: relative">
+  <div style="color: #ddd; background-color: #282e34; text-align: center; padding: 50px 80px; text-align: justify">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>

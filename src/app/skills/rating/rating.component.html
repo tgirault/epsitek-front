@@ -1,0 +1,5 @@
+<div class="rate">
+  <mat-icon *ngFor="let fullStar of fullStars" color="primary">star</mat-icon>
+  <mat-icon *ngIf="hasAnHalfStar" color="primary">star_half</mat-icon>
+  <mat-icon *ngFor="let emptyStar of emptyStars" color="accent">star_outline</mat-icon>
+</div>

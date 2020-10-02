@@ -10,12 +10,12 @@ const routerOptions: ExtraOptions = {
 };
 const routes: Routes = [
   {
-    path: 'content',
+    path: 'home',
     component: AppComponent,
   },
   {
     path: '',
-    redirectTo: 'content',
+    redirectTo: 'home',
     pathMatch: 'full'
   }
 ];

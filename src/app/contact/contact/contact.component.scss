@@ -1,12 +1,6 @@
-form {
-  padding: 30px;
-}
+@import './../../core/common';
 
-.example-card {
-  max-width: 400px;
-}
-
-.example-header-image {
-  background-image: url('/assets/images/me.png');
-  background-size: cover;
+.background-contacts {
+  background-image: url('/assets/images/background-contacts.jpg');
+  min-height: 250px;
 }

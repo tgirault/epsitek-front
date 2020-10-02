@@ -1,0 +1,54 @@
+<form fxLayout="column" [formGroup]="contactForm">
+  <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+    <mat-form-field appearance="fill" fxFlex>
+      <mat-label>Prénom</mat-label>
+      <input matInput type="text" placeholder="Prénom" formControlName="firstName" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" fxFlex>
+      <mat-label>Nom</mat-label>
+      <input matInput type="text" placeholder="Nom" formControlName="lastName" required />
+    </mat-form-field>
+  </div>
+
+  <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+    <mat-form-field appearance="fill" fxFlex>
+      <mat-label>Société</mat-label>
+      <input matInput type="text" placeholder="Société" formControlName="society" required />
+    </mat-form-field>
+  </div>
+
+  <div class="input-row">
+    <mat-form-field appearance="fill" fxFlex>
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" [formControl]="email" required />
+      <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="input-row">
+    <mat-form-field appearance="fill" fxFlex>
+      <mat-label>Votre message</mat-label>
+      <textarea
+        matInput
+        cdkTextareaAutosize
+        cdkAutosizeMinRows="10"
+        cdkAutosizeMaxRows="20"
+        #message
+        type="text"
+        placeholder="Laissez-moi un message"
+        formControlName="message"
+        maxlength="5000"
+        required
+      ></textarea>
+      <mat-hint align="end">{{ message.value?.length || 0 }}/5000</mat-hint>
+    </mat-form-field>
+  </div>
+
+  <div class="input-row">
+    <button mat-icon-button color="primary" aria-label="Envoyer mon message">
+      Envoyer
+      <mat-icon>send</mat-icon>
+    </button>
+  </div>
+</form>

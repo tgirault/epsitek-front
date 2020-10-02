@@ -1,82 +1,92 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>home</mat-icon>
-  </button>
-  <span>Epsitek</span>
-  <span class="example-spacer"></span>
-  <button mat-button color="accent" (click)="scroll(about)">A propos</button>
-  <button mat-button color="accent" (click)="scroll(services)">Prestations</button>
-  <button mat-button color="accent" (click)="scroll(skills)">Compétences</button>
-  <button mat-button color="accent" (click)="scroll(experiences)">Expériences</button>
-  <button mat-button color="accent" (click)="scroll(contacts)">Contacts</button>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-</mat-toolbar>
+<!-- Header -->
+<header>
+  <mat-toolbar color="primary">
+    <button mat-icon-button aria-label="Home icon">
+      <mat-icon>home</mat-icon>
+    </button>
+    <span>Epsitek</span>
+    <span class="spacer"></span>
+    <div fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+      <div>
+        <button mat-button color="accent" (click)="scroll(about)">A propos</button>
+      </div>
+      <div>
+        <button mat-button color="accent" (click)="scroll(services)">Prestations</button>
+      </div>
+      <div>
+        <button mat-button color="accent" (click)="scroll(skills)">Compétences</button>
+      </div>
+      <div>
+        <button mat-button color="accent" (click)="scroll(experiences)">Expériences</button>
+      </div>
+      <div>
+        <button mat-button color="accent" (click)="scroll(contacts)">Contacts</button>
+      </div>
+    </div>
+  </mat-toolbar>
+</header>
 
-<div #about class="background-about">
-  <div class="caption">
-    <span class="border">THOMAS GIRAULT</span>
+<!-- Content -->
+<section>
+  <article #about>
+    <app-about></app-about>
+  </article>
+
+  <article #services>
+    <app-services></app-services>
+  </article>
+
+  <article #skills>
+    <app-skills></app-skills>
+  </article>
+
+  <article #experiences>
+    <app-customers></app-customers>
+  </article>
+
+  <article #contacts>
+    <app-contact></app-contact>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="80px" fxLayoutGap.xs="0">
+    <div fxFlex="70%">
+      <h6>A propos</h6>
+      <p class="text-justify">
+        Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour garantir une expérience utilisateur optimale.
+      </p>
+    </div>
+
+    <div fxFlex="30%">
+      <h6>Liens rapides</h6>
+      <ul class="footer-links">
+        <li><a (click)="scroll(about)">A propos</a></li>
+        <li><a (click)="scroll(services)">Prestations</a></li>
+        <li><a (click)="scroll(skills)">Compétences</a></li>
+        <li><a (click)="scroll(experiences)">Expériences</a></li>
+        <li><a (click)="scroll(contacts)">Contacts</a></li>
+      </ul>
+    </div>
   </div>
-</div>
+  <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.xs="0">
+    <div fxFlex="70%">
+      <p class="copyright-text">Copyright &copy; 2020 <a href="#">Epsitek</a>. Tous droits réservés.</p>
+    </div>
 
-<div style="color: #777; background-color: white; text-align: center; padding: 50px 80px; text-align: justify">
-  <app-about></app-about>
-</div>
-
-<div #services class="background-services">
-  <div class="caption">
-    <span class="border" style="background-color: transparent; font-size: 25px; color: #f7f7f7">PRESTATIONS</span>
+    <div fxFlex="30%">
+      <ul class="social-icons">
+        <li>
+          <a class="linkedin" href="https://www.linkedin.com/in/thomasgirault/" target="_blank"><fa-icon [icon]="['fab', 'linkedin']"></fa-icon></a>
+        </li>
+        <li>
+          <a class="github" href="https://github.com/tgirault" target="_blank"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>
+        </li>
+        <li>
+          <a class="twitter" href="https://twitter.com/thomas_girault" target="_blank"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-
-<div style="color: #777; background-color: white; text-align: center; padding: 50px 80px; text-align: justify">
-  <app-services></app-services>
-</div>
-
-<div style="position: relative">
-  <div style="color: #ddd; background-color: #282e34; text-align: center; padding: 50px 80px; text-align: justify">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-  </div>
-</div>
-
-<div #skills class="background-skills">
-  <div class="caption">
-    <span class="border" style="background-color: transparent; font-size: 25px; color: #f7f7f7">COMPETENCES</span>
-  </div>
-</div>
-
-<div style="color: #777; background-color: white; text-align: center; padding: 50px 80px; text-align: justify">
-  <app-skills></app-skills>
-</div>
-
-<div style="position: relative">
-  <div style="color: #ddd; background-color: #282e34; text-align: center; padding: 50px 80px; text-align: justify">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-  </div>
-</div>
-
-<div #experiences class="background-experiences">
-  <div class="caption">
-    <span class="border" style="background-color: transparent; font-size: 25px; color: #f7f7f7">EXPERIENCES</span>
-  </div>
-</div>
-
-<div style="color: #777; background-color: white; text-align: center; padding: 50px 80px; text-align: justify">
-  <app-customers></app-customers>
-</div>
-
-<div #contacts class="background-contacts">
-  <div class="caption">
-    <span class="border" style="background-color: transparent; font-size: 25px; color: #f7f7f7">CONTACTEZ-MOI</span>
-  </div>
-</div>
-
-<div style="color: #777; background-color: white; text-align: center; padding: 50px 80px; text-align: justify">
-  <app-contact></app-contact>
-</div>
-
-<app-footer></app-footer>
+</footer>
