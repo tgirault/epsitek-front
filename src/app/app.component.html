@@ -5,10 +5,10 @@
       <button mat-icon-button aria-label="Menu icon" (click)="toggleDisplay()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
       </button>
-      <button mat-icon-button aria-label="Home icon" (click)="scroll(about)">
+      <button mat-icon-button aria-label="Home icon" (click)="scroll(about)" fxHide.lt-md>
         <mat-icon>home</mat-icon>
       </button>
-      <span>Epsitek</span>
+      <a class="logo" (click)="scroll(about)"></a>
       <span class="spacer"></span>
       <div fxShow="true" fxHide.lt-md>
         <button mat-button color="accent" (click)="scroll(about)">A propos</button>
@@ -20,8 +20,8 @@
     </mat-toolbar-row>
   </mat-toolbar>
 
-  <div class="menu-nav" fxFlexFill #sidenav fxHide.gt-sm [hidden]="isShow">
-    <mat-nav-list role="list">
+  <div class="menu-nav" fxFlexFill fxHide.gt-sm [hidden]="isShow">
+    <mat-nav-list>
       <a mat-list-item (click)="scroll(about)">A propos</a>
       <a mat-list-item (click)="scroll(services)">Prestations</a>
       <a mat-list-item (click)="scroll(skills)">Compétences</a>

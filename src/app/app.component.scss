@@ -17,12 +17,30 @@ html {
 
 .menu-nav {
   position: fixed;
-  top: 55px;
+  top: 48px;
   z-index: 2;
+}
+
+.menu-nav a {
+  background-color: #1f497d;
+  color: whitesmoke;
+  width: 250px;
+}
+
+.menu-nav a:hover {
+  background-color: #0f243e;
+  color: whitesmoke;
 }
 
 .spacer {
   flex: 1 1 auto;
+}
+
+a.logo {
+  width: 112px;
+  height: 50px;
+  background-image: url('/assets/images/logo-epsitek-112x50-dark.png');
+  cursor: pointer;
 }
 
 /** Footer */

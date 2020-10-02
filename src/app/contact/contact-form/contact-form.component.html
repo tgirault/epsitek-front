@@ -1,34 +1,35 @@
+<h2>Envoyez-moi un message</h2>
 <form fxLayout="column" [formGroup]="contactForm">
   <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
     <mat-form-field appearance="fill" fxFlex>
       <mat-label>Prénom</mat-label>
-      <input matInput type="text" placeholder="Prénom" formControlName="firstName" required />
+      <input matInput type="text" placeholder="Votre prénom" formControlName="firstName" required />
     </mat-form-field>
 
     <mat-form-field appearance="fill" fxFlex>
       <mat-label>Nom</mat-label>
-      <input matInput type="text" placeholder="Nom" formControlName="lastName" required />
+      <input matInput type="text" placeholder="Votre nom" formControlName="lastName" required />
     </mat-form-field>
   </div>
 
   <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
     <mat-form-field appearance="fill" fxFlex>
       <mat-label>Société</mat-label>
-      <input matInput type="text" placeholder="Société" formControlName="society" required />
+      <input matInput type="text" placeholder="Votre société" formControlName="society" required />
     </mat-form-field>
   </div>
 
   <div class="input-row">
     <mat-form-field appearance="fill" fxFlex>
       <mat-label>Email</mat-label>
-      <input matInput placeholder="Email" [formControl]="email" required />
+      <input matInput placeholder="Votre adresse email" [formControl]="email" required />
       <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
     </mat-form-field>
   </div>
 
   <div class="input-row">
     <mat-form-field appearance="fill" fxFlex>
-      <mat-label>Votre message</mat-label>
+      <mat-label>Message</mat-label>
       <textarea
         matInput
         cdkTextareaAutosize
@@ -36,7 +37,7 @@
         cdkAutosizeMaxRows="20"
         #message
         type="text"
-        placeholder="Laissez-moi un message"
+        placeholder="Ecrivez votre message..."
         formControlName="message"
         maxlength="5000"
         required
