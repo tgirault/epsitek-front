@@ -8,29 +8,23 @@
   <mat-accordion>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title><mat-icon color="warn">create</mat-icon> Conception technique et fonctionnelle</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">create</mat-icon> &nbsp;Conception technique et fonctionnelle</mat-panel-title>
       </mat-expansion-panel-header>
+      <p>Conception fonctionnelle et technique.</p>
       <ul class="fa-ul">
-        <li>
-          <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> R&eacute;daction de documentation technique (sp&eacute;cifications techniques d&eacute;taill&eacute;es, dossier d'architecture logicielle,
-          dossier d'architecture technique)
-        </li>
-        <li>
-          <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon>
-          Mod&eacute;lisation UML (diagramme de cas d'utilisation, diagrammes de s&eacute;quence, diagramme de classes), mod&eacute;lisation de workflow BPMN, maîtrise des principaux patrons de
-          conception (GoF)
-        </li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> R&eacute;daction de documentation technique (sp&eacute;cifications techniques d&eacute;taill&eacute;es)</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mod&eacute;lisation UML (diagramme de cas d'utilisation, diagrammes de s&eacute;quence, diagramme de classes)</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mod&eacute;lisation de workflow BPMN</li>
         <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mod&eacute;lisation de bases de donn&eacute;es relationnelles (BCNF)</li>
       </ul>
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title><mat-icon color="warn">device_hub</mat-icon> Architecture</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">device_hub</mat-icon> &nbsp;Architecture</mat-panel-title>
       </mat-expansion-panel-header>
-      <p>
-        Plusieurs exp&eacute;riences sur des architectures en haute disponibilit&eacute;, avec une scalabilit&eacute; horizontale et r&eacute;partition de charge. Etude techniques sur des
-        probl&eacute;matiques de d&eacute;ploiement &agrave; chaud. Veille technologique et int&eacute;rêt pour les architectures micro-services (Docker, IaaS, PaaS, Saas, DBaaS).
-      </p>
+      <p>Plusieurs exp&eacute;riences sur des architectures en haute disponibilit&eacute;, avec une scalabilit&eacute; horizontale et r&eacute;partition de charge.</p>
+      <p>Etudes techniques sur des probl&eacute;matiques de d&eacute;ploiement &agrave; chaud.</p>
+      <p>Veille technologique et int&eacute;rêt pour les architectures micro-services (Docker, IaaS, PaaS, Saas, DBaaS).</p>
       <ul class="fa-ul">
         <li>
           <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> R&eacute;daction de documentation technique (sp&eacute;cifications techniques d&eacute;taill&eacute;es, dossier d'architecture logicielle,
@@ -42,7 +36,7 @@
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title><mat-icon color="warn">supervised_user_circle</mat-icon> Lead d'&eacute;quipe</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">supervised_user_circle</mat-icon> &nbsp;Lead d'&eacute;quipe</mat-panel-title>
       </mat-expansion-panel-header>
       <p>Leader technique dans des &eacute;quipes de 4 &agrave; 10 d&eacute;veloppeurs.</p>
       <ul class="fa-ul">
@@ -58,8 +52,9 @@
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title><mat-icon color="warn">code</mat-icon> D&eacute;veloppement</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">code</mat-icon> &nbsp;D&eacute;veloppement</mat-panel-title>
       </mat-expansion-panel-header>
+      <p>Développement dans les règles de l'art.</p>
       <ul class="fa-ul">
         <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Choix des technologies/frameworks adapt&eacute;s au besoin</li>
         <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mise en place de socles techniques s&eacute;curis&eacute;s et performants</li>
@@ -73,7 +68,7 @@
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title><mat-icon color="warn">verified</mat-icon> Qualit&eacute; logicielle</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">verified</mat-icon> &nbsp;Qualit&eacute; logicielle</mat-panel-title>
       </mat-expansion-panel-header>
       <p>Mise en application des bonnes pratiques et des principes de qualit&eacute; logicielle :</p>
       <ul class="fa-ul">
@@ -86,7 +81,7 @@
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title><mat-icon color="warn">addchart</mat-icon> Performances</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">addchart</mat-icon> &nbsp;Performances</mat-panel-title>
       </mat-expansion-panel-header>
       <ul class="fa-ul">
         <li>
@@ -99,23 +94,26 @@
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title><mat-icon color="warn">verified_user</mat-icon> S&eacute;curit&eacute;</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">verified_user</mat-icon> &nbsp;S&eacute;curit&eacute;</mat-panel-title>
       </mat-expansion-panel-header>
       <p>Sensibilis&eacute; &agrave; la s&eacute;curit&eacute; et exp&eacute;rience d'auditeur en s&eacute;curit&eacute; (OWASP ZAP).</p>
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title><mat-icon color="warn">settings</mat-icon> M&eacute;thodologie</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">settings</mat-icon> &nbsp;M&eacute;thodologie</mat-panel-title>
       </mat-expansion-panel-header>
-      <p>
-        Familiaris&eacute; avec les m&eacute;thodologies SCRUM et Agile &agrave; l'&eacute;chelle (Safe). Participation aux c&eacute;r&eacute;monies agiles : PI Planning, Daily meeting, Backlog
-        refinement, Sprint planning, Poker Planning, D&eacute;monstration, R&eacute;trospective. Exp&eacute;rience de Scrum master dans une &eacute;quipe de 7 personnes. Mise en place et animation des
-        c&eacute;r&eacute;monies agiles, du board Jira, alimentation des sprints pour l'&eacute;quipe, calcul de la capacit&eacute;, etc.
-      </p>
+      <p>Familiaris&eacute; avec les m&eacute;thodologies SCRUM et Agile &agrave; l'&eacute;chelle (Safe).</p>
+      <p>Participation aux c&eacute;r&eacute;monies agiles : PI Planning, Daily meeting, Backlog refinement, Sprint planning, Poker Planning, D&eacute;monstration, R&eacute;trospective.</p>
+      <p>Exp&eacute;rience de Scrum master dans une &eacute;quipe de 7 personnes.</p>
+      <ul class="fa-ul">
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mise en place et animation des c&eacute;r&eacute;monies agiles</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mise en place du board Jira</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Alimentation des sprints pour l'&eacute;quipe, calcul de la capacit&eacute;, etc.</li>
+      </ul>
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title><mat-icon color="warn">published_with_changes</mat-icon> DevOps</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">published_with_changes</mat-icon> &nbsp;DevOps</mat-panel-title>
       </mat-expansion-panel-header>
       <ul class="fa-ul">
         <li>
@@ -128,7 +126,7 @@
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title><mat-icon color="warn">storage</mat-icon> Administration syst&egrave;me</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">storage</mat-icon> &nbsp;Administration syst&egrave;me</mat-panel-title>
       </mat-expansion-panel-header>
       <p>Administration syst&egrave;me et r&eacute;seau des VMs. Bonnes connaissances Unix/Linux. D&eacute;veloppement de scripts Shell.</p>
     </mat-expansion-panel>
