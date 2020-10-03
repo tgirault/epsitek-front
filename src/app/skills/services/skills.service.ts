@@ -27,6 +27,17 @@ export class SkillsService {
     }
 
     /**
+     * Rechercher toutes les méthodologies.
+     */
+    findAllMethodologies(): Array<Technology> {
+        return Array.from([
+            new Technology('Agile', 'Agile et agile à l’échelle (SAFe)'),
+            new Technology('Srum', 'SCRUM'),
+            new Technology('Outils', 'JIRA, XRay TM for JIRA')
+        ]);
+    }
+
+    /**
      * Rechercher toutes les catégories de compétences et les compétences associées.
      */
     findAllCategoriesWithSkills(): Array<Category> {

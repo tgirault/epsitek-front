@@ -6,21 +6,20 @@
 }
 
 table.skills {
-  min-width: 250px;
+  min-width: 200px;
 }
 
-table.skills caption {
+table caption {
   text-align: left;
   font-size: 15px;
   font-weight: 500;
   margin: 16px 0;
 }
 
-table.technologies td {
+table td {
   padding: 2px 10px;
 }
 
-table.technologies td.label {
-  text-align: right;
+table td.label {
   font-weight: 500;
 }

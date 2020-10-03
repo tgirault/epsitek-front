@@ -28,15 +28,29 @@
 
 <div style="position: relative">
   <div class="container dark-container">
-    <h3>Technologies</h3>
-
     <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutGap.xs="0px">
-      <table class="technologies">
-        <tr *ngFor="let technology of technologies">
-          <td class="label">{{ technology.name }}</td>
-          <td>{{ technology.description }}</td>
-        </tr>
-      </table>
+      <div>
+        <table class="technologies">
+          <caption>
+            Technologies
+          </caption>
+          <tr *ngFor="let technology of technologies">
+            <td class="label">{{ technology.name }}</td>
+            <td>{{ technology.description }}</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <table class="technologies">
+          <caption>
+            Méthodologies
+          </caption>
+          <tr *ngFor="let methodology of methodologies">
+            <td class="label">{{ methodology.name }}</td>
+            <td>{{ methodology.description }}</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
 </div>
