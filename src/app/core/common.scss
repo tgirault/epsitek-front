@@ -36,6 +36,9 @@
 }
 
 .dark-container {
+  text-align: center;
+  padding: 30px 150px;
+  font-size: 15px;
   color: whitesmoke;
   background-color: #282e34;
 }
@@ -43,6 +46,11 @@
 .blue-container {
   color: whitesmoke;
   background-color: #17365d;
+}
+
+.grey-container {
+  color: #17365d;
+  background-color: #f4f7fb;
 }
 
 h3 {

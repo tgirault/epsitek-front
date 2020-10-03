@@ -5,8 +5,6 @@
 </div>
 
 <div class="container light-container">
-  <h3>Mes compétences</h3>
-
   <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutGap.xs="0px">
     <div *ngFor="let category of categories">
       <table class="skills">
@@ -26,7 +24,7 @@
   </div>
 </div>
 
-<div class="container dark-container">
+<div class="container grey-container">
   <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutGap.xs="0px">
     <div>
       <table class="technologies">
@@ -51,4 +49,8 @@
       </table>
     </div>
   </div>
+</div>
+
+<div class="container dark-container">
+  <p><fa-icon [icon]="['fas', 'quote-left']" size="2x"></fa-icon> Technophile invétéré, je suis en veille permanente sur les nouvelles technologies.</p>
 </div>

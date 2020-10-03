@@ -11,7 +11,7 @@ import { Experience } from '../model/experience.data';
 export class ExperiencesService {
 
     /**
-     * Rechercher toutes les technologies.
+     * Rechercher toutes les expériences.
      */
     findAll(): Array<Experience> {
         const soprasteria = new Company('Sopra Steria', 'logo-soprasteria', 'https://www.soprasteria.com/fr');

@@ -16,11 +16,12 @@ export class SkillsService {
      */
     findAllTechnologies(): Array<Technology> {
         return Array.from([
-            new Technology('Moteurs d’indexation', 'Elasticsearch, Apache Solr'),
-            new Technology('Bus d’entreprise', 'Oracle Service Bus'),
+            new Technology('Moteurs d\'indexation', 'Elasticsearch, Apache Solr'),
+            new Technology('Moteurs de workflow', 'Activiti'),
+            new Technology('Bus d\'entreprise', 'Oracle Service Bus'),
             new Technology('Systèmes de Gestion de Base de Données', 'Oracle 12c, PostgreSQL, MySQL, MariaDB'),
             new Technology('Brokers JMS', 'ActiveMQ, MQSeries'),
-            new Technology('Serveurs d’application', 'Tomcat, JBoss'),
+            new Technology('Serveurs d\'application', 'Tomcat, JBoss'),
             new Technology('Gestion de configuration logicielle', 'Git (GitLab, Bitbucket), SVN'),
             new Technology('DevOps', 'Docker, Ansible, Jenkins'),
         ]);
@@ -31,7 +32,7 @@ export class SkillsService {
      */
     findAllMethodologies(): Array<Technology> {
         return Array.from([
-            new Technology('Agile', 'Agile et agile à l’échelle (SAFe)'),
+            new Technology('Agile', 'Agile et agile à l\'échelle (SAFe)'),
             new Technology('Srum', 'SCRUM'),
             new Technology('Outils', 'JIRA, XRay TM for JIRA')
         ]);

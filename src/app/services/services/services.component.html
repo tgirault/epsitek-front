@@ -5,11 +5,10 @@
 </div>
 
 <div class="container light-container">
-  <h3>Je vous propose mes services</h3>
   <mat-accordion>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title>Conception technique et fonctionnelle</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">create</mat-icon> Conception technique et fonctionnelle</mat-panel-title>
       </mat-expansion-panel-header>
       <ul class="fa-ul">
         <li>
@@ -26,26 +25,40 @@
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title>Architecture</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">device_hub</mat-icon> Architecture</mat-panel-title>
       </mat-expansion-panel-header>
       <p>
         Plusieurs exp&eacute;riences sur des architectures en haute disponibilit&eacute;, avec une scalabilit&eacute; horizontale et r&eacute;partition de charge. Etude techniques sur des
         probl&eacute;matiques de d&eacute;ploiement &agrave; chaud. Veille technologique et int&eacute;rêt pour les architectures micro-services (Docker, IaaS, PaaS, Saas, DBaaS).
       </p>
+      <ul class="fa-ul">
+        <li>
+          <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> R&eacute;daction de documentation technique (sp&eacute;cifications techniques d&eacute;taill&eacute;es, dossier d'architecture logicielle,
+          dossier d'architecture technique)
+        </li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Etudes techniques</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mise en place d'un socle technique</li>
+      </ul>
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title>Lead d'&eacute;quipe</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">supervised_user_circle</mat-icon> Lead d'&eacute;quipe</mat-panel-title>
       </mat-expansion-panel-header>
-      <p>
-        Leader technique dans des &eacute;quipes de 4 &agrave; 10 d&eacute;veloppeurs. Suivi des d&eacute;veloppements, revus de code, suivi des indicateurs, support, mont&eacute;e en
-        comp&eacute;tence des d&eacute;veloppeurs juniors, animation de Webinar, chiffrages techniques, r&eacute;partition des t&acirc;ches et suivi op&eacute;rationnel (plannification, suivi des
-        charges).
-      </p>
+      <p>Leader technique dans des &eacute;quipes de 4 &agrave; 10 d&eacute;veloppeurs.</p>
+      <ul class="fa-ul">
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Suivi des d&eacute;veloppements</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Revues de code</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Suivi des indicateurs</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Support</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mont&eacute;e en comp&eacute;tence des d&eacute;veloppeurs juniors</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Animation de Webinar</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Chiffrages techniques</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> R&eacute;partition des t&acirc;ches et suivi op&eacute;rationnel (plannification, suivi des charges).</li>
+      </ul>
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title>D&eacute;veloppement</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">code</mat-icon> D&eacute;veloppement</mat-panel-title>
       </mat-expansion-panel-header>
       <ul class="fa-ul">
         <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Choix des technologies/frameworks adapt&eacute;s au besoin</li>
@@ -60,31 +73,39 @@
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title>Qualit&eacute; logicielle</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">verified</mat-icon> Qualit&eacute; logicielle</mat-panel-title>
       </mat-expansion-panel-header>
-      <p>
-        Mise en application des bonnes pratiques et des principes de qualit&eacute; logicielle : Tests unitaires (Junit), tests d'int&eacute;gration automatis&eacute;s (Fitnesse), revue de code, suivi
-        des indicateurs de qualim&eacute;trie (Sonar), r&eacute;daction de cas de tests.
-      </p>
+      <p>Mise en application des bonnes pratiques et des principes de qualit&eacute; logicielle :</p>
+      <ul class="fa-ul">
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Tests unitaires</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Tests d'int&eacute;gration automatis&eacute;s</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Revue de code</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Suivi des indicateurs de qualim&eacute;trie</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> R&eacute;daction de cas de tests</li>
+      </ul>
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title>Performances</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">addchart</mat-icon> Performances</mat-panel-title>
       </mat-expansion-panel-header>
-      <p>
-        R&eacute;daction d'un cahier des charges (Test de degradation des transactions, tests de mont&eacute;e en charge, tests de performances), pr&eacute;paration et ex&eacute;cution des campagnes
-        de tests (JMeter), relev&eacute; des m&eacute;triques et analyse des r&eacute;sultats (ElasticSearch, Logstash, Kibana), optimisation des performances (JProfiler).
-      </p>
+      <ul class="fa-ul">
+        <li>
+          <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> R&eacute;daction d'un cahier des charges (Test de degradation des transactions, tests de mont&eacute;e en charge, tests de performances)
+        </li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Pr&eacute;paration et ex&eacute;cution des campagnes de tests (JMeter)</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Relev&eacute; des m&eacute;triques et analyse des r&eacute;sultats (ElasticSearch, Logstash, Kibana)</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Optimisation des performances (JProfiler)</li>
+      </ul>
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title>S&eacute;curit&eacute;</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">verified_user</mat-icon> S&eacute;curit&eacute;</mat-panel-title>
       </mat-expansion-panel-header>
       <p>Sensibilis&eacute; &agrave; la s&eacute;curit&eacute; et exp&eacute;rience d'auditeur en s&eacute;curit&eacute; (OWASP ZAP).</p>
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title>M&eacute;thodologie</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">settings</mat-icon> M&eacute;thodologie</mat-panel-title>
       </mat-expansion-panel-header>
       <p>
         Familiaris&eacute; avec les m&eacute;thodologies SCRUM et Agile &agrave; l'&eacute;chelle (Safe). Participation aux c&eacute;r&eacute;monies agiles : PI Planning, Daily meeting, Backlog
@@ -94,16 +115,20 @@
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title>DevOps</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">published_with_changes</mat-icon> DevOps</mat-panel-title>
       </mat-expansion-panel-header>
-      <p>
-        Mise en place de l'int&eacute;gration continue, d'un pipeline de d&eacute;ploiement continue avec Jenkins. Conteneurisation de briques logicielles avec Docker, Installation automatis&eacute;e
-        des briques logicielles avec Ansible.
-      </p>
+      <ul class="fa-ul">
+        <li>
+          <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon>
+          Mise en place de la fabrique logicielle, du pipeline de d&eacute;ploiement continue avec Jenkins.
+        </li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Conteneurisation de briques logicielles avec Docker</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Installation automatis&eacute;e des briques logicielles avec Ansible.</li>
+      </ul>
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title>Administration syst&egrave;me</mat-panel-title>
+        <mat-panel-title><mat-icon color="warn">storage</mat-icon> Administration syst&egrave;me</mat-panel-title>
       </mat-expansion-panel-header>
       <p>Administration syst&egrave;me et r&eacute;seau des VMs. Bonnes connaissances Unix/Linux. D&eacute;veloppement de scripts Shell.</p>
     </mat-expansion-panel>
@@ -111,5 +136,5 @@
 </div>
 
 <div class="container dark-container">
-  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  <p><fa-icon [icon]="['fas', 'quote-left']" size="2x"></fa-icon> Vous avez un problème ou un besoin ? J'ai peut-être la solution pour vous.</p>
 </div>

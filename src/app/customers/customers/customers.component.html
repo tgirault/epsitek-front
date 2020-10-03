@@ -16,7 +16,7 @@
       <ng-template matStepLabel>{{ experience.startDate }} – {{ experience.endDate }}</ng-template>
       <mat-card class="experience-card">
         <mat-card-header>
-          <div mat-card-avatar class="logo">
+          <div mat-card-avatar>
             <a href="{{ experience.company.website }}" target="_blank"><img src="/assets/images/{{ experience.company.logo }}.png" class="company-logo" /></a>
           </div>
           <mat-card-title>{{ experience.title }}</mat-card-title>
@@ -44,6 +44,11 @@
   </mat-vertical-stepper>
 </div>
 
-<div class="container dark-container">
-  <h3>Ils me font confiance</h3>
+<div class="container blue-container">
+  <h3>Les clients</h3>
+  <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
+    <div class="logo" *ngFor="let customer of customers">
+      <a href="{{ customer.website }}" target="_blank"><img src="/assets/images/{{ customer.logo }}.png" class="customer-logo" matTooltip="{{ customer.name }}" /></a>
+    </div>
+  </div>
 </div>
