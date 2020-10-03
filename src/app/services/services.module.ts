@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServicesComponent } from './services/services.component';
 
 
@@ -11,7 +12,8 @@ import { ServicesComponent } from './services/services.component';
   imports: [
     CommonModule,
     MatExpansionModule,
-    MatIconModule
+    MatIconModule,
+    FontAwesomeModule
   ],
   exports: [ServicesComponent],
 })

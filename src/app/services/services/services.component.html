@@ -5,19 +5,23 @@
 </div>
 
 <div class="container light-container">
-  <h3>Quels sont les services que je propose ?</h3>
+  <h3>Je vous propose mes services</h3>
   <mat-accordion>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
         <mat-panel-title>Conception technique et fonctionnelle</mat-panel-title>
       </mat-expansion-panel-header>
-      <ul>
-        <li>R&eacute;daction de documentation technique (sp&eacute;cifications techniques d&eacute;taill&eacute;es, dossier d'architecture logicielle, dossier d'architecture technique)</li>
+      <ul class="fa-ul">
         <li>
+          <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> R&eacute;daction de documentation technique (sp&eacute;cifications techniques d&eacute;taill&eacute;es, dossier d'architecture logicielle,
+          dossier d'architecture technique)
+        </li>
+        <li>
+          <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon>
           Mod&eacute;lisation UML (diagramme de cas d'utilisation, diagrammes de s&eacute;quence, diagramme de classes), mod&eacute;lisation de workflow BPMN, maîtrise des principaux patrons de
           conception (GoF)
         </li>
-        <li>Mod&eacute;lisation de bases de donn&eacute;es relationnelles (BCNF)</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mod&eacute;lisation de bases de donn&eacute;es relationnelles (BCNF)</li>
       </ul>
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -43,13 +47,15 @@
       <mat-expansion-panel-header>
         <mat-panel-title>D&eacute;veloppement</mat-panel-title>
       </mat-expansion-panel-header>
-      <ul>
-        <li>Choix des technologies/frameworks adapt&eacute;s au besoin</li>
-        <li>Mise en place de socles techniques s&eacute;curis&eacute;s et performants</li>
-        <li>D&eacute;veloppement de fonctionnalit&eacute;s full-stack Java/Angular</li>
-        <li>D&eacute;veloppement de traitements batch robustes et performants</li>
-        <li>D&eacute;veloppement d'interfaces utilisateur ergonomiques avec des contraintes de responsive design et d'accessibilit&eacute; (RGAA)</li>
-        <li>Veille technologique</li>
+      <ul class="fa-ul">
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Choix des technologies/frameworks adapt&eacute;s au besoin</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mise en place de socles techniques s&eacute;curis&eacute;s et performants</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> D&eacute;veloppement de fonctionnalit&eacute;s full-stack Java/Angular</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> D&eacute;veloppement de traitements batch robustes et performants</li>
+        <li>
+          <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> D&eacute;veloppement d'interfaces utilisateur ergonomiques avec des contraintes de responsive design et d'accessibilit&eacute; (RGAA)
+        </li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Veille technologique</li>
       </ul>
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -104,8 +110,6 @@
   </mat-accordion>
 </div>
 
-<div style="position: relative">
-  <div class="container dark-container">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-  </div>
+<div class="container dark-container">
+  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
 </div>

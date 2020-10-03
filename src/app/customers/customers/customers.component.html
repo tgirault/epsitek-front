@@ -8,49 +8,42 @@
   <h3>Mes exp&eacute;riences professionnelles</h3>
   <p>10 ans d'expérience professionnelle.</p>
   <mat-vertical-stepper #stepper>
+    <!-- change default 'edit' icon -->
+    <ng-template matStepperIcon="edit">
+      <mat-icon>work</mat-icon>
+    </ng-template>
     <mat-step *ngFor="let experience of experiences">
       <ng-template matStepLabel>{{ experience.startDate }} – {{ experience.endDate }}</ng-template>
       <mat-card class="experience-card">
         <mat-card-header>
-          <div mat-card-avatar class="{{ experience.company.logo }}"></div>
+          <div mat-card-avatar class="logo">
+            <a href="{{ experience.company.website }}" target="_blank"><img src="/assets/images/{{ experience.company.logo }}.png" class="company-logo" /></a>
+          </div>
           <mat-card-title>{{ experience.title }}</mat-card-title>
           <mat-card-subtitle><mat-icon>place</mat-icon> {{ experience.company.name }}, {{ experience.place }}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
           <p>{{ experience.description }}</p>
-          <ul>
-            <li *ngFor="let task of experience.tasks">{{ task }}</li>
+          <ul class="fa-ul">
+            <li *ngFor="let task of experience.tasks"><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> {{ task }}</li>
           </ul>
         </mat-card-content>
         <mat-card-actions>
-          <mat-list>
-            <mat-divider></mat-divider>
-            <mat-list-item>
-              <mat-chip-list aria-label="Technologies">
-                <mat-chip *ngFor="let technology of experience.technologies" color="primary" selected>{{ technology }}</mat-chip>
-              </mat-chip-list>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>
-              <mat-chip-list aria-label="Outils">
-                <mat-chip *ngFor="let tool of experience.tools">{{ tool }}</mat-chip>
-              </mat-chip-list>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>
-              <mat-chip-list aria-label="DevOps">
-                <mat-chip *ngFor="let devOps of experience.devOps" color="warn" selected>{{ devOps }}</mat-chip>
-              </mat-chip-list>
-            </mat-list-item>
-          </mat-list>
+          <mat-chip-list aria-label="Technologies">
+            <mat-chip *ngFor="let technology of experience.technologies" color="primary" selected>{{ technology }}</mat-chip>
+          </mat-chip-list>
+          <mat-chip-list aria-label="Outils">
+            <mat-chip *ngFor="let tool of experience.tools">{{ tool }}</mat-chip>
+          </mat-chip-list>
+          <mat-chip-list aria-label="DevOps">
+            <mat-chip *ngFor="let devOps of experience.devOps" color="warn" selected>{{ devOps }}</mat-chip>
+          </mat-chip-list>
         </mat-card-actions>
       </mat-card>
     </mat-step>
   </mat-vertical-stepper>
 </div>
 
-<div style="position: relative">
-  <div class="container dark-container">
-    <h3>Ils me font confiance</h3>
-  </div>
+<div class="container dark-container">
+  <h3>Ils me font confiance</h3>
 </div>

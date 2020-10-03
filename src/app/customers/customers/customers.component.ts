@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Experience } from '../model/experience.data';
 import { ExperiencesService } from '../services/experiences.service';
 
@@ -15,7 +17,9 @@ export class CustomersComponent implements OnInit {
    * Constructeur du composant.
    * @param experiencesService le service de gestion des expériences
    */
-  constructor(private experiencesService: ExperiencesService) { }
+  constructor(private experiencesService: ExperiencesService, private library: FaIconLibrary) {
+    library.addIcons(faArrowRight);
+  }
 
   /**
    * Initialisation du composant.

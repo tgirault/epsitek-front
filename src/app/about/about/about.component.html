@@ -4,20 +4,85 @@
   </div>
 </div>
 
-<div class="container light-container">
-  <h3>Qui suis-je ?</h3>
-  <p>Je m'appelle Thomas Girault. Fort de 10 ans d'expériences, j'ai voulu me lancer en indépendant.</p>
-  <p>J'ai créé l'entreprise Epsitek en 2020.</p>
-  <p>utiliser des graphiques, des illustrations</p>
-  <p>32 ans</p>
-  <p>10 années d'expérience</p>
-  <p>8 projets réalisés</p>
-  <p>X études menées</p>
+<div class="container blue-container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="0">
+  <div appearance="fill" fxFlex>
+    <mat-card class="dashboard-card">
+      <mat-card-header>
+        <div mat-card-avatar>
+          <mat-icon class="green">account_circle</mat-icon>
+        </div>
+        <mat-card-subtitle>Age</mat-card-subtitle>
+        <mat-card-title>32</mat-card-title>
+      </mat-card-header>
+    </mat-card>
+  </div>
+  <div appearance="fill" fxFlex>
+    <mat-card class="dashboard-card">
+      <mat-card-header>
+        <div mat-card-avatar>
+          <mat-icon class="green">business_center</mat-icon>
+        </div>
+        <mat-card-subtitle>Années d'expérience</mat-card-subtitle>
+        <mat-card-title>10</mat-card-title>
+      </mat-card-header>
+    </mat-card>
+  </div>
+  <div appearance="fill" fxFlex>
+    <mat-card class="dashboard-card">
+      <mat-card-header>
+        <div mat-card-avatar>
+          <mat-icon class="green">add_task</mat-icon>
+        </div>
+        <mat-card-subtitle>Projets réalisés</mat-card-subtitle>
+        <mat-card-title>+8</mat-card-title>
+      </mat-card-header>
+    </mat-card>
+  </div>
+  <div appearance="fill" fxFlex>
+    <mat-card class="dashboard-card">
+      <mat-card-header>
+        <div mat-card-avatar>
+          <mat-icon class="green">thumb_up</mat-icon>
+        </div>
+        <mat-card-subtitle>Disponible à partir de</mat-card-subtitle>
+        <mat-card-title>Jan. 2021</mat-card-title>
+      </mat-card-header>
+    </mat-card>
+  </div>
 </div>
 
-<div style="position: relative">
-  <div class="container dark-container">
-    <fa-icon [icon]="['fas', 'quote-left']" size="2x"></fa-icon>
-    <p>Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour garantir une expérience utilisateur optimale.</p>
+<div class="container-about light-container">
+  <div fxLayout="row wrap" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column" fxLayoutGap="0">
+    <!-- Première colonne -->
+    <div appearance="fill" fxFlex="45%">
+      <mat-card class="card-about">
+        <mat-card-header>
+          <mat-card-title>Thomas Girault</mat-card-title>
+          <mat-card-subtitle>Ingénieur logiciel - Freelance</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Diplômé de l'école Polytech'Nantes en 2011, j'ai intégré la division Secteur Public de Sopra Steria où j'ai participé à la réalisation de projets pour le compte de Ministères.</p>
+          <p>
+            Après 8 ans de riches expériences en ESN qui m'ont permis d'acquérir de solides compétences, j'ai souhaité me recentrer sur le développement de solutions numériques. J'ai alors intégré
+            DSIA - éditeur de logiciel en Suply Chain - en tant que leader technique.
+          </p>
+          <p>J'avais pour projet de créer ma propre société depuis quelque temps pour mettre mes compétences au profit de vos projets.</p>
+          <p>C'est en septembre 2020, après mûre réflexion, que j'ai créé la société Epsitek !</p>
+          <p>J'exerce désormais ma passion en tant qu'ingénieur logiciel Freelance.</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-fab color="warn" matTooltip="Télécharger mon CV au format .pdf" matTooltipClass="download-tooltip" aria-label="Télécharger mon CV au format .pdf">
+            <mat-icon>picture_as_pdf</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <!-- Deuxième colonne -->
+    <div class="about-picture" appearance="fill" fxFlex="55%"></div>
   </div>
+</div>
+
+<div class="container dark-container">
+  <fa-icon [icon]="['fas', 'quote-left']" size="2x"></fa-icon>
+  <p>Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour garantir une expérience utilisateur optimale.</p>
 </div>

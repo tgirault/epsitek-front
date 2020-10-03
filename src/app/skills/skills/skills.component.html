@@ -26,31 +26,29 @@
   </div>
 </div>
 
-<div style="position: relative">
-  <div class="container dark-container">
-    <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutGap.xs="0px">
-      <div>
-        <table class="technologies">
-          <caption>
-            Technologies
-          </caption>
-          <tr *ngFor="let technology of technologies">
-            <td class="label">{{ technology.name }}</td>
-            <td>{{ technology.description }}</td>
-          </tr>
-        </table>
-      </div>
-      <div>
-        <table class="technologies">
-          <caption>
-            Méthodologies
-          </caption>
-          <tr *ngFor="let methodology of methodologies">
-            <td class="label">{{ methodology.name }}</td>
-            <td>{{ methodology.description }}</td>
-          </tr>
-        </table>
-      </div>
+<div class="container dark-container">
+  <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutGap.xs="0px">
+    <div>
+      <table class="technologies">
+        <caption>
+          Technologies
+        </caption>
+        <tr *ngFor="let technology of technologies">
+          <td class="label">{{ technology.name }}</td>
+          <td>{{ technology.description }}</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <table class="technologies">
+        <caption>
+          Méthodologies
+        </caption>
+        <tr *ngFor="let methodology of methodologies">
+          <td class="label">{{ methodology.name }}</td>
+          <td>{{ methodology.description }}</td>
+        </tr>
+      </table>
     </div>
   </div>
 </div>

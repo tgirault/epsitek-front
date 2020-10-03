@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-services',
@@ -8,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class ServicesComponent implements OnInit {
   panelOpenState = false;
 
-  constructor() { }
+  constructor(private library: FaIconLibrary) {
+    library.addIcons(faArrowRight);
+  }
 
   ngOnInit(): void {
   }

@@ -1,55 +1,60 @@
-<h2>Envoyez-moi un message</h2>
-<form fxLayout="column" [formGroup]="contactForm">
-  <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
-    <mat-form-field appearance="fill" fxFlex>
-      <mat-label>Prénom</mat-label>
-      <input matInput type="text" placeholder="Votre prénom" formControlName="firstName" required />
-    </mat-form-field>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Envoyez-moi un message</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form fxLayout="column" [formGroup]="contactForm">
+      <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Prénom</mat-label>
+          <input matInput type="text" placeholder="Votre prénom" formControlName="firstName" required />
+        </mat-form-field>
 
-    <mat-form-field appearance="fill" fxFlex>
-      <mat-label>Nom</mat-label>
-      <input matInput type="text" placeholder="Votre nom" formControlName="lastName" required />
-    </mat-form-field>
-  </div>
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Nom</mat-label>
+          <input matInput type="text" placeholder="Votre nom" formControlName="lastName" required />
+        </mat-form-field>
+      </div>
 
-  <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
-    <mat-form-field appearance="fill" fxFlex>
-      <mat-label>Société</mat-label>
-      <input matInput type="text" placeholder="Votre société" formControlName="society" required />
-    </mat-form-field>
-  </div>
+      <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Société</mat-label>
+          <input matInput type="text" placeholder="Votre société" formControlName="society" required />
+        </mat-form-field>
+      </div>
 
-  <div class="input-row">
-    <mat-form-field appearance="fill" fxFlex>
-      <mat-label>Email</mat-label>
-      <input matInput placeholder="Votre adresse email" [formControl]="email" required />
-      <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
-    </mat-form-field>
-  </div>
+      <div class="input-row">
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Votre adresse email" [formControl]="email" required />
+          <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+        </mat-form-field>
+      </div>
 
-  <div class="input-row">
-    <mat-form-field appearance="fill" fxFlex>
-      <mat-label>Message</mat-label>
-      <textarea
-        matInput
-        cdkTextareaAutosize
-        cdkAutosizeMinRows="10"
-        cdkAutosizeMaxRows="20"
-        #message
-        type="text"
-        placeholder="Ecrivez votre message..."
-        formControlName="message"
-        maxlength="5000"
-        required
-      ></textarea>
-      <mat-hint align="end">{{ message.value?.length || 0 }}/5000</mat-hint>
-    </mat-form-field>
-  </div>
-
-  <div class="input-row">
-    <button mat-icon-button color="primary" aria-label="Envoyer mon message">
+      <div class="input-row">
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Message</mat-label>
+          <textarea
+            matInput
+            cdkTextareaAutosize
+            cdkAutosizeMinRows="10"
+            cdkAutosizeMaxRows="20"
+            #message
+            type="text"
+            placeholder="Ecrivez votre message..."
+            formControlName="message"
+            maxlength="5000"
+            required
+          ></textarea>
+          <mat-hint align="end">{{ message.value?.length || 0 }}/5000</mat-hint>
+        </mat-form-field>
+      </div>
+    </form>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button color="primary" aria-label="Envoyer mon message">
       Envoyer
       <mat-icon>send</mat-icon>
     </button>
-  </div>
-</form>
+  </mat-card-actions>
+</mat-card>

@@ -5,15 +5,14 @@
 </div>
 
 <div class="container light-container">
-  <h3>Comment me contacter ?</h3>
-  <div class="container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="60px" fxLayoutGap.xs="20px">
+  <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.xs="0">
     <!-- Première colonne -->
-    <div>
-      <app-contact-card></app-contact-card>
+    <div appearance="fill" fxFlex>
+      <app-contact-form></app-contact-form>
     </div>
     <!-- Deuxième colonne -->
-    <div>
-      <app-contact-form></app-contact-form>
+    <div appearance="fill" fxFlex>
+      <app-contact-card></app-contact-card>
     </div>
   </div>
 </div>
