@@ -22,5 +22,6 @@ export class AppComponent {
 
   scroll(el: HTMLElement): void {
     el.scrollIntoView();
+    this.isShow = false;
   }
 }
