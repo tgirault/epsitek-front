@@ -43,7 +43,7 @@
 </div>
 
 <div class="container blue-container">
-  <h3>Les clients</h3>
+  <h3>Mes clients</h3>
   <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
     <div class="logo" *ngFor="let customer of customers">
       <a href="{{ customer.website }}" target="_blank"><img src="/assets/images/{{ customer.logo }}.png" class="customer-logo" matTooltip="{{ customer.name }}" /></a>
