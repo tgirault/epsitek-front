@@ -11,9 +11,15 @@
   padding: 0 0 0 80px;
 }
 
-.about-picture {
+.wrapper-about-picture {
+  background-repeat: no-repeat;
+  background-position: top center;
   background-image: url('/assets/images/about-me.jpg');
-  background-size: cover;
+  background-size: contain;
+  min-width: 300px;
+  max-width: 1024px;
+  min-height: 250px;
+  max-height: 800px;
 }
 
 /* Désactivation de l'effet parallax pour les tablettes et smartphones. */
@@ -56,6 +62,5 @@
 }
 
 .mat-card.card-about .mat-card-actions {
-  padding-top: 20px;
   text-align: center;
 }
