@@ -1,9 +1,9 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Envoyez-moi un message</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <form fxLayout="column" [formGroup]="contactForm">
+<form fxLayout="column" [formGroup]="contactForm">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Envoyez-moi un message</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
       <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
         <mat-form-field appearance="fill" fxFlex>
           <mat-label>Prénom</mat-label>
@@ -49,12 +49,12 @@
           <mat-hint align="end">{{ message.value?.length || 0 }}/5000</mat-hint>
         </mat-form-field>
       </div>
-    </form>
-  </mat-card-content>
-  <mat-card-actions align="end">
-    <button mat-raised-button color="primary" aria-label="Envoyer mon message">
-      Envoyer
-      <mat-icon>send</mat-icon>
-    </button>
-  </mat-card-actions>
-</mat-card>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary" aria-label="Envoyer mon message">
+        Envoyer
+        <mat-icon>send</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</form>
