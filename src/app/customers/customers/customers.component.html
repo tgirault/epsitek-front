@@ -15,7 +15,7 @@
       <mat-card class="experience-card">
         <mat-card-header>
           <div mat-card-avatar>
-            <a href="{{ experience.company.website }}" target="_blank"><img src="/assets/images/{{ experience.company.logo }}.png" class="company-logo" /></a>
+            <a href="{{ experience.company.website }}" target="_blank"><img src="/assets/images/{{ experience.company.logo }}.png" alt="Logo {{ experience.company.name }}" class="company-logo" /></a>
           </div>
           <mat-card-title>{{ experience.title }}</mat-card-title>
           <mat-card-subtitle><mat-icon>place</mat-icon> {{ experience.company.name }}, {{ experience.place }}</mat-card-subtitle>
@@ -46,7 +46,7 @@
   <h3>Mes clients</h3>
   <div fxLayout="row wrap" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.xs="10px">
     <div class="logo" *ngFor="let customer of customers" appearence="fill">
-      <a href="{{ customer.website }}" target="_blank"><img src="/assets/images/{{ customer.logo }}.png" class="customer-logo" matTooltip="{{ customer.name }}" /></a>
+      <a href="{{ customer.website }}" target="_blank"><img src="/assets/images/{{ customer.logo }}.png" alt="Logo {{ customer.name }}" class="customer-logo" matTooltip="{{ customer.name }}" /></a>
     </div>
   </div>
 </div>
