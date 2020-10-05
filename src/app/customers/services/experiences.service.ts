@@ -19,7 +19,7 @@ export class ExperiencesService {
             new Experience(
                 'Juin 2019',
                 'Sept. 2020',
-                'Lead developer Java/Angular - Scrum master',
+                'Lead developer Java / Angular - Scrum master',
                 'Nantes',
                 new Company('DSIA', 'logo-dsia', 'https://logistar-dsia.com/fr/'),
                 'Lead developer / Scrum master d\'une équipe de 5 à 8 développeurs au sein d\'un éditeur de solutions en Supply Chain Management. Développement d\'une solution logistique de gestion des entrepôts (WMS) et optimisation des processus métier de préparation des commandes Drive pour le compte de Carrefour.',
