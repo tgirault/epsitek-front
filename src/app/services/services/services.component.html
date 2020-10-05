@@ -8,18 +8,6 @@
   <mat-accordion>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header>
-        <mat-panel-title><mat-icon color="warn">create</mat-icon> &nbsp;Conception technique et fonctionnelle</mat-panel-title>
-      </mat-expansion-panel-header>
-      <p>Conception fonctionnelle et technique :</p>
-      <ul class="fa-ul">
-        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> R&eacute;daction de documentation technique (sp&eacute;cifications techniques d&eacute;taill&eacute;es)</li>
-        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mod&eacute;lisation UML (diagramme de cas d'utilisation, diagrammes de s&eacute;quence, diagramme de classes)</li>
-        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mod&eacute;lisation de workflow BPMN</li>
-        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mod&eacute;lisation de bases de donn&eacute;es relationnelles (BCNF)</li>
-      </ul>
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
         <mat-panel-title><mat-icon color="warn">device_hub</mat-icon> &nbsp;Architecture</mat-panel-title>
       </mat-expansion-panel-header>
       <p>Prestation d'architecture :</p>
@@ -34,6 +22,18 @@
           <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mise en place d'une architecture en haute disponibilit&eacute;, avec une scalabilit&eacute; horizontale et r&eacute;partition de charge
         </li>
         <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Veille technologique et int&eacute;rêt pour les architectures micro-services (Docker, IaaS, PaaS, Saas, DBaaS).</li>
+      </ul>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title><mat-icon color="warn">create</mat-icon> &nbsp;Conception technique et fonctionnelle</mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Conception fonctionnelle et technique :</p>
+      <ul class="fa-ul">
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> R&eacute;daction de documentation technique (sp&eacute;cifications techniques d&eacute;taill&eacute;es)</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mod&eacute;lisation UML (diagramme de cas d'utilisation, diagrammes de s&eacute;quence, diagramme de classes)</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mod&eacute;lisation de workflow BPMN</li>
+        <li><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon> Mod&eacute;lisation de bases de donn&eacute;es relationnelles (BCNF)</li>
       </ul>
     </mat-expansion-panel>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
