@@ -3,7 +3,7 @@
 .background-about {
   background-image: url('/assets/images/background-about.jpg');
   background-position: center top;
-  min-height: 600px;
+  min-height: 650px;
 }
 
 .container-about {
@@ -24,6 +24,10 @@
 
 /* Désactivation de l'effet parallax pour les tablettes et smartphones. */
 @media only screen and (max-device-width: 1024px) {
+  .background-about {
+    min-height: 250px;
+  }
+
   .container-about {
     margin: 0;
     padding: 0 10px 0 10px;
