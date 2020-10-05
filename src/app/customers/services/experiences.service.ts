@@ -24,15 +24,16 @@ export class ExperiencesService {
                 new Company('DSIA', 'logo-dsia', 'https://logistar-dsia.com/fr/'),
                 'Lead developer / Scrum master d\'une équipe de 5 à 8 développeurs au sein d\'un éditeur de solutions en Supply Chain Management. Développement d\'une solution logistique de gestion des entrepôts (WMS) et optimisation des processus métier de préparation des commandes Drive pour le compte de Carrefour.',
                 Array.from([
-                    'Développement full stack de nouvelles fonctionnalités (Java/Spring, Angular)',
+                    'Développement full stack de nouvelles fonctionnalités (Java / Spring, Angular)',
                     'Migration technique d\'une solution existante sur le socle technique de l\'entreprise',
-                    'Migration vers une architecture scalable : Front Angular 8, API Gateway (Zuul), Services back Java/Spring',
+                    'Migration vers une architecture scalable : Front Angular 8, API Gateway (Zuul), Services back Java / Spring',
                     'Contributeur de la mise en place des principes SCRUM et du board agile sur JIRA (Daily meeting, Sprint planning, Poker planning, Démonstration)',
                     'Contributeur de la mise en place des bonnes pratiques de tests (XRay TM for JIRA)',
                     'Travail en collaboration avec les différents services de l\'entreprise (Développement, Industrialisation, Qualité, Production)',
                 ]),
                 Array.from([
                     'Angular 8',
+                    'Typescript',
                     'Java 8',
                     'Spring Boot',
                     'Spring OAuth2',
@@ -44,7 +45,10 @@ export class ExperiencesService {
                     'Flyway',
                     'Lombok',
                     'MapStruct',
-                    'Maven'
+                    'Maven',
+                    'HTML',
+                    'CSS',
+                    'Javascript'
                 ]),
                 Array.from([
                     'Git',
@@ -71,7 +75,7 @@ export class ExperiencesService {
                     'Référent technique transverse du projet. Animation d\'un backlog refinement hebdomadaire avec les lead developpers de chaque équipe afin d\'identifier les sujets techniques à instruire.',
                     'Création, priorisation des US techniques en lien avec le chef de projet client et l\'architecte',
                     'Animation transverse de tech\'lunch (Docker, Activiti)',
-                    'Participation aux cérémonies agiles (PI Planning, Daily stand up, Backlog refinement, Sprint planning, Planning poker, Démonstrations, Rétrospectives)',
+                    'Participation aux cérémonies agiles (Planning Increment, Daily meeting, Backlog Refinement, Sprint Planning, Poker Planning, Démonstrations, Rétrospectives)',
                     'Expérience DevOps avec Jenkins, Docker et Ansible : dockerisation d\'une brique logicielle'
                 ]),
                 Array.from([
@@ -112,7 +116,7 @@ export class ExperiencesService {
                 soprasteria,
                 'Responsable technique d\'une équipe de 10 développeurs sur un projet de build de 6000 jours/homme pour le compte du Ministère de la Justice. Refonte du système d\'information du Casier Judiciaire National et dématérialisation des demandes de bulletin n°3 néant.',
                 Array.from([
-                    'Mise en place du socle technique en respectant les contraintes d\'accessibilité(RGAA), de responsive design(application consultable sur mobile et tablette), de performance et de sécurité',
+                    'Mise en place du socle technique en respectant les contraintes d\'accessibilité (RGAA), de responsive design (application consultable sur mobile et tablette), de performance et de sécurité',
                     'Industrialisation du projet (pipeline d\'intégration continue Jenkins, automatisation de l\'installation, suivi des indicateurs de qualité Sonar)',
                     'Animation d\'ateliers techniques avec la cellule technique du client',
                     'Encadrement de l\'équipe de développement (mise en place de processus de développement, répartition des tâches, revues de code, suivi de la qualité, diffusion des bonnes pratiques, support)',
@@ -122,11 +126,6 @@ export class ExperiencesService {
                 ]),
                 Array.from([
                     'JEE 7',
-                    'JSF 2',
-                    'Primefaces',
-                    'HTML5',
-                    'CSS3',
-                    'Javascript',
                     'EJB 3',
                     'CDI',
                     'Hibernate',
@@ -135,7 +134,12 @@ export class ExperiencesService {
                     'JMS',
                     'Java Batch Processing',
                     'Infinispan',
-                    'JUnit'
+                    'JUnit',
+                    'JSF 2',
+                    'Primefaces',
+                    'HTML5',
+                    'CSS3',
+                    'Javascript',
                 ]),
                 Array.from([
                     'JBoss EAP 7',
@@ -166,18 +170,21 @@ export class ExperiencesService {
                     'Mise en place de la fabrique logicielle avec Jenkins'
                 ]),
                 Array.from([
-                    'Alfresco (Web scripts)',
+                    'Alfresco',
                     'Moteur d\'indexation Solr',
                     'Moteur de workflow Activiti',
-                    'Java/J2EE',
+                    'Java',
+                    'JEE',
                     'Spring',
                     'Spring MVC',
-                    'HTML/CSS',
+                    'HTML',
+                    'CSS',
                     'JQuery'
                 ]),
                 Array.from([
                     'Apache',
                     'Tomcat',
+                    'LDAP',
                     'PostgreSQL',
                     'MariaDB'
                 ]),
@@ -217,14 +224,16 @@ export class ExperiencesService {
                     'Rédaction de spécifications fonctionnelles détaillées'
                 ]),
                 Array.from([
-                    'Java/JEE',
+                    'Java',
+                    'JEE',
                     'Spring',
-                    'Struts 2',
-                    'HTML/CSS',
-                    'JQuery',
                     'Hibernate',
                     'JPA',
-                    'JUnit'
+                    'JUnit',
+                    'Struts 2',
+                    'HTML',
+                    'CSS',
+                    'JQuery'
                 ]),
                 Array.from([
                     'SVN',
@@ -246,11 +255,15 @@ export class ExperiencesService {
                     'Développement et tests unitaires',
                 ]),
                 Array.from([
-                    'Java/JEE',
-                    'frawemork Lutèce',
-                    'Spring/Hibernate/JPA',
+                    'Java',
+                    'JEE',
+                    'Frawemork Lutèce',
+                    'Spring',
+                    'Hibernate',
+                    'JPA',
                     'JUnit',
-                    'HTML/CSS',
+                    'HTML',
+                    'CSS',
                     'JQuery'
                 ]),
                 Array.from([
