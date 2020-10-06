@@ -26,8 +26,7 @@
       <div class="input-row">
         <mat-form-field appearance="fill" fxFlex>
           <mat-label>Email</mat-label>
-          <input matInput placeholder="Votre adresse email" [formControl]="email" required />
-          <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+          <input matInput placeholder="Votre adresse email" formControlName="email" required />
         </mat-form-field>
       </div>
 
