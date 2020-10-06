@@ -7,26 +7,35 @@
       <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
         <mat-form-field appearance="fill" fxFlex>
           <mat-label>Prénom</mat-label>
-          <input matInput type="text" placeholder="Votre prénom" formControlName="firstName" required />
+          <input matInput type="text" placeholder="Votre prénom" formControlName="firstName" maxlength="40" required />
         </mat-form-field>
 
         <mat-form-field appearance="fill" fxFlex>
           <mat-label>Nom</mat-label>
-          <input matInput type="text" placeholder="Votre nom" formControlName="lastName" required />
+          <input matInput type="text" placeholder="Votre nom" formControlName="lastName" maxlength="40" required />
         </mat-form-field>
       </div>
 
       <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
         <mat-form-field appearance="fill" fxFlex>
           <mat-label>Société</mat-label>
-          <input matInput type="text" placeholder="Le nom de votre société" formControlName="company" required />
+          <input matInput type="text" placeholder="Le nom de votre société" formControlName="company" maxlength="60" required />
         </mat-form-field>
       </div>
 
       <div class="input-row">
         <mat-form-field appearance="fill" fxFlex>
           <mat-label>Email</mat-label>
-          <input matInput placeholder="Votre adresse email" formControlName="email" required />
+          <input matInput placeholder="Votre adresse email" formControlName="email" maxlength="150" required />
+        </mat-form-field>
+      </div>
+
+      <div class="input-row">
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Téléphone</mat-label>
+          <span matPrefix>+33 &nbsp;</span>
+          <input type="tel" matInput placeholder="0603375938" formControlName="phone" maxlength="10" required />
+          <mat-icon matSuffix>phone</mat-icon>
         </mat-form-field>
       </div>
 

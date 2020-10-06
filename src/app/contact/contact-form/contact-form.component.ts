@@ -31,6 +31,7 @@ export class ContactFormComponent implements OnInit {
       lastName: '',
       company: '',
       email: '',
+      phone: '',
       message: '',
     });
   }
@@ -51,11 +52,12 @@ export class ContactFormComponent implements OnInit {
         this.contactForm.get('lastName').value,
         this.contactForm.get('company').value,
         this.contactForm.get('email').value,
+        this.contactForm.get('phone').value,
         this.contactForm.get('message').value
       );
       this.messagesService.send(message).subscribe(response => {
         this.notification.open(response.message, null, {
-          duration: 2000,
+          duration: 3000,
         });
         // Réinitialisation du formulaire
         this.contactForm.reset();
