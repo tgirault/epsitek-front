@@ -57,6 +57,8 @@ export class ContactFormComponent implements OnInit {
         this.notification.open(response.message, null, {
           duration: 2000,
         });
+        // Réinitialisation du formulaire
+        this.contactForm.reset();
       });
 
     } else {
