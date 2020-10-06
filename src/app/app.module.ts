@@ -1,4 +1,5 @@
 import { LayoutModule } from '@angular/cdk/layout';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatBadgeModule } from '@angular/material/badge';
@@ -11,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
@@ -27,6 +29,7 @@ import { CustomersModule } from './customers/customers.module';
 import { ServicesModule } from './services/services.module';
 import { SkillsModule } from './skills/skills.module';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -34,6 +37,7 @@ import { SkillsModule } from './skills/skills.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     RouterModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -50,6 +54,7 @@ import { SkillsModule } from './skills/skills.module';
     MatFormFieldModule,
     MatStepperModule,
     MatCardModule,
+    MatSnackBarModule,
     MatChipsModule,
     CoreModule,
     AboutModule,

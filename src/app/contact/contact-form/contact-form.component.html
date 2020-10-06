@@ -1,4 +1,4 @@
-<form fxLayout="column" [formGroup]="contactForm">
+<form fxLayout="column" [formGroup]="contactForm" (ngSubmit)="send()">
   <mat-card>
     <mat-card-header>
       <mat-card-title>Envoyez-moi un message</mat-card-title>
@@ -19,7 +19,7 @@
       <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
         <mat-form-field appearance="fill" fxFlex>
           <mat-label>Société</mat-label>
-          <input matInput type="text" placeholder="Votre société" formControlName="society" required />
+          <input matInput type="text" placeholder="Le nom de votre société" formControlName="company" required />
         </mat-form-field>
       </div>
 
@@ -51,7 +51,7 @@
       </div>
     </mat-card-content>
     <mat-card-actions align="end">
-      <button mat-raised-button color="primary" aria-label="Envoyer mon message">
+      <button type="submit" mat-raised-button color="primary" aria-label="Envoyer mon message">
         Envoyer
         <mat-icon>send</mat-icon>
       </button>
