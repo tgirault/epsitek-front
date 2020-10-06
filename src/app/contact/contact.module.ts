@@ -10,7 +10,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {
+  RecaptchaFormsModule,
+  RecaptchaModule,
+  RecaptchaSettings,
+
+  RECAPTCHA_LANGUAGE,
+  RECAPTCHA_SETTINGS
+} from 'ng-recaptcha';
 import { ContactCardComponent } from './contact-card/contact-card.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ContactComponent } from './contact/contact.component';
@@ -19,6 +28,9 @@ import { ContactComponent } from './contact/contact.component';
   declarations: [ContactComponent, ContactFormComponent, ContactCardComponent],
   imports: [
     CommonModule,
+    BrowserModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
     MatFormFieldModule,
     ReactiveFormsModule,
     MatIconModule,
@@ -32,6 +44,16 @@ import { ContactComponent } from './contact/contact.component';
     FlexLayoutModule,
     CoreModule
   ],
-  exports: [ContactComponent]
+  exports: [ContactComponent],
+  providers: [
+    {
+      provide: RECAPTCHA_SETTINGS,
+      useValue: { siteKey: '6LdgcNQZAAAAAMG2SfXZTis_3945nXiYrhHIHeaw' } as RecaptchaSettings,
+    },
+    {
+      provide: RECAPTCHA_LANGUAGE,
+      useValue: 'fr', // use French language
+    }
+  ],
 })
 export class ContactModule { }

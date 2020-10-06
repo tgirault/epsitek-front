@@ -20,6 +20,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
 import { AboutModule } from './about/about.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -41,6 +42,8 @@ import { SkillsModule } from './skills/skills.module';
     RouterModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
     LayoutModule,
     MatToolbarModule,
     MatExpansionModule,
