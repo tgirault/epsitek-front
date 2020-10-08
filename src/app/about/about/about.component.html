@@ -1,55 +1,4 @@
-<div class="background background-about">
-  <div class="caption">
-    <span class="border">&lt;A PROPOS/&gt;</span>
-  </div>
-</div>
-
-<div class="container blue-container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px">
-  <div appearance="fill" fxFlex>
-    <mat-card class="dashboard-card">
-      <mat-card-header>
-        <div mat-card-avatar>
-          <mat-icon class="green">business_center</mat-icon>
-        </div>
-        <mat-card-subtitle>Années d'expérience</mat-card-subtitle>
-        <mat-card-title>10</mat-card-title>
-      </mat-card-header>
-    </mat-card>
-  </div>
-  <div appearance="fill" fxFlex>
-    <mat-card class="dashboard-card">
-      <mat-card-header>
-        <div mat-card-avatar>
-          <mat-icon class="green">add_task</mat-icon>
-        </div>
-        <mat-card-subtitle>Projets réalisés</mat-card-subtitle>
-        <mat-card-title>+8</mat-card-title>
-      </mat-card-header>
-    </mat-card>
-  </div>
-  <div appearance="fill" fxFlex>
-    <mat-card class="dashboard-card">
-      <mat-card-header>
-        <div mat-card-avatar>
-          <mat-icon class="green">thumb_up</mat-icon>
-        </div>
-        <mat-card-subtitle>Disponible à partir de</mat-card-subtitle>
-        <mat-card-title>Jan. 2021</mat-card-title>
-      </mat-card-header>
-    </mat-card>
-  </div>
-  <div appearance="fill" fxFlex>
-    <mat-card class="dashboard-card">
-      <mat-card-header>
-        <div mat-card-avatar>
-          <mat-icon class="green">place</mat-icon>
-        </div>
-        <mat-card-subtitle>Lieu</mat-card-subtitle>
-        <mat-card-title>Nantes</mat-card-title>
-      </mat-card-header>
-    </mat-card>
-  </div>
-</div>
+<app-dashboard></app-dashboard>
 
 <div class="light-container">
   <div fxLayout="row wrap" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column" fxLayoutAlign="center" fxLayoutGap="0">
@@ -58,7 +7,7 @@
       <mat-card class="card-about">
         <mat-card-header>
           <mat-card-title>Thomas Girault</mat-card-title>
-          <mat-card-subtitle>Ingénieur logiciel - Freelance</mat-card-subtitle>
+          <mat-card-subtitle>Leader technique</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
           <p>
@@ -89,9 +38,7 @@
   </div>
 </div>
 
-<div class="container dark-container">
-  <p>
-    <fa-icon [icon]="['fas', 'quote-left']" size="2x"></fa-icon> Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour
-    garantir une expérience utilisateur optimale.
-  </p>
-</div>
+<app-citation
+  phrase="Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour
+garantir une expérience utilisateur optimale."
+></app-citation>
