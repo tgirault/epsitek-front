@@ -1,18 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { Company } from '../model/company.data';
-import { Experience } from '../model/experience.data';
-import { CustomersService } from '../services/customers.service';
-import { ExperiencesService } from '../services/experiences.service';
-
+import { Company } from './model/company.data';
+import { Experience } from './model/experience.data';
+import { CustomersService } from './services/customers.service';
+import { ExperiencesService } from './services/experiences.service';
 
 @Component({
-  selector: 'app-customers',
-  templateUrl: './customers.component.html',
-  styleUrls: ['./customers.component.scss']
+  selector: 'app-experiences',
+  templateUrl: './experiences.component.html',
+  styleUrls: ['./experiences.component.scss']
 })
-export class CustomersComponent implements OnInit {
+export class ExperiencesComponent implements OnInit {
   /** Liste des expériences professionnelles. */
   experiences: Array<Experience>;
   /** Liste des clients. */
@@ -24,7 +23,10 @@ export class CustomersComponent implements OnInit {
    * @param customersService le service de gestion des clients
    * @param library librairie des icônes Font Awesome
    */
-  constructor(private experiencesService: ExperiencesService, private customersService: CustomersService, private library: FaIconLibrary) {
+  constructor(
+    private experiencesService: ExperiencesService,
+    private customersService: CustomersService,
+    private library: FaIconLibrary) {
     library.addIcons(faArrowRight);
   }
 

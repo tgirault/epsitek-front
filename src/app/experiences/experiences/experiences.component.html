@@ -46,7 +46,10 @@
   <h3>Mes clients</h3>
   <div fxLayout="row wrap" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.xs="10px">
     <div class="logo" *ngFor="let customer of customers" appearence="fill">
-      <a href="{{ customer.website }}" target="_blank"><img src="/assets/images/{{ customer.logo }}.png" alt="Logo {{ customer.name }}" class="customer-logo" matTooltip="{{ customer.name }}" /></a>
+      <a *ngIf="customer.website" href="{{ customer.website }}" target="_blank">
+        <img src="/assets/images/{{ customer.logo }}.png" alt="Logo {{ customer.name }}" class="customer-logo" matTooltip="{{ customer.name }}" />
+      </a>
+      <img *ngIf="!customer.website" src="/assets/images/{{ customer.logo }}.png" alt="Logo {{ customer.name }}" class="customer-logo" matTooltip="{{ customer.name }}" />
     </div>
   </div>
 </div>

@@ -26,7 +26,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactModule } from './contact/contact.module';
 import { CoreModule } from './core/core.module';
-import { CustomersModule } from './customers/customers.module';
+import { ExperiencesModule } from './experiences/experiences.module';
 import { ServicesModule } from './services/services.module';
 import { SkillsModule } from './skills/skills.module';
 
@@ -63,7 +63,7 @@ import { SkillsModule } from './skills/skills.module';
     AboutModule,
     ServicesModule,
     SkillsModule,
-    CustomersModule,
+    ExperiencesModule,
     ContactModule,
     FontAwesomeModule,
     FlexLayoutModule

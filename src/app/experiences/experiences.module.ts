@@ -8,11 +8,10 @@ import { MatListModule } from '@angular/material/list';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { CustomersComponent } from './customers/customers.component';
-
+import { ExperiencesComponent } from './experiences/experiences.component';
 
 @NgModule({
-  declarations: [CustomersComponent],
+  declarations: [ExperiencesComponent],
   imports: [
     CommonModule,
     MatIconModule,
@@ -24,6 +23,6 @@ import { CustomersComponent } from './customers/customers.component';
     FontAwesomeModule,
     FlexLayoutModule
   ],
-  exports: [CustomersComponent],
+  exports: [ExperiencesComponent],
 })
-export class CustomersModule { }
+export class ExperiencesModule { }
