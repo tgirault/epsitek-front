@@ -1,5 +1,7 @@
 .box {
   background: rgba(0, 0, 0, 0);
+  width: 300px;
+  text-align: left;
 }
 
 h2 {
@@ -9,8 +11,8 @@ h2 {
 }
 
 .type-writer {
-  font-weight: 600;
-  font-size: 40px;
-  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  color: black;
   font-family: 'Courier New', Courier, monospace;
 }

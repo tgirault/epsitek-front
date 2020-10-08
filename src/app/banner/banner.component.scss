@@ -3,5 +3,6 @@
 .background-about {
   background-image: url('/assets/images/background-about.jpg');
   background-position: center top;
-  min-height: 650px;
+  background-size: cover;
+  min-height: 250px;
 }
