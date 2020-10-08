@@ -3,7 +3,8 @@
   <mat-toolbar class="menu" color="primary">
     <mat-toolbar-row>
       <button mat-icon-button aria-label="Menu icon" (click)="toggleDisplay()" fxShow="true" fxHide.gt-sm>
-        <mat-icon>menu</mat-icon>
+        <mat-icon *ngIf="!isShow">menu</mat-icon>
+        <mat-icon *ngIf="isShow">close</mat-icon>
       </button>
       <button mat-icon-button aria-label="Home icon" (click)="scroll(about)" fxHide.lt-md>
         <mat-icon>home</mat-icon>
@@ -35,7 +36,7 @@
 
 <!-- Content -->
 <section>
-  <article #about style="scroll-margin: 60px">
+  <article #about style="scroll-margin: 55px">
     <app-about></app-about>
   </article>
 
