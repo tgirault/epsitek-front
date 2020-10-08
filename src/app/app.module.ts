@@ -24,6 +24,7 @@ import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
 import { AboutModule } from './about/about.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BannerModule } from './banner/banner.module';
 import { ContactModule } from './contact/contact.module';
 import { CoreModule } from './core/core.module';
 import { ExperiencesModule } from './experiences/experiences.module';
@@ -60,6 +61,7 @@ import { SkillsModule } from './skills/skills.module';
     MatSnackBarModule,
     MatChipsModule,
     CoreModule,
+    BannerModule,
     AboutModule,
     ServicesModule,
     SkillsModule,
