@@ -20,8 +20,8 @@ import {
   RECAPTCHA_LANGUAGE,
   RECAPTCHA_SETTINGS
 } from 'ng-recaptcha';
-import { ContactCardComponent } from './contact-card/contact-card.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ContactCardComponent } from './contact/contact-card/contact-card.component';
+import { ContactFormComponent } from './contact/contact-form/contact-form.component';
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
