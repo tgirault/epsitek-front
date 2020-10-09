@@ -41,7 +41,7 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
   ]
 })
 export class AppComponent {
-  title = 'Epsitek';
+  /** Le menu est ouvert ? */
   isOpen = false;
 
   /**
@@ -57,12 +57,5 @@ export class AppComponent {
    */
   toggleMenu(): void {
     this.isOpen = !this.isOpen;
-  }
-
-  /**
-   * Scroll vers une ancre.
-   */
-  scroll(el: HTMLElement): void {
-    el.scrollIntoView();
   }
 }

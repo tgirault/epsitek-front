@@ -7,32 +7,32 @@
         <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'hide'"></div>
         <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'bottomX'"></div>
       </div>
-      <button mat-icon-button aria-label="Home icon" (click)="scroll(about)" fxHide.lt-md>
+      <button mat-icon-button aria-label="Home icon" [routerLink]="['']" fxHide.lt-md>
         <mat-icon>home</mat-icon>
       </button>
-      <a class="logo" (click)="scroll(about)"></a>
+      <a class="logo" [routerLink]="['']"></a>
       <span class="spacer"></span>
       <div fxShow="true" fxHide.lt-md>
-        <button mat-button color="accent" (click)="scroll(about)">A propos</button>
-        <button mat-button color="accent" (click)="scroll(services)">Services</button>
-        <button mat-button color="accent" (click)="scroll(skills)">Compétences</button>
-        <button mat-button color="accent" (click)="scroll(experiences)">Expériences</button>
-        <button mat-button color="accent" (click)="scroll(contacts)">Contacts</button>
+        <button mat-button [routerLink]="['']" fragment="about" routerLinkActive="mat-accent">A propos</button>
+        <button mat-button [routerLink]="['']" fragment="services" routerLinkActive="mat-accent">Services</button>
+        <button mat-button [routerLink]="['']" fragment="skills" routerLinkActive="mat-accent">Compétences</button>
+        <button mat-button [routerLink]="['']" fragment="experiences" routerLinkActive="mat-accent">Expériences</button>
+        <button mat-button [routerLink]="['']" fragment="contacts" routerLinkActive="mat-accent">Contacts</button>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
 
   <div class="menu-nav" fxFlexFill fxHide.gt-sm [@openClose]="isOpen ? 'closed' : 'open'" (click)="toggleMenu()">
     <mat-nav-list>
-      <a mat-list-item (click)="scroll(about)">A propos</a>
+      <a mat-list-item [routerLink]="['']" fragment="about">A propos</a>
       <mat-divider></mat-divider>
-      <a mat-list-item (click)="scroll(services)">Services</a>
+      <a mat-list-item [routerLink]="['']" fragment="services">Services</a>
       <mat-divider></mat-divider>
-      <a mat-list-item (click)="scroll(skills)">Compétences</a>
+      <a mat-list-item [routerLink]="['']" fragment="skills">Compétences</a>
       <mat-divider></mat-divider>
-      <a mat-list-item (click)="scroll(experiences)">Expériences</a>
+      <a mat-list-item [routerLink]="['']" fragment="experiences">Expériences</a>
       <mat-divider></mat-divider>
-      <a mat-list-item (click)="scroll(contacts)">Contacts</a>
+      <a mat-list-item [routerLink]="['']" fragment="contacts">Contacts</a>
       <mat-divider></mat-divider>
     </mat-nav-list>
   </div>
@@ -42,23 +42,23 @@
 
 <!-- Content -->
 <section>
-  <article #about style="scroll-margin: 55px">
+  <article #about id="about" style="scroll-margin: 54px">
     <app-about></app-about>
   </article>
 
-  <article #services>
+  <article #services id="services">
     <app-services></app-services>
   </article>
 
-  <article #skills>
+  <article #skills id="skills">
     <app-skills></app-skills>
   </article>
 
-  <article #experiences>
+  <article #experiences id="experiences">
     <app-experiences></app-experiences>
   </article>
 
-  <article #contacts>
+  <article #contacts id="contacts">
     <app-contact></app-contact>
   </article>
 </section>
@@ -75,11 +75,11 @@
     <div appearance="fill" fxFlex="30%">
       <h6>Liens rapides</h6>
       <ul class="footer-links">
-        <li><a (click)="scroll(about)">A propos</a></li>
-        <li><a (click)="scroll(services)">Services</a></li>
-        <li><a (click)="scroll(skills)">Compétences</a></li>
-        <li><a (click)="scroll(experiences)">Expériences</a></li>
-        <li><a (click)="scroll(contacts)">Contacts</a></li>
+        <li><a [routerLink]="['']" fragment="about">A propos</a></li>
+        <li><a [routerLink]="['']" fragment="services">Services</a></li>
+        <li><a [routerLink]="['']" fragment="skills">Compétences</a></li>
+        <li><a [routerLink]="['']" fragment="experiences">Expériences</a></li>
+        <li><a [routerLink]="['']" fragment="contacts">Contacts</a></li>
       </ul>
     </div>
   </div>
