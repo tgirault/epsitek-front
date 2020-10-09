@@ -2,10 +2,11 @@
 <header>
   <mat-toolbar class="menu" color="primary">
     <mat-toolbar-row>
-      <button mat-icon-button aria-label="Menu icon" (click)="toggleDisplay()" fxShow="true" fxHide.gt-sm>
-        <mat-icon *ngIf="!isShow">menu</mat-icon>
-        <mat-icon *ngIf="isShow">close</mat-icon>
-      </button>
+      <div (click)="toggleMenu()" class="btn" fxHide.gt-sm>
+        <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'topX'"></div>
+        <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'hide'"></div>
+        <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'bottomX'"></div>
+      </div>
       <button mat-icon-button aria-label="Home icon" (click)="scroll(about)" fxHide.lt-md>
         <mat-icon>home</mat-icon>
       </button>
@@ -21,13 +22,18 @@
     </mat-toolbar-row>
   </mat-toolbar>
 
-  <div class="menu-nav" fxFlexFill fxHide.gt-sm [hidden]="!isShow">
+  <div class="menu-nav" fxFlexFill fxHide.gt-sm [@openClose]="isOpen ? 'closed' : 'open'" (click)="toggleMenu()">
     <mat-nav-list>
       <a mat-list-item (click)="scroll(about)">A propos</a>
+      <mat-divider></mat-divider>
       <a mat-list-item (click)="scroll(services)">Services</a>
+      <mat-divider></mat-divider>
       <a mat-list-item (click)="scroll(skills)">Compétences</a>
+      <mat-divider></mat-divider>
       <a mat-list-item (click)="scroll(experiences)">Expériences</a>
+      <mat-divider></mat-divider>
       <a mat-list-item (click)="scroll(contacts)">Contacts</a>
+      <mat-divider></mat-divider>
     </mat-nav-list>
   </div>
 </header>
