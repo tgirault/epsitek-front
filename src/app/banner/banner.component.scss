@@ -1,8 +1,51 @@
 @import './../core/common';
 
-.background-about {
-  background-image: url('/assets/images/background-about.jpg');
-  background-position: center top;
+.background-banner {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  min-height: 250px;
+  background-color: #013a6b;
+  background-image: -webkit-linear-gradient(30deg, #013a6b 50%, #004e95 50%);
+  position: relative;
+  opacity: 0.9;
+  min-height: 350px;
+}
+
+.caption-banner {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption-banner span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 100;
+  color: white;
+}
+
+h4 {
+  color: white;
 }
