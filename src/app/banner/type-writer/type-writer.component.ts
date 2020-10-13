@@ -38,7 +38,7 @@ export class TypeWriterComponent implements OnInit {
       const wordLength = word.length;
 
       if (up) {
-        this.displayedText = word.slice(0, n) + ' _';
+        this.displayedText = word.slice(0, n) + '|';
         n++;
       }
 
@@ -47,7 +47,7 @@ export class TypeWriterComponent implements OnInit {
       }
 
       if (!up) {
-        this.displayedText = word.slice(0, n) + ' _';
+        this.displayedText = word.slice(0, n) + '|';
         n--;
       }
 
@@ -59,7 +59,7 @@ export class TypeWriterComponent implements OnInit {
         wordsIndex = 0;
       }
 
-    }, 200);
+    }, 250);
   }
 
 }
