@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AnimateModule } from '../animate/animate.module';
 import { CitationComponent } from './citation/citation.component';
 import { ApiService } from './services/api.service';
 
@@ -12,7 +13,8 @@ import { ApiService } from './services/api.service';
     CommonModule,
     RouterModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AnimateModule
   ],
   exports: [
     CitationComponent

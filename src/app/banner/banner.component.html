@@ -1,7 +1,15 @@
 <div class="background-banner">
-  <div class="caption-banner">
+  <div class="caption-banner" appAnimate="rollIn">
     <h1><span class="border">THOMAS GIRAULT</span></h1>
-    <h2>Leader technique <app-type-writer [words]="['Java', 'Angular', 'Alfresco', 'DevOps', 'Docker', 'Ansible', 'Jenkins']"></app-type-writer></h2>
+    <h2>Leader technique Java / Angular</h2>
     <h3>Conseil, Expertise, Développement, Architecture</h3>
+    <div fxLayout="row wrap" fxLayoutAlign="center">
+      <div>
+        <h4>#technologies &nbsp;</h4>
+      </div>
+      <div class="box">
+        <app-type-writer [words]="['Java 8+', 'Spring Boot', 'Angular 2+', 'Typescript', 'Alfresco', 'DevOps', 'Docker', 'Ansible', 'Jenkins']"></app-type-writer>
+      </div>
+    </div>
   </div>
 </div>

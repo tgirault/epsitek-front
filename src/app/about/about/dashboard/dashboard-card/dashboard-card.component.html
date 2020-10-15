@@ -1,9 +1,13 @@
-<mat-card class="dashboard-card">
-  <mat-card-header>
-    <div mat-card-avatar>
-      <mat-icon class="green">{{ icon }}</mat-icon>
-    </div>
-    <mat-card-subtitle>{{ title }}</mat-card-subtitle>
-    <mat-card-title>{{ value }}</mat-card-title>
-  </mat-card-header>
-</mat-card>
+<div>
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <div mat-card-avatar>
+        <mat-icon class="green">{{ icon }}</mat-icon>
+      </div>
+      <mat-card-subtitle>{{ title }}</mat-card-subtitle>
+      <mat-card-title>
+        <div appAnimate="tada" aos>{{ value }}</div>
+      </mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</div>

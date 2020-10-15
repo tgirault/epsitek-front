@@ -47,7 +47,15 @@ h3 {
 }
 
 h4 {
+  text-align: left;
   color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.box {
+  width: 150px;
+  text-align: left;
 }
 
 @media only screen and (max-device-width: 1024px) {

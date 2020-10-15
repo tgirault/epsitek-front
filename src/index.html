@@ -13,13 +13,36 @@
       gtag("config", "UA-179522815-1");
     </script>
     <meta charset="utf-8" />
-    <meta name="description" content="Thomas Girault, leader tehcnique indépendant à Nantes. Conseil, expertise, conception, développement, architecture, lead d'équipe." />
+    <meta name="description" content="Thomas Girault, leader technique indépendant à Nantes. Conseil, expertise, conception, développement, architecture, lead d'équipe." />
     <title>Epsitek - Thomas Girault</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   </head>
   <body class="mat-typography">
     <app-root></app-root>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+      window.cookieconsent.initialise({
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391",
+          },
+          button: {
+            background: "#4b81e8",
+          },
+        },
+        theme: "classic",
+        type: "opt-out",
+        content: {
+          message: "Ce site web utilise des cookies à des fins statistiques pour mesurer les performances et permettre d'améliorer votre expérience utilisateur.",
+          dismiss: "Autoriser",
+          deny: "Refuser",
+          link: "En savoir plus",
+        },
+      });
+    </script>
   </body>
 </html>

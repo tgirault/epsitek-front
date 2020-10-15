@@ -55,10 +55,10 @@ export class SkillsService {
      */
     private initLanguagesSkills(): Array<Skill> {
         return Array.from([
-            new Skill('Java', 5),
+            new Skill('Java 8+', 5),
             new Skill('SQL', 5),
             new Skill('Typescript', 4),
-            new Skill('HTML, CSS, Javascript', 4)
+            new Skill('HTML, CSS, JavaScript', 4)
         ]);
     }
 
@@ -90,7 +90,7 @@ export class SkillsService {
      */
     private initFrameworksJavascriptSkills(): Array<Skill> {
         return Array.from([
-            new Skill('Angular', 4)
+            new Skill('Angular 2+', 4)
         ]);
     }
 }

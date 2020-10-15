@@ -11,10 +11,10 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
   animations: [
     trigger('openClose', [
       state('open', style({
-        transform: 'translateX(-100%)'
+        transform: 'translateX(150%)'
       })),
       state('closed', style({
-        transform: 'translateX(0)'
+        transform: 'translateX(30%)'
       })),
       transition('open => closed', animate('400ms ease-in-out')),
       transition('closed => open', animate('400ms ease-in-out'))

@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { AnimateModule } from '../animate/animate.module';
 import { CoreModule } from '../core/core.module';
 import { AboutComponent } from './about/about.component';
 import { DashboardCardComponent } from './about/dashboard/dashboard-card/dashboard-card.component';
@@ -21,7 +22,8 @@ import { DashboardComponent } from './about/dashboard/dashboard.component';
     MatIconModule,
     MatTooltipModule,
     FlexLayoutModule,
-    CoreModule
+    CoreModule,
+    AnimateModule
   ],
   exports: [AboutComponent]
 })

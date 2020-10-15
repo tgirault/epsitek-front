@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AnimateModule } from '../animate/animate.module';
 import { BannerComponent } from './banner.component';
 import { TypeWriterComponent } from './type-writer/type-writer.component';
 
@@ -10,7 +11,8 @@ import { TypeWriterComponent } from './type-writer/type-writer.component';
   declarations: [BannerComponent, TypeWriterComponent],
   imports: [
     CommonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AnimateModule
   ],
   exports: [BannerComponent]
 })

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AnimateModule } from '../animate/animate.module';
 import { CoreModule } from '../core/core.module';
 import { RatingComponent } from './skills/rating/rating.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -16,7 +17,8 @@ import { SkillsComponent } from './skills/skills.component';
     MatIconModule,
     FlexLayoutModule,
     FontAwesomeModule,
-    CoreModule
+    CoreModule,
+    AnimateModule
   ],
   exports: [SkillsComponent],
 })

@@ -2,11 +2,6 @@
 <header>
   <mat-toolbar class="menu" color="primary">
     <mat-toolbar-row>
-      <div (click)="toggleMenu()" class="btn" fxHide.gt-sm>
-        <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'topX'"></div>
-        <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'hide'"></div>
-        <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'bottomX'"></div>
-      </div>
       <button mat-icon-button aria-label="Home icon" [routerLink]="['']" fxHide.lt-md>
         <mat-icon>home</mat-icon>
       </button>
@@ -18,6 +13,11 @@
         <button mat-button [routerLink]="['']" fragment="skills" routerLinkActive="mat-accent">Compétences</button>
         <button mat-button [routerLink]="['']" fragment="experiences" routerLinkActive="mat-accent">Expériences</button>
         <button mat-button [routerLink]="['']" fragment="contacts" routerLinkActive="mat-accent">Contacts</button>
+      </div>
+      <div (click)="toggleMenu()" class="btn" fxHide.gt-sm>
+        <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'topX'"></div>
+        <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'hide'"></div>
+        <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'bottomX'"></div>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
