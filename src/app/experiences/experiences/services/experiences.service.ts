@@ -14,14 +14,14 @@ export class ExperiencesService {
      * Rechercher toutes les expériences.
      */
     findAll(): Array<Experience> {
-        const soprasteria = new Company('Sopra Steria', 'logo-soprasteria', 'https://www.soprasteria.com/fr');
+        const soprasteria = new Company('Sopra Steria', 'logo-soprasteria.jpg', 'https://www.soprasteria.com/fr');
         return Array.from([
             new Experience(
                 'Juin 2019',
                 'Sept. 2020',
                 'Lead developer Java / Angular - Scrum master',
                 'Nantes',
-                new Company('DSIA', 'logo-dsia', 'https://logistar-dsia.com/fr/'),
+                new Company('DSIA', 'logo-dsia.jpg', 'https://logistar-dsia.com/fr/'),
                 'Lead developer / Scrum master d\'une équipe de 5 à 8 développeurs au sein d\'un éditeur de solutions en Supply Chain Management. Développement d\'une solution logistique de gestion des entrepôts (WMS) et optimisation des processus métier de préparation des commandes Drive pour le compte de Carrefour.',
                 Array.from([
                     'Développement full stack de nouvelles fonctionnalités (Java / Spring, Angular)',
