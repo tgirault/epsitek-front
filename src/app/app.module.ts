@@ -1,74 +1,37 @@
-import { LayoutModule } from '@angular/cdk/layout';
+import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatChipsModule } from '@angular/material/chips';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatExpansionModule } from '@angular/material/expansion';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
-import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { MatStepperModule } from '@angular/material/stepper';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
-import { AboutModule } from './about/about.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BannerModule } from './banner/banner.module';
-import { ContactModule } from './contact/contact.module';
-import { CoreModule } from './core/core.module';
-import { ExperiencesModule } from './experiences/experiences.module';
-import { ServicesModule } from './services/services.module';
-import { SkillsModule } from './skills/skills.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    AppRoutingModule,
+    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    RouterModule,
-    AppRoutingModule,
-    RecaptchaModule,
-    RecaptchaFormsModule,
-    LayoutModule,
     MatToolbarModule,
-    MatExpansionModule,
     MatButtonModule,
-    MatSidenavModule,
     MatIconModule,
-    MatTooltipModule,
-    MatBadgeModule,
     MatListModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatStepperModule,
-    MatCardModule,
     MatDividerModule,
-    MatSnackBarModule,
-    MatChipsModule,
-    CoreModule,
-    BannerModule,
-    AboutModule,
-    ServicesModule,
-    SkillsModule,
-    ExperiencesModule,
-    ContactModule,
     FontAwesomeModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    BannerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

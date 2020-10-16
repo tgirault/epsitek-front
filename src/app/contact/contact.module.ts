@@ -10,7 +10,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {
   RecaptchaFormsModule,
@@ -28,7 +27,6 @@ import { ContactComponent } from './contact/contact.component';
   declarations: [ContactComponent, ContactFormComponent, ContactCardComponent],
   imports: [
     CommonModule,
-    BrowserModule,
     RecaptchaModule,
     RecaptchaFormsModule,
     MatFormFieldModule,

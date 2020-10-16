@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -10,8 +9,17 @@ const routerOptions: ExtraOptions = {
 };
 const routes: Routes = [
   {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+  },
+  {
+    path: 'mentions-legales',
+    loadChildren: () => import('./mentions/mentions.module').then(m => m.MentionsModule)
+  },
+  {
     path: '',
-    component: AppComponent,
+    redirectTo: '/home',
+    pathMatch: 'full'
   }
 ];
 

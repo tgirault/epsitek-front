@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AnimateModule } from '../animate/animate.module';
 import { CoreModule } from '../core/core.module';
 import { ServicesComponent } from './services/services.component';
 
@@ -15,7 +16,8 @@ import { ServicesComponent } from './services/services.component';
     MatExpansionModule,
     MatIconModule,
     FontAwesomeModule,
-    CoreModule
+    CoreModule,
+    AnimateModule
   ],
   exports: [ServicesComponent],
 })

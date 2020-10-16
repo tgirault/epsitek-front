@@ -8,11 +8,11 @@
       <a class="logo" [routerLink]="['']"></a>
       <span class="spacer"></span>
       <div fxShow="true" fxHide.lt-md>
-        <button mat-button [routerLink]="['']" fragment="about" routerLinkActive="mat-accent">A propos</button>
-        <button mat-button [routerLink]="['']" fragment="services" routerLinkActive="mat-accent">Services</button>
-        <button mat-button [routerLink]="['']" fragment="skills" routerLinkActive="mat-accent">Compétences</button>
-        <button mat-button [routerLink]="['']" fragment="experiences" routerLinkActive="mat-accent">Expériences</button>
-        <button mat-button [routerLink]="['']" fragment="contacts" routerLinkActive="mat-accent">Contacts</button>
+        <button mat-button [routerLink]="['/home']" fragment="about" routerLinkActive="mat-accent">A propos</button>
+        <button mat-button [routerLink]="['/home']" fragment="services" routerLinkActive="mat-accent">Services</button>
+        <button mat-button [routerLink]="['/home']" fragment="skills" routerLinkActive="mat-accent">Compétences</button>
+        <button mat-button [routerLink]="['/home']" fragment="experiences" routerLinkActive="mat-accent">Expériences</button>
+        <button mat-button [routerLink]="['/home']" fragment="contacts" routerLinkActive="mat-accent">Contacts</button>
       </div>
       <div (click)="toggleMenu()" class="btn" fxHide.gt-sm>
         <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'topX'"></div>
@@ -24,15 +24,15 @@
 
   <div class="menu-nav" fxFlexFill fxHide.gt-sm [@openClose]="isOpen ? 'closed' : 'open'" (click)="toggleMenu()">
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['']" fragment="about">A propos</a>
+      <a mat-list-item [routerLink]="['/home']" fragment="about">A propos</a>
       <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="['']" fragment="services">Services</a>
+      <a mat-list-item [routerLink]="['/home']" fragment="services">Services</a>
       <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="['']" fragment="skills">Compétences</a>
+      <a mat-list-item [routerLink]="['/home']" fragment="skills">Compétences</a>
       <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="['']" fragment="experiences">Expériences</a>
+      <a mat-list-item [routerLink]="['/home']" fragment="experiences">Expériences</a>
       <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="['']" fragment="contacts">Contacts</a>
+      <a mat-list-item [routerLink]="['/home']" fragment="contacts">Contacts</a>
       <mat-divider></mat-divider>
     </mat-nav-list>
   </div>
@@ -40,28 +40,8 @@
 
 <app-banner></app-banner>
 
-<!-- Content -->
-<section>
-  <article #about id="about" style="scroll-margin: 54px">
-    <app-about></app-about>
-  </article>
-
-  <article #services id="services">
-    <app-services></app-services>
-  </article>
-
-  <article #skills id="skills">
-    <app-skills></app-skills>
-  </article>
-
-  <article #experiences id="experiences">
-    <app-experiences></app-experiences>
-  </article>
-
-  <article #contacts id="contacts">
-    <app-contact></app-contact>
-  </article>
-</section>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
 
 <!-- Footer -->
 <footer class="site-footer">
@@ -75,11 +55,12 @@
     <div appearance="fill" fxFlex="30%">
       <h6>Liens rapides</h6>
       <ul class="footer-links">
-        <li><a [routerLink]="['']" fragment="about">A propos</a></li>
-        <li><a [routerLink]="['']" fragment="services">Services</a></li>
-        <li><a [routerLink]="['']" fragment="skills">Compétences</a></li>
-        <li><a [routerLink]="['']" fragment="experiences">Expériences</a></li>
-        <li><a [routerLink]="['']" fragment="contacts">Contacts</a></li>
+        <li><a [routerLink]="['/home']" fragment="about">A propos</a></li>
+        <li><a [routerLink]="['/home']" fragment="services">Services</a></li>
+        <li><a [routerLink]="['/home']" fragment="skills">Compétences</a></li>
+        <li><a [routerLink]="['/home']" fragment="experiences">Expériences</a></li>
+        <li><a [routerLink]="['/home']" fragment="contacts">Contacts</a></li>
+        <li><a routerLink="/mentions-legales">Mentions légales</a></li>
       </ul>
     </div>
   </div>

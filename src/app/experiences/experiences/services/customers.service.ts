@@ -15,7 +15,7 @@ export class CustomersService {
     findAll(): Array<Company> {
         return Array.from([
             new Company('DSIA', 'logo-dsia.jpg', 'https://logistar-dsia.com/fr/'),
-            new Company('Vous ?', 'logo-company', '')
+            new Company('Vous ?', 'logo-company.jpg', '')
         ]);
     }
 }
