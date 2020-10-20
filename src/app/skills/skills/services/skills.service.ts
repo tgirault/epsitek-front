@@ -72,7 +72,8 @@ export class SkillsService {
             { name: 'Spring Data / Hibernate', rate: 5 },
             { name: 'Spring Security OAuth', rate: 4 },
             { name: 'Spring Batch', rate: 4.5 },
-            { name: 'JSF2, CDI, EJB3, JPA, JTA', rate: 4 },
+            { name: 'JSF2, CDI, EJB3, JPA', rate: 4.5 },
+            { name: 'Java Batch Processing', rate: 4 },
             { name: 'Activiti', rate: 4.5 },
         ];
     }
