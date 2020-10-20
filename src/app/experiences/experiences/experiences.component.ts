@@ -12,6 +12,8 @@ import { ExperiencesService } from './services/experiences.service';
   styleUrls: ['./experiences.component.scss']
 })
 export class ExperiencesComponent implements OnInit {
+  /** Statut d'ouverture du panel. */
+  panelOpenState = false;
   /** Liste des expériences professionnelles. */
   experiences: Array<Experience>;
   /** Liste des clients. */

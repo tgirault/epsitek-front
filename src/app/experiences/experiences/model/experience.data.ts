@@ -8,6 +8,8 @@ export class Experience {
     startDate: string;
     /** La date de fin de l'expérience. */
     endDate: string;
+    /** La durée de l'expérience. */
+    duration: string;
     /** Le titre de l'expérience. */
     title: string;
     /** Le lieu de l'expérience. */
@@ -29,6 +31,7 @@ export class Experience {
      * Constructeur d'une expérience professionnelle.
      * @param startDate la date de début
      * @param endDate la date de fin
+     * @param duration la durée de l'expérience
      * @param title l'intitulé du poste
      * @param place le lieu d'activité
      * @param company la société
@@ -40,6 +43,7 @@ export class Experience {
     constructor(
         startDate: string,
         endDate: string,
+        duration: string,
         title: string,
         place: string,
         company: Company,
@@ -51,6 +55,7 @@ export class Experience {
     ) {
         this.startDate = startDate;
         this.endDate = endDate;
+        this.duration = duration;
         this.title = title;
         this.place = place;
         this.company = company;

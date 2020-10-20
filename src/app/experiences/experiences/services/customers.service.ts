@@ -13,9 +13,17 @@ export class CustomersService {
      * Rechercher tous les clients.
      */
     findAll(): Array<Company> {
-        return Array.from([
-            new Company('DSIA', 'logo-dsia.jpg', 'https://logistar-dsia.com/fr/'),
-            new Company('Vous ?', 'logo-company.jpg', '')
-        ]);
+        return [
+            {
+                name: 'DSIA',
+                logo: 'logo-dsia.jpg',
+                website: 'https://logistar-dsia.com/fr/'
+            },
+            {
+                name: 'Vous ?',
+                logo: 'logo-company.jpg',
+                website: ''
+            }
+        ];
     }
 }

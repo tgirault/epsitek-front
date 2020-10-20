@@ -15,82 +15,83 @@ export class SkillsService {
      * Rechercher toutes les technologies.
      */
     findAllTechnologies(): Array<Technology> {
-        return Array.from([
-            new Technology('Moteurs d\'indexation', 'Elasticsearch, Apache Solr'),
-            new Technology('Moteurs de workflow', 'Activiti'),
-            new Technology('Bus d\'entreprise', 'Oracle Service Bus'),
-            new Technology('Systèmes de Gestion de Base de Données', 'Oracle 12c, PostgreSQL, MySQL, MariaDB'),
-            new Technology('Brokers JMS', 'ActiveMQ, MQSeries'),
-            new Technology('Serveurs d\'application', 'Tomcat, JBoss'),
-            new Technology('Gestion de configuration logicielle', 'Git (GitLab, Bitbucket), SVN'),
-            new Technology('DevOps', 'Docker, Ansible, Jenkins'),
-        ]);
+        return [
+            { name: 'Moteurs d\'indexation', description: 'Elasticsearch, Apache Solr' },
+            { name: 'Moteurs de workflow', description: 'Activiti' },
+            { name: 'Bus d\'entreprise', description: 'Oracle Service Bus' },
+            { name: 'Systèmes de Gestion de Base de Données', description: 'Oracle 12c, PostgreSQL, MySQL, MariaDB' },
+            { name: 'Brokers JMS', description: 'ActiveMQ, MQSeries' },
+            { name: 'Serveurs d\'application', description: 'Tomcat, JBoss' },
+            { name: 'Gestion de configuration logicielle', description: 'Git (GitLab, Bitbucket}, SVN' },
+            { name: 'DevOps', description: 'Docker, Ansible, Jenkins' }
+        ];
     }
 
     /**
      * Rechercher toutes les méthodologies.
      */
     findAllMethodologies(): Array<Technology> {
-        return Array.from([
-            new Technology('Agile', 'Agile et agile à l\'échelle (SAFe)'),
-            new Technology('Srum', 'SCRUM'),
-            new Technology('Outils', 'JIRA, XRay TM for JIRA')
-        ]);
+        return [
+            { name: 'Agile', description: 'Agile et agile à l\'échelle (SAFe)' },
+            { name: 'Srum', description: 'SCRUM' },
+            { name: 'Outils', description: 'JIRA, XRay TM for JIRA' }
+        ];
     }
 
     /**
      * Rechercher toutes les catégories de compétences et les compétences associées.
      */
     findAllCategoriesWithSkills(): Array<Category> {
-        return Array.from([
-            new Category('Langages', this.initLanguagesSkills()),
-            new Category('Frameworks JEE', this.initFrameworksJeeSkills()),
-            new Category('Gestion Electronique de Documents', this.initGedSkills()),
-            new Category('Frameworks Javascript', this.initFrameworksJavascriptSkills())
-        ]);
+        return [
+            { name: 'Langages', skills: this.initLanguagesSkills() },
+            { name: 'Frameworks JEE', skills: this.initFrameworksJeeSkills() },
+            { name: 'Gestion Electronique de Documents', skills: this.initGedSkills() },
+            { name: 'Frameworks Javascript', skills: this.initFrameworksJavascriptSkills() }
+        ];
     }
 
     /**
      * Initialisation des compétences dans la catégorie des langages.
      */
     private initLanguagesSkills(): Array<Skill> {
-        return Array.from([
-            new Skill('Java 8+', 5),
-            new Skill('SQL', 5),
-            new Skill('Typescript', 4),
-            new Skill('HTML, CSS, JavaScript', 4)
-        ]);
+        return [
+            { name: 'Java 8+', rate: 5 },
+            { name: 'SQL', rate: 5 },
+            { name: 'Typescript', rate: 4 },
+            { name: 'HTML, CSS, JavaScript', rate: 4 }
+        ];
     }
 
     /**
      * Initialisation des compétences dans la catégorie des frameworks JEE.
      */
     private initFrameworksJeeSkills(): Array<Skill> {
-        return Array.from([
-            new Skill('JUnit / Mockito', 5),
-            new Skill('Spring / Spring Boot', 5),
-            new Skill('Spring Data / Hibernate', 5),
-            new Skill('Spring Security OAuth', 4),
-            new Skill('Spring Batch', 4.5),
-            new Skill('Activiti', 4.5),
-        ]);
+        return [
+            { name: 'JUnit / Mockito', rate: 5 },
+            { name: 'Spring / Spring Boot', rate: 5 },
+            { name: 'Spring Data / Hibernate', rate: 5 },
+            { name: 'Spring Security OAuth', rate: 4 },
+            { name: 'Spring Batch', rate: 4.5 },
+            { name: 'JSF2, CDI, EJB3, JPA, JTA', rate: 4 },
+            { name: 'Activiti', rate: 4.5 },
+        ];
     }
 
     /**
      * Initialisation des compétences dans la catégorie des outils de Gestion Electronique de Documents.
      */
     private initGedSkills(): Array<Skill> {
-        return Array.from([
-            new Skill('Alfresco ECM', 4.5)
-        ]);
+        return [
+            { name: 'Alfresco ECM', rate: 4.5 }
+        ];
     }
 
     /**
      * Initialisation des compétences dans la catégorie des frameworks Javascript.
      */
     private initFrameworksJavascriptSkills(): Array<Skill> {
-        return Array.from([
-            new Skill('Angular 2+', 4)
-        ]);
+        return [
+            { name: 'Angular 2+', rate: 4 }
+        ];
     }
 }

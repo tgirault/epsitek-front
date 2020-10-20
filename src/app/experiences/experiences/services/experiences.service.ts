@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Company } from '../model/company.data';
 import { Experience } from '../model/experience.data';
 
 /**
@@ -14,24 +13,28 @@ export class ExperiencesService {
      * Rechercher toutes les expériences.
      */
     findAll(): Array<Experience> {
-        const soprasteria = new Company('Sopra Steria', 'logo-soprasteria.jpg', 'https://www.soprasteria.com/fr');
-        return Array.from([
-            new Experience(
-                'Juin 2019',
-                'Sept. 2020',
-                'Lead developer Java / Angular - Scrum master',
-                'Nantes',
-                new Company('DSIA', 'logo-dsia.jpg', 'https://logistar-dsia.com/fr/'),
-                'Lead developer / Scrum master d\'une équipe de 5 à 8 développeurs au sein d\'un éditeur de solutions en Supply Chain Management. Développement d\'une solution logistique de gestion des entrepôts (WMS) et optimisation des processus métier de préparation des commandes Drive pour le compte de Carrefour.',
-                Array.from([
+        return [
+            {
+                startDate: 'Juin 2019',
+                endDate: 'Sept. 2020',
+                duration: '1 an et 3 mois',
+                title: 'Lead developer Java / Angular',
+                place: 'Nantes',
+                company: {
+                    name: 'DSIA',
+                    logo: 'logo-dsia.jpg',
+                    website: 'https://logistar-dsia.com/fr/'
+                },
+                description: 'Lead developer / Scrum master d\'une équipe de 5 à 8 développeurs au sein d\'un éditeur de solutions en Supply Chain Management. Développement d\'une solution logistique de gestion des entrepôts (WMS) et optimisation des processus métier de préparation des commandes Drive pour le compte de Carrefour.',
+                tasks: [
                     'Développement full stack de nouvelles fonctionnalités (Java / Spring, Angular)',
                     'Migration technique d\'une solution existante sur le socle technique de l\'entreprise',
                     'Migration vers une architecture scalable : Front Angular 8, API Gateway (Zuul), Services back Java / Spring',
                     'Contributeur de la mise en place des principes SCRUM et du board agile sur JIRA (Daily meeting, Sprint planning, Poker planning, Démonstration)',
                     'Contributeur de la mise en place des bonnes pratiques de tests (XRay TM for JIRA)',
                     'Travail en collaboration avec les différents services de l\'entreprise (Développement, Industrialisation, Qualité, Production)',
-                ]),
-                Array.from([
+                ],
+                technologies: [
                     'Angular 8',
                     'Typescript',
                     'Java 8',
@@ -49,8 +52,8 @@ export class ExperiencesService {
                     'HTML',
                     'CSS',
                     'Javascript'
-                ]),
-                Array.from([
+                ],
+                tools: [
                     'Git',
                     'Bitbucket',
                     'PostgreSQL 9/11',
@@ -59,16 +62,22 @@ export class ExperiencesService {
                     'Confluence',
                     'XRay',
                     'XWiki'
-                ]),
-                Array.from([])),
-            new Experience(
-                'Avril 2018',
-                'Juin 2019',
-                'Leader technique Java',
-                'Nantes, Paris',
-                soprasteria,
-                'Leader technique d\'une équipe agile de 8 personnes sur un projet en agile distribué (SAFe), de gestion des échanges pour le compte d\'ENEDIS (environ 35 personnes).',
-                Array.from([
+                ],
+                devOps: []
+            },
+            {
+                startDate: 'Avril 2018',
+                endDate: 'Juin 2019',
+                duration: '1 an et 2 mois',
+                title: 'Leader technique Java',
+                place: 'Nantes, Paris',
+                company: {
+                    name: 'Sopra Steria',
+                    logo: 'logo-soprasteria.jpg',
+                    website: 'https://www.soprasteria.com/fr'
+                },
+                description: 'Leader technique d\'une équipe agile de 8 personnes sur un projet en agile distribué (SAFe), de gestion des échanges pour le compte d\'ENEDIS (environ 35 personnes).',
+                tasks: [
                     'Conception, développement et tests unitaires',
                     'Tests d\'acceptation automatisés Fitnesse',
                     'Support aux développeurs juniors et contribution à leur montée en compétence',
@@ -77,8 +86,8 @@ export class ExperiencesService {
                     'Animation transverse de tech\'lunch (Docker, Activiti)',
                     'Participation aux cérémonies agiles (Planning Increment, Daily meeting, Backlog Refinement, Sprint Planning, Poker Planning, Démonstrations, Rétrospectives)',
                     'Expérience DevOps avec Jenkins, Docker et Ansible : dockerisation d\'une brique logicielle'
-                ]),
-                Array.from([
+                ],
+                technologies: [
                     'Java 8',
                     'Spring Cloud',
                     'Spring Boot',
@@ -92,8 +101,8 @@ export class ExperiencesService {
                     'MapStruct',
                     'Maven',
                     'Tests automatisés Fitnesse'
-                ]),
-                Array.from([
+                ],
+                tools: [
                     'Git',
                     'GitLab',
                     'Tomcat',
@@ -102,20 +111,26 @@ export class ExperiencesService {
                     'ActiveMQ',
                     'Oracle 12c',
                     'Oracle Service Bus'
-                ]),
-                Array.from([
+                ],
+                devOps: [
                     'Docker',
                     'Ansible',
                     'Jenkins'
-                ])),
-            new Experience(
-                'Juin 2016 ',
-                'Avril 2018',
-                'Leader technique Java',
-                'Nantes',
-                soprasteria,
-                'Responsable technique d\'une équipe de 10 développeurs sur un projet de build de 6000 jours/homme pour le compte du Ministère de la Justice. Refonte du système d\'information du Casier Judiciaire National et dématérialisation des demandes de bulletin n°3 néant.',
-                Array.from([
+                ]
+            },
+            {
+                startDate: 'Juin 2016 ',
+                endDate: 'Avril 2018',
+                duration: '1 an et 10 mois',
+                title: 'Leader technique Java',
+                place: 'Nantes',
+                company: {
+                    name: 'Sopra Steria',
+                    logo: 'logo-soprasteria.jpg',
+                    website: 'https://www.soprasteria.com/fr'
+                },
+                description: 'Responsable technique d\'une équipe de 10 développeurs sur un projet de build de 6000 jours/homme pour le compte du Ministère de la Justice. Refonte du système d\'information du Casier Judiciaire National et dématérialisation des demandes de bulletin n°3 néant.',
+                tasks: [
                     'Mise en place du socle technique en respectant les contraintes d\'accessibilité (RGAA), de responsive design (application consultable sur mobile et tablette), de performance et de sécurité',
                     'Industrialisation du projet (pipeline d\'intégration continue Jenkins, automatisation de l\'installation, suivi des indicateurs de qualité Sonar)',
                     'Animation d\'ateliers techniques avec la cellule technique du client',
@@ -123,8 +138,8 @@ export class ExperiencesService {
                     'Rédaction de documentation technique (dossier d\'installation, dossier d\'exploitation, spécifications techniques détaillées)',
                     'Chantier performance (rédaction du cahier des charges, préparation et exécution des scénarios JMeter, analyse des résultats avec la Suite Elastic/Kibana et optimisation de code)',
                     'Audit de sécurité avec OWASP ZAP',
-                ]),
-                Array.from([
+                ],
+                technologies: [
                     'JEE 7',
                     'EJB 3',
                     'CDI',
@@ -140,8 +155,8 @@ export class ExperiencesService {
                     'HTML5',
                     'CSS3',
                     'Javascript',
-                ]),
-                Array.from([
+                ],
+                tools: [
                     'JBoss EAP 7',
                     'Oracle 12c',
                     'SoapUI',
@@ -150,26 +165,32 @@ export class ExperiencesService {
                     'Metric Beat',
                     'Kibana',
                     'JMeter'
-                ]),
-                Array.from([
+                ],
+                devOps: [
                     'Jenkins'
-                ])),
-            new Experience(
-                'Novembre 2013',
-                'Juin 2016',
-                'Leader technique Java / Alfresco',
-                'Nantes, Paris',
-                soprasteria,
-                'Leader technique d\'un projet de dématérialisation et de Gestion Électronique de Documents pour le compte de la Préfecture de police de Paris.',
-                Array.from([
+                ]
+            },
+            {
+                startDate: 'Novembre 2013',
+                endDate: 'Juin 2016',
+                duration: '2 an et 6 mois',
+                title: 'Leader technique Java / Alfresco',
+                place: 'Nantes, Paris',
+                company: {
+                    name: 'Sopra Steria',
+                    logo: 'logo-soprasteria.jpg',
+                    website: 'https://www.soprasteria.com/fr'
+                },
+                description: 'Leader technique d\'un projet de dématérialisation et de Gestion Électronique de Documents pour le compte de la Préfecture de police de Paris.',
+                tasks: [
                     'Développement front office (JEE) et back office (Alfresco)',
                     'Expertise Alfresco',
                     'Études techniques, chiffrages',
                     'Architecture technique : scalabilité horizontale, clustering, répartition de charges',
                     'Encadrement et support d\'une équipe de 4-5 développeurs',
                     'Mise en place de la fabrique logicielle avec Jenkins'
-                ]),
-                Array.from([
+                ],
+                technologies: [
                     'Alfresco',
                     'Moteur d\'indexation Solr',
                     'Moteur de workflow Activiti',
@@ -180,50 +201,62 @@ export class ExperiencesService {
                     'HTML',
                     'CSS',
                     'JQuery'
-                ]),
-                Array.from([
+                ],
+                tools: [
                     'Apache',
                     'Tomcat',
                     'LDAP',
                     'PostgreSQL',
                     'MariaDB'
-                ]),
-                Array.from([
+                ],
+                devOps: [
                     'Jenkins'
-                ])),
-            new Experience(
-                'Octobre',
-                'Novembre 2013',
-                'Référent technique',
-                'Nantes, Paris',
-                soprasteria,
-                'Dans le cadre d\'une avant-vente, réalisation d\'une étude technique et d\'un POC sur la mise en place d\'une messagerie instantanée permettant la communication entre des unités maritimes, aériennes et terrestres des Douanes.',
-                Array.from([
+                ]
+            },
+            {
+                startDate: 'Octobre',
+                endDate: 'Novembre 2013',
+                duration: '2 mois',
+                title: 'Référent technique',
+                place: 'Nantes, Paris',
+                company: {
+                    name: 'Sopra Steria',
+                    logo: 'logo-soprasteria.jpg',
+                    website: 'https://www.soprasteria.com/fr'
+                },
+                description: 'Dans le cadre d\'une avant-vente, réalisation d\'une étude technique et d\'un POC sur la mise en place d\'une messagerie instantanée permettant la communication entre des unités maritimes, aériennes et terrestres des Douanes.',
+                tasks: [
                     'Étude comparative des protocoles d\'échanges',
                     'Rédaction d\'un dossier d\'architecture technique',
                     'Prototypage d\'une architecture de messagerie instantanée',
                     'Présentation de l\'étude'
-                ]),
-                Array.from([]),
-                Array.from([
+                ],
+                technologies: [],
+                tools: [
                     'XMPP',
                     'eJabberd',
                     'CentOS 5',
                     'OpenLDAP'
-                ]),
-                Array.from([])),
-            new Experience(
-                'Sept. 2011',
-                'Sept. 2013',
-                'Développeur Java/JEE',
-                'Nantes, Paris',
-                soprasteria,
-                'Développement d\'une application pour la gestion des mutations des agents douaniers au sein d\'une équipe de 5 personnes.',
-                Array.from([
+                ],
+                devOps: []
+            },
+            {
+                startDate: 'Sept. 2011',
+                endDate: 'Sept. 2013',
+                duration: '2 ans',
+                title: 'Développeur Java / JEE',
+                place: 'Nantes, Paris',
+                company: {
+                    name: 'Sopra Steria',
+                    logo: 'logo-soprasteria.jpg',
+                    website: 'https://www.soprasteria.com/fr'
+                },
+                description: 'Développement d\'une application pour la gestion des mutations des agents douaniers au sein d\'une équipe de 5 personnes.',
+                tasks: [
                     'Conception, développement, tests unitaires',
                     'Rédaction de spécifications fonctionnelles détaillées'
-                ]),
-                Array.from([
+                ],
+                technologies: [
                     'Java',
                     'JEE',
                     'Spring',
@@ -234,27 +267,33 @@ export class ExperiencesService {
                     'HTML',
                     'CSS',
                     'JQuery'
-                ]),
-                Array.from([
+                ],
+                tools: [
                     'SVN',
                     'Tomcat',
                     'Sonar',
                     'JIRA'
-                ]),
-                Array.from([
+                ],
+                devOps: [
                     'Jenkins'
-                ])),
-            new Experience(
-                'Mai',
-                'Septembre 2011',
-                'Développeur Java/JEE',
-                'Nantes, Paris',
-                soprasteria,
-                'Stage de fin d\'études. Développement d\'une application de gestion des primes pour les agents de la Mairie de Paris au sein d\'une équipe de 6 personnes. (Paris / Nantes)',
-                Array.from([
+                ]
+            },
+            {
+                startDate: 'Mai',
+                endDate: 'Septembre 2011',
+                duration: '5 mois',
+                title: 'Développeur Java / JEE',
+                place: 'Nantes, Paris',
+                company: {
+                    name: 'Sopra Steria',
+                    logo: 'logo-soprasteria.jpg',
+                    website: 'https://www.soprasteria.com/fr'
+                },
+                description: 'Stage de fin d\'études. Développement d\'une application de gestion des primes pour les agents de la Mairie de Paris au sein d\'une équipe de 6 personnes. (Paris / Nantes)',
+                tasks: [
                     'Développement et tests unitaires',
-                ]),
-                Array.from([
+                ],
+                technologies: [
                     'Java',
                     'JEE',
                     'Frawemork Lutèce',
@@ -265,15 +304,16 @@ export class ExperiencesService {
                     'HTML',
                     'CSS',
                     'JQuery'
-                ]),
-                Array.from([
+                ],
+                tools: [
                     'JIRA',
                     'SVN',
                     'Tomcat'
-                ]),
-                Array.from([
+                ],
+                devOps: [
                     'Jenkins'
-                ]))
-        ]);
+                ]
+            }
+        ];
     }
 }

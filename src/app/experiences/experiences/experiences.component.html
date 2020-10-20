@@ -5,13 +5,24 @@
 </div>
 
 <div class="container light-container">
-  <mat-vertical-stepper #stepper>
-    <!-- change default 'edit' icon -->
-    <ng-template matStepperIcon="edit">
-      <mat-icon>work</mat-icon>
-    </ng-template>
-    <mat-step *ngFor="let experience of experiences">
-      <ng-template matStepLabel>{{ experience.startDate }} – {{ experience.endDate }}</ng-template>
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let experience of experiences" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <div class="experience-header">
+            <div class="experience-logo">
+              <img src="/assets/images/{{ experience.company.logo }}" alt="Logo {{ experience.company.name }}" class="experience-company-logo" />
+            </div>
+            <div class="experience-period">
+              <p class="period">{{ experience.startDate }} – {{ experience.endDate }}</p>
+              <p class="duration">{{ experience.duration }}</p>
+            </div>
+            <div class="experience-title">
+              <span class="title">{{ experience.title }}</span>
+            </div>
+          </div>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
       <mat-card class="experience-card">
         <mat-card-header>
           <div mat-card-avatar>
@@ -38,8 +49,8 @@
           </mat-chip-list>
         </mat-card-actions>
       </mat-card>
-    </mat-step>
-  </mat-vertical-stepper>
+    </mat-expansion-panel>
+  </mat-accordion>
 </div>
 
 <div class="container blue-container">

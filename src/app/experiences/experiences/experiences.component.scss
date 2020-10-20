@@ -5,8 +5,54 @@
   min-height: 250px;
 }
 
-.mat-stepper-vertical {
-  margin-top: 8px;
+.mat-expansion-panel-header {
+  height: 60px;
+}
+
+.experience-header {
+  width: 100%;
+  height: 60px;
+}
+
+.experience-logo {
+  float: left;
+  background-color: white;
+  border: 1px #f2f2f2 solid;
+  width: 50px;
+  height: 50px;
+  margin: 5px 10px 5px 0;
+}
+
+.experience-company-logo {
+  max-width: 50px;
+  height: auto;
+}
+
+.experience-period {
+  float: left;
+  height: 50px;
+  margin: 10px 0 0 0;
+}
+
+.experience-period .period {
+  margin: 0;
+  font-size: 12px;
+}
+
+.experience-period .duration {
+  margin: 0;
+  font-size: 11px;
+  color: grey;
+}
+
+.experience-title {
+  float: right;
+  height: 50px;
+  margin: 15px 50px 0 0;
+}
+
+.experience-title .title {
+  font-size: 17px;
 }
 
 h4 {
@@ -51,10 +97,6 @@ h4 {
 
 .mat-list-icon {
   color: rgba(23, 54, 93, 0.54);
-}
-
-.mat-card-actions {
-  max-width: 800px;
 }
 
 .mat-card-avatar {
