@@ -1,0 +1,44 @@
+<footer class="site-footer">
+  <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="80px" fxLayoutGap.md="40px" fxLayoutGap.sm="40px" fxLayoutGap.xs="0">
+    <div appearance="fill" fxFlex="70%">
+      <h6>A propos</h6>
+      <fa-icon [icon]="['fas', 'quote-left']" size="2x"></fa-icon>
+      <p>Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour garantir une expérience utilisateur optimale.</p>
+    </div>
+
+    <div appearance="fill" fxFlex="30%">
+      <h6>Liens rapides</h6>
+      <ul class="footer-links">
+        <li><a [routerLink]="['/home']" fragment="about">A propos</a></li>
+        <li><a [routerLink]="['/home']" fragment="services">Services</a></li>
+        <li><a [routerLink]="['/home']" fragment="skills">Compétences</a></li>
+        <li><a [routerLink]="['/home']" fragment="experiences">Expériences</a></li>
+        <li><a [routerLink]="['/home']" fragment="contacts">Contacts</a></li>
+        <li><a routerLink="/mentions-legales">Mentions légales</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.xs="0">
+    <div appearance="fill" fxFlex="70%">
+      <p>
+        Site web développé par <a href="mailto:thomas.girault@epsitek.fr">Thomas Girault</a>. Code source disponible sur
+        <a class="github" href="https://github.com/tgirault/epsitek-front" target="_blank"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>.
+      </p>
+      <p class="copyright-text">Copyright &copy; 2020 <a href="#">Epsitek</a>. Tous droits réservés.</p>
+    </div>
+
+    <div appearance="fill" fxFlex="30%">
+      <ul class="social-icons">
+        <li>
+          <a class="linkedin" href="https://www.linkedin.com/in/thomasgirault/" target="_blank"><fa-icon [icon]="['fab', 'linkedin']"></fa-icon></a>
+        </li>
+        <li>
+          <a class="github" href="https://github.com/tgirault" target="_blank"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>
+        </li>
+        <li>
+          <a class="twitter" href="https://twitter.com/thomas_girault" target="_blank"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

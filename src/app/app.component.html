@@ -1,41 +1,6 @@
 <!-- Header -->
 <header>
-  <mat-toolbar class="menu" color="primary">
-    <mat-toolbar-row>
-      <button mat-icon-button aria-label="Home icon" [routerLink]="['']" fxHide.lt-md>
-        <mat-icon>home</mat-icon>
-      </button>
-      <a class="logo" [routerLink]="['']"></a>
-      <span class="spacer"></span>
-      <div fxShow="true" fxHide.lt-md>
-        <button mat-button [routerLink]="['/home']" fragment="about" routerLinkActive="mat-accent">A propos</button>
-        <button mat-button [routerLink]="['/home']" fragment="services" routerLinkActive="mat-accent">Services</button>
-        <button mat-button [routerLink]="['/home']" fragment="skills" routerLinkActive="mat-accent">Compétences</button>
-        <button mat-button [routerLink]="['/home']" fragment="experiences" routerLinkActive="mat-accent">Expériences</button>
-        <button mat-button [routerLink]="['/home']" fragment="contacts" routerLinkActive="mat-accent">Contacts</button>
-      </div>
-      <div (click)="toggleMenu()" class="btn" fxHide.gt-sm>
-        <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'topX'"></div>
-        <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'hide'"></div>
-        <div class="icon-bar" [@hamburguerX]="!isOpen ? 'hamburguer' : 'bottomX'"></div>
-      </div>
-    </mat-toolbar-row>
-  </mat-toolbar>
-
-  <div class="menu-nav" fxFlexFill fxHide.gt-sm [@openClose]="isOpen ? 'closed' : 'open'" (click)="toggleMenu()">
-    <mat-nav-list>
-      <a mat-list-item [routerLink]="['/home']" fragment="about">A propos</a>
-      <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="['/home']" fragment="services">Services</a>
-      <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="['/home']" fragment="skills">Compétences</a>
-      <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="['/home']" fragment="experiences">Expériences</a>
-      <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="['/home']" fragment="contacts">Contacts</a>
-      <mat-divider></mat-divider>
-    </mat-nav-list>
-  </div>
+  <app-menu></app-menu>
 </header>
 
 <app-banner></app-banner>
@@ -44,47 +9,4 @@
 <router-outlet></router-outlet>
 
 <!-- Footer -->
-<footer class="site-footer">
-  <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="80px" fxLayoutGap.md="40px" fxLayoutGap.sm="40px" fxLayoutGap.xs="0">
-    <div appearance="fill" fxFlex="70%">
-      <h6>A propos</h6>
-      <fa-icon [icon]="['fas', 'quote-left']" size="2x"></fa-icon>
-      <p>Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour garantir une expérience utilisateur optimale.</p>
-    </div>
-
-    <div appearance="fill" fxFlex="30%">
-      <h6>Liens rapides</h6>
-      <ul class="footer-links">
-        <li><a [routerLink]="['/home']" fragment="about">A propos</a></li>
-        <li><a [routerLink]="['/home']" fragment="services">Services</a></li>
-        <li><a [routerLink]="['/home']" fragment="skills">Compétences</a></li>
-        <li><a [routerLink]="['/home']" fragment="experiences">Expériences</a></li>
-        <li><a [routerLink]="['/home']" fragment="contacts">Contacts</a></li>
-        <li><a routerLink="/mentions-legales">Mentions légales</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.xs="0">
-    <div appearance="fill" fxFlex="70%">
-      <p>
-        Site web développé par <a href="mailto:thomas.girault@epsitek.fr">Thomas Girault</a>. Code source disponible sur
-        <a class="github" href="https://github.com/tgirault/epsitek-front" target="_blank"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>.
-      </p>
-      <p class="copyright-text">Copyright &copy; 2020 <a href="#">Epsitek</a>. Tous droits réservés.</p>
-    </div>
-
-    <div appearance="fill" fxFlex="30%">
-      <ul class="social-icons">
-        <li>
-          <a class="linkedin" href="https://www.linkedin.com/in/thomasgirault/" target="_blank"><fa-icon [icon]="['fab', 'linkedin']"></fa-icon></a>
-        </li>
-        <li>
-          <a class="github" href="https://github.com/tgirault" target="_blank"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>
-        </li>
-        <li>
-          <a class="twitter" href="https://twitter.com/thomas_girault" target="_blank"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</footer>
+<app-footer></app-footer>

@@ -22,7 +22,7 @@ export class ExperiencesService {
                 place: 'Nantes',
                 company: {
                     name: 'DSIA',
-                    logo: 'logo-dsia.jpg',
+                    logo: 'logo-dsia',
                     website: 'https://logistar-dsia.com/fr/'
                 },
                 description: 'Lead developer / Scrum master d\'une équipe de 5 à 8 développeurs au sein d\'un éditeur de solutions en Supply Chain Management. Développement d\'une solution logistique de gestion des entrepôts (WMS) et optimisation des processus métier de préparation des commandes Drive pour le compte de Carrefour.',
@@ -73,7 +73,7 @@ export class ExperiencesService {
                 place: 'Nantes, Paris',
                 company: {
                     name: 'Sopra Steria',
-                    logo: 'logo-soprasteria.jpg',
+                    logo: 'logo-soprasteria',
                     website: 'https://www.soprasteria.com/fr'
                 },
                 description: 'Leader technique d\'une équipe agile de 8 personnes sur un projet en agile distribué (SAFe), de gestion des échanges pour le compte d\'ENEDIS (environ 35 personnes).',
@@ -126,7 +126,7 @@ export class ExperiencesService {
                 place: 'Nantes',
                 company: {
                     name: 'Sopra Steria',
-                    logo: 'logo-soprasteria.jpg',
+                    logo: 'logo-soprasteria',
                     website: 'https://www.soprasteria.com/fr'
                 },
                 description: 'Responsable technique d\'une équipe de 10 développeurs sur un projet de build de 6000 jours/homme pour le compte du Ministère de la Justice. Refonte du système d\'information du Casier Judiciaire National et dématérialisation des demandes de bulletin n°3 néant.',
@@ -178,7 +178,7 @@ export class ExperiencesService {
                 place: 'Nantes, Paris',
                 company: {
                     name: 'Sopra Steria',
-                    logo: 'logo-soprasteria.jpg',
+                    logo: 'logo-soprasteria',
                     website: 'https://www.soprasteria.com/fr'
                 },
                 description: 'Leader technique d\'un projet de dématérialisation et de Gestion Électronique de Documents pour le compte de la Préfecture de police de Paris.',
@@ -221,7 +221,7 @@ export class ExperiencesService {
                 place: 'Nantes, Paris',
                 company: {
                     name: 'Sopra Steria',
-                    logo: 'logo-soprasteria.jpg',
+                    logo: 'logo-soprasteria',
                     website: 'https://www.soprasteria.com/fr'
                 },
                 description: 'Dans le cadre d\'une avant-vente, réalisation d\'une étude technique et d\'un POC sur la mise en place d\'une messagerie instantanée permettant la communication entre des unités maritimes, aériennes et terrestres des Douanes.',
@@ -248,7 +248,7 @@ export class ExperiencesService {
                 place: 'Nantes, Paris',
                 company: {
                     name: 'Sopra Steria',
-                    logo: 'logo-soprasteria.jpg',
+                    logo: 'logo-soprasteria',
                     website: 'https://www.soprasteria.com/fr'
                 },
                 description: 'Développement d\'une application pour la gestion des mutations des agents douaniers au sein d\'une équipe de 5 personnes.',
@@ -286,7 +286,7 @@ export class ExperiencesService {
                 place: 'Nantes, Paris',
                 company: {
                     name: 'Sopra Steria',
-                    logo: 'logo-soprasteria.jpg',
+                    logo: 'logo-soprasteria',
                     website: 'https://www.soprasteria.com/fr'
                 },
                 description: 'Stage de fin d\'études. Développement d\'une application de gestion des primes pour les agents de la Mairie de Paris au sein d\'une équipe de 6 personnes. (Paris / Nantes)',

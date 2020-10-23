@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { CoreModule, FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
@@ -19,6 +19,7 @@ import {
   RECAPTCHA_LANGUAGE,
   RECAPTCHA_SETTINGS
 } from 'ng-recaptcha';
+import { CoreModule } from '../core/core.module';
 import { ContactCardComponent } from './contact/contact-card/contact-card.component';
 import { ContactFormComponent } from './contact/contact-form/contact-form.component';
 import { ContactComponent } from './contact/contact.component';

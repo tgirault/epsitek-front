@@ -1,8 +1,4 @@
-<div class="background background-experiences">
-  <div class="caption">
-    <span class="border">&lt;EXPERIENCES/&gt;</span>
-  </div>
-</div>
+<app-title title="experiences" image="experiences"></app-title>
 
 <div class="container light-container">
   <mat-accordion>
@@ -11,7 +7,11 @@
         <mat-panel-title>
           <div class="experience-header">
             <div class="experience-logo">
-              <img src="/assets/images/{{ experience.company.logo }}" alt="Logo {{ experience.company.name }}" class="experience-company-logo" />
+              <picture>
+                <!-- <source srcset="/assets/images/{{ experience.company.logo }}.webp" type="image/webp" /> -->
+                <source srcset="/assets/images/{{ experience.company.logo }}.jp2" type="image/jp2" />
+                <img src="/assets/images/{{ experience.company.logo }}.png" alt="Logo {{ experience.company.name }}" class="experience-company-logo" />
+              </picture>
             </div>
             <div class="experience-period">
               <p class="period">{{ experience.startDate }} – {{ experience.endDate }}</p>
@@ -26,7 +26,13 @@
       <mat-card class="experience-card">
         <mat-card-header>
           <div mat-card-avatar>
-            <a href="{{ experience.company.website }}" target="_blank"><img src="/assets/images/{{ experience.company.logo }}" alt="Logo {{ experience.company.name }}" class="company-logo" /></a>
+            <a href="{{ experience.company.website }}" target="_blank">
+              <picture>
+                <!-- <source srcset="/assets/images/{{ experience.company.logo }}.webp" type="image/webp" /> -->
+                <source srcset="/assets/images/{{ experience.company.logo }}.jp2" type="image/jp2" />
+                <img src="/assets/images/{{ experience.company.logo }}.png" alt="Logo {{ experience.company.name }}" class="company-logo" />
+              </picture>
+            </a>
           </div>
           <mat-card-title>{{ experience.title }}</mat-card-title>
           <mat-card-subtitle><mat-icon>place</mat-icon> {{ experience.company.name }}, {{ experience.place }}</mat-card-subtitle>
@@ -58,9 +64,17 @@
   <div fxLayout="row wrap" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.xs="10px">
     <div class="logo" *ngFor="let customer of customers" appearence="fill">
       <a *ngIf="customer.website" href="{{ customer.website }}" target="_blank">
-        <img src="/assets/images/{{ customer.logo }}" alt="Logo {{ customer.name }}" class="customer-logo" matTooltip="{{ customer.name }}" />
+        <picture>
+          <!-- <source srcset="/assets/images/{{ customer.logo }}.webp" type="image/webp" /> -->
+          <source srcset="/assets/images/{{ customer.logo }}.jp2" type="image/jp2" />
+          <img src="/assets/images/{{ customer.logo }}.png" alt="Logo {{ customer.name }}" class="customer-logo" matTooltip="{{ customer.name }}" />
+        </picture>
       </a>
-      <img *ngIf="!customer.website" src="/assets/images/{{ customer.logo }}" alt="Logo {{ customer.name }}" class="customer-logo" matTooltip="{{ customer.name }}" />
+      <picture *ngIf="!customer.website">
+        <!-- <source srcset="/assets/images/{{ customer.logo }}.webp" type="image/webp" /> -->
+        <source srcset="/assets/images/{{ customer.logo }}.jp2" type="image/jp2" />
+        <img src="/assets/images/{{ customer.logo }}.png" alt="Logo {{ customer.name }}" class="customer-logo" matTooltip="{{ customer.name }}" />
+      </picture>
     </div>
   </div>
 </div>

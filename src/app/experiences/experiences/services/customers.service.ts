@@ -16,12 +16,12 @@ export class CustomersService {
         return [
             {
                 name: 'DSIA',
-                logo: 'logo-dsia.jpg',
+                logo: 'logo-dsia',
                 website: 'https://logistar-dsia.com/fr/'
             },
             {
                 name: 'Vous ?',
-                logo: 'logo-company.jpg',
+                logo: 'logo-company',
                 website: ''
             }
         ];

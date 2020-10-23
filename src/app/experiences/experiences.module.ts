@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CoreModule } from '../core/core.module';
 import { ExperiencesComponent } from './experiences/experiences.component';
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ExperiencesComponent } from './experiences/experiences.component';
     MatExpansionModule,
     MatListModule,
     FontAwesomeModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    CoreModule
   ],
   exports: [ExperiencesComponent],
 })

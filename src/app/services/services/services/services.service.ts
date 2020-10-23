@@ -19,12 +19,11 @@ export class ServicesService {
                 title: 'Architecture',
                 description: '',
                 items: [
-                    'Etudes des besoins et des contraintes (charge utilisateur, volumétrie, sécurité, etc.)',
+                    'Etudes des besoins et des contraintes',
                     'Rédaction de documentation technique (spécifications techniques détaillées, dossier d\'architecture logicielle, dossier d\'architecture technique)',
                     'Mise en place d\'un socle technique',
-                    'Mise en place d\'une architecture adaptée à vos besoins et vos contraintes (dimensionnement, haute disponibilité, scalabilité horizontale, répartition de charge, etc.)',
-                    'Veille technologique et intérêt pour les architectures micro-services (Docker, IaaS, PaaS, Saas, DBaaS)',
-                    'Déploiement sur le cloud (AWS, Azure, Google Cloud)'
+                    'Mise en place d\'une architecture adaptée à vos besoins et vos contraintes (sécurité, dimensionnement, disponibilité, scalabilité horizontale, répartition de charge)',
+                    'Veille technologique et intérêt pour les architectures micro-services (IaaS, PaaS, Saas, Docker)'
                 ]
             },
             {
@@ -46,7 +45,7 @@ export class ServicesService {
                     'Suivi des développements',
                     'Revues de code',
                     'Suivi des indicateurs',
-                    'Support',
+                    'Support technique',
                     'Montée en compétence des développeurs juniors',
                     'Animation de Webinar',
                     'Chiffrages techniques',

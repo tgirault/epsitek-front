@@ -45,8 +45,8 @@ export class SkillsService {
         return [
             { name: 'Langages', skills: this.initLanguagesSkills() },
             { name: 'Frameworks JEE', skills: this.initFrameworksJeeSkills() },
-            { name: 'Gestion Electronique de Documents', skills: this.initGedSkills() },
-            { name: 'Frameworks Javascript', skills: this.initFrameworksJavascriptSkills() }
+            { name: 'Frameworks Javascript', skills: this.initFrameworksJavascriptSkills() },
+            { name: 'Gestion Electronique de Documents', skills: this.initGedSkills() }
         ];
     }
 
