@@ -1,5 +1,7 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { share } from 'rxjs/operators';
 
 @Component({
   selector: 'app-menu',
@@ -41,7 +43,14 @@ export class MenuComponent implements OnInit {
   /** Le menu est ouvert ? */
   isOpen = false;
 
-  constructor() { }
+  /** Le fragment actif. */
+  activeFragment = this.route.fragment.pipe(share());
+
+  /**
+   * Constructeur du composant.
+   * @param route route active
+   */
+  constructor(public route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
