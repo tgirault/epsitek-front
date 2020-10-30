@@ -1,0 +1,15 @@
+<table>
+  <caption>
+    {{
+      category.name
+    }}
+  </caption>
+  <tr *ngFor="let skill of category.skills">
+    <td *ngIf="skill.rate">{{ skill.name }}</td>
+    <td *ngIf="skill.description" class="label">{{ skill.name }}</td>
+    <td *ngIf="skill.description">{{ skill.description }}</td>
+    <td *ngIf="skill.rate">
+      <app-rating rate="{{ skill.rate }}"></app-rating>
+    </td>
+  </tr>
+</table>

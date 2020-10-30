@@ -1,0 +1,28 @@
+table {
+  min-width: 200px;
+  color: black;
+}
+
+table caption {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 16px 0;
+}
+
+table td {
+  padding: 2px 10px;
+  text-align: left;
+}
+
+table td.label {
+  color: #0d2241;
+  font-weight: 500;
+}
+
+@media only screen and (max-device-width: 320px) {
+  table td {
+    padding: 2px 5px;
+    font-size: 10px;
+  }
+}

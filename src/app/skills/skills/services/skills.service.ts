@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Category } from '../model/category.data';
 import { Skill } from '../model/skill.data';
-import { Technology } from '../model/technology.data';
 
 /**
  * Service métier de gestion des compétences.
@@ -12,9 +11,16 @@ import { Technology } from '../model/technology.data';
 export class SkillsService {
 
     /**
-     * Rechercher toutes les technologies.
+     * Rechercher toutes les catégories avec une description des compétences.
      */
-    findAllTechnologies(): Array<Technology> {
+    findAllCategoriesWithDescribedSkills(): Array<Category> {
+        return [
+            { name: 'Technologies', skills: this.initTechnologySkills() },
+            { name: 'Méthodologies', skills: this.initMethodologySkills() }
+        ];
+    }
+
+    private initTechnologySkills(): Array<Skill> {
         return [
             { name: 'Moteurs d\'indexation', description: 'Elasticsearch, Apache Solr' },
             { name: 'Moteurs de workflow', description: 'Activiti' },
@@ -28,9 +34,9 @@ export class SkillsService {
     }
 
     /**
-     * Rechercher toutes les méthodologies.
+     * Initialisation des compétences dans la catégorie des méthodologies.
      */
-    findAllMethodologies(): Array<Technology> {
+    private initMethodologySkills(): Array<Skill> {
         return [
             { name: 'Agile', description: 'Agile et agile à l\'échelle (SAFe)' },
             { name: 'Srum', description: 'SCRUM' },
@@ -39,9 +45,9 @@ export class SkillsService {
     }
 
     /**
-     * Rechercher toutes les catégories de compétences et les compétences associées.
+     * Rechercher toutes les catégories avec des compétences évaluées.
      */
-    findAllCategoriesWithSkills(): Array<Category> {
+    findAllCategoriesWithRatedSkills(): Array<Category> {
         return [
             { name: 'Langages', skills: this.initLanguagesSkills() },
             { name: 'Frameworks JEE', skills: this.initFrameworksJeeSkills() },

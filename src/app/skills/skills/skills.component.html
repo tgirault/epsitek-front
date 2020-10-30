@@ -1,49 +1,18 @@
 <app-title title="competences" image="skills"></app-title>
 
 <div class="container light-container">
-  <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutGap.xs="0px">
-    <div *ngFor="let category of categories">
-      <table class="skills">
-        <caption>
-          {{
-            category.name
-          }}
-        </caption>
-        <tr *ngFor="let skill of category.skills">
-          <td>{{ skill.name }}</td>
-          <td>
-            <app-rating rate="{{ skill.rate }}"></app-rating>
-          </td>
-        </tr>
-      </table>
-    </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayoutGap="40px" fxLayoutGap.xs="0px" appAnimate="bounceIn">
+    <ng-container *ngFor="let category of ratedSkills">
+      <app-category [category]="category"></app-category>
+    </ng-container>
   </div>
 </div>
 
 <div class="container grey-container">
-  <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutGap.xs="0px">
-    <div>
-      <table class="technologies">
-        <caption>
-          Technologies
-        </caption>
-        <tr *ngFor="let technology of technologies">
-          <td class="label">{{ technology.name }}</td>
-          <td>{{ technology.description }}</td>
-        </tr>
-      </table>
-    </div>
-    <div>
-      <table class="technologies">
-        <caption>
-          Méthodologies
-        </caption>
-        <tr *ngFor="let methodology of methodologies">
-          <td class="label">{{ methodology.name }}</td>
-          <td>{{ methodology.description }}</td>
-        </tr>
-      </table>
-    </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutGap.xs="0px" appAnimate="bounceIn">
+    <ng-container *ngFor="let category of describedSkills">
+      <app-category [category]="category"></app-category>
+    </ng-container>
   </div>
 </div>
 
