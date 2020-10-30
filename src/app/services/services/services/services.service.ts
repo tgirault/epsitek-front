@@ -17,48 +17,40 @@ export class ServicesService {
             {
                 icon: 'device_hub',
                 title: 'Architecture',
-                description: '',
+                description: 'Mise en place d\'une architecture adaptée à vos besoins et vos contraintes.',
                 items: [
-                    'Etudes des besoins et des contraintes',
+                    'Etude technique, prototypage',
                     'Rédaction de documentation technique (spécifications techniques détaillées, dossier d\'architecture logicielle, dossier d\'architecture technique)',
-                    'Mise en place d\'un socle technique',
-                    'Mise en place d\'une architecture adaptée à vos besoins et vos contraintes (sécurité, dimensionnement, disponibilité, scalabilité horizontale, répartition de charge)',
-                    'Veille technologique et intérêt pour les architectures micro-services (IaaS, PaaS, Saas, Docker)'
+                    'Choix des technologies / frameworks adaptés au besoin et contraintes',
+                    'Mise en place de socles techniques sécurisés et performants',
                 ]
             },
             {
                 icon: 'create',
-                title: 'Conception fonctionnelle et technique',
-                description: '',
+                title: 'Conception',
+                description: 'Concevoir des solutions maintenables et documentées.',
                 items: [
-                    'Rédaction de documentation technique (spécifications techniques détaillées)',
-                    'Modélisation UML (diagramme de cas d\'utilisation, diagrammes de séquence, diagramme de classes)',
+                    'Rédaction de documentation technique',
+                    'Modélisation UML',
                     'Modélisation de workflow BPMN',
-                    'Modélisation de bases de données relationnelles (BCNF)',
+                    'Modélisation de bases de données',
                 ]
             },
             {
                 icon: 'supervised_user_circle',
                 title: 'Lead d\'équipe',
-                description: 'Leader technique dans des équipes de développement :',
+                description: 'Animer les équipes de développement.',
                 items: [
-                    'Suivi des développements',
-                    'Revues de code',
-                    'Suivi des indicateurs',
-                    'Support technique',
-                    'Montée en compétence des développeurs juniors',
                     'Animation de Webinar',
-                    'Chiffrages techniques',
-                    'Répartition des tâches et suivi opérationnel (plannification, suivi des charges).'
+                    'Montée en compétence des développeurs juniors',
+                    'Pilotage opérationnel (estimation, planification, suivi, reporting)'
                 ]
             },
             {
                 icon: 'code',
                 title: 'Développement',
-                description: 'Développement dans les règles de l\'art :',
+                description: 'Développer des solutions ergonomiques, robustes et performantes.',
                 items: [
-                    'Choix des technologies/frameworks adaptés au besoin',
-                    'Mise en place de socles techniques sécurisés et performants',
                     'Développement de fonctionnalités full-stack Java / Angular',
                     'Développement de traitements batch robustes et performants',
                     'Développement d\'interfaces utilisateur ergonomiques avec des contraintes de responsive design et d\'accessibilité (RGAA)'
@@ -67,30 +59,30 @@ export class ServicesService {
             {
                 icon: 'verified',
                 title: 'Qualité logicielle',
-                description: 'Mise en application des bonnes pratiques et des principes de qualité logicielle :',
+                description: 'Mise en application des bonnes pratiques et des principes de qualité logicielle.',
                 items: [
+                    'Revue de code',
                     'Tests unitaires',
                     'Tests d\'intégration automatisés',
-                    'Revue de code',
                     'Suivi des indicateurs de qualimétrie',
-                    'Rédaction de cas de tests'
+                    'Rédaction/exécution de cas de tests'
                 ]
             },
             {
                 icon: 'addchart',
                 title: 'Performances',
-                description: 'Mesure et optimisation des performances :',
+                description: 'Mesure et optimisation des performances.',
                 items: [
-                    'Rédaction du cahier des charges (Test de dégradation des transactions, tests de montée en charge, tests de performances)',
-                    'Préparation et exécution des campagnes de tests (JMeter)',
+                    'Rédaction du cahier des charges',
+                    'Préparation et exécution des campagnes de tests',
                     'Relevé des métriques et analyse des résultats (ElasticSearch, Logstash, Kibana)',
-                    'Optimisation des performances (JProfiler)'
+                    'Optimisation des performances'
                 ]
             },
             {
                 icon: 'verified_user',
                 title: 'Sécurité',
-                description: 'Sensibilisé et formé à la sécurité.',
+                description: 'Sensibilisé et formé à la sécurité logicielle.',
                 items: []
             },
             {
@@ -99,28 +91,18 @@ export class ServicesService {
                 description: 'Familiarisé avec les méthodologies SCRUM et Agile à l\'échelle (Safe).',
                 items: [
                     'Participation aux cérémonies agiles: Planning Increment, Daily Meeting, Backlog Refinement, Sprint Planning, Poker Planning, Démonstration, Rétrospective.',
-                    'Mise en place et animation des cérémonies agiles',
-                    'Mise en place du board Jira',
-                    'Alimentation des sprints pour l\'équipe, calcul de la capacité, etc.'
+                    'Mise en place des principes agiles et animation des cérémonies'
                 ]
             },
             {
                 icon: 'published_with_changes',
                 title: 'DevOps',
-                description: 'Mise en place d\'un outillage industrialisé :',
+                description: 'Mise en place d\'un outillage industrialisé.',
                 items: [
-                    'Mise en place de la fabrique logicielle, du pipeline de déploiement continue avec Jenkins.',
-                    'Conteneurisation des briques logicielles avec Docker',
-                    'Installation automatisée des briques logicielles avec Ansible.'
-                ]
-            },
-            {
-                icon: 'storage',
-                title: 'Administration système',
-                description: '',
-                items: [
-                    'Administration système et réseau des VMs.',
-                    'Développement de scripts Shell.'
+                    'Mise en place de la fabrique logicielle',
+                    'Mise en place de l\'intégration/déploiement continue',
+                    'Dockeriser des briques logicielles',
+                    'Automatiser l\'installation de briques logicielles'
                 ]
             }
         ];

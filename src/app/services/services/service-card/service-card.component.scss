@@ -1,0 +1,42 @@
+article {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  .text {
+    padding: 16px;
+    color: black;
+
+    h1 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    ul.items {
+      list-style-type: none;
+      padding-inline-start: 10px;
+    }
+  }
+
+  .icon {
+    color: #3e8914;
+    $size: 50px;
+    font-size: $size;
+    width: $size * 1.5; // Makes sure having room to center larger icons
+    height: $size;
+    line-height: $size;
+  }
+}
+
+@media only screen and (max-device-width: 767px) {
+  article {
+    padding: 0px;
+
+    .text {
+      padding: 10px;
+    }
+  }
+}

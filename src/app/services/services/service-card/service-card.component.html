@@ -1,0 +1,11 @@
+<article fxLayout="row" fxLayoutAlign="center center">
+  <mat-icon class="icon">{{ service.icon }}</mat-icon>
+  <div class="text">
+    <h1>{{ service.title }}</h1>
+    <p>{{ service.description }}</p>
+    <ul class="items">
+      <li *ngFor="let item of service.items"><fa-icon [icon]="['fas', 'arrow-right']"></fa-icon>&nbsp;{{ item }}</li>
+    </ul>
+    <div class="tools"></div>
+  </div>
+</article>
