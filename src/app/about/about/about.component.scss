@@ -1,33 +1,55 @@
-.container-about {
+article {
   margin: 0;
-  padding: 0 0 0 80px;
+  padding: 20px 20px 20px 80px;
+
+  header {
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 400;
+      color: black;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 300;
+      color: grey;
+    }
+  }
+
+  p {
+    color: black;
+    font-size: 14px;
+
+    strong {
+      font-weight: 500;
+    }
+  }
+
+  footer {
+    text-align: center;
+  }
 }
 
-.wrapper-about-picture {
+.wrapper-responsive-image {
+  background-image: url('/assets/images/about-me.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.resonsive-image {
   width: 100%;
   height: auto;
+  visibility: hidden;
 }
 
-/* Désactivation de l'effet parallax pour les tablettes et smartphones. */
-@media only screen and (max-device-width: 1024px) {
-  .container-about {
-    padding: 0 10px 0 10px;
+@media only screen and (max-device-width: 767px) {
+  article {
+    padding: 10px;
   }
 
-  .wrapper-about-picture {
-    width: 100%;
-    height: auto;
+  .resonsive-image {
+    visibility: visible;
   }
-}
-
-.mat-card.card-about .mat-card-header-text {
-  margin: 0 0;
-}
-
-.mat-card.card-about .mat-card-content {
-  text-align: justify;
-}
-
-.mat-card.card-about .mat-card-actions {
-  text-align: center;
 }

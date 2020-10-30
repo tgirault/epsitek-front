@@ -3,44 +3,43 @@
 <div class="light-container">
   <div fxLayout="row wrap" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center" fxLayoutGap="0">
     <!-- Première colonne -->
-    <div class="container-about" appearance="fill" fxFlex="50%">
-      <mat-card class="card-about">
-        <mat-card-header>
-          <mat-card-title>Thomas Girault</mat-card-title>
-          <mat-card-subtitle>Ingénieur logiciel - Freelance</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Diplômé de l'école Polytech'Nantes en 2011 après une année d'échange à l'université Laval au Canada, j'ai intégré la division Secteur Public puis Energie de Sopra Steria où j'ai participé
-            à la réalisation de plusieurs projets pour de grands comptes (Douanes et Droits Indirects, Ministère de l'intérieur, Ministère de la Justice, ENEDIS).
-          </p>
-          <p>
-            Après 8 années de riches expériences en ESN, j'ai souhaité me recentrer sur le développement d'un produit. J'ai alors intégré DSIA - éditeur de logiciels en Supply Chain Managment - en
-            tant que leader technique.
-          </p>
-          <p>
-            Au cours de mes 10 années d'expérience, j'ai pu acquérir de solides compétences en conception et développement, une expertise technique sur des solutions de dématérialisation de documents
-            et des apétences en architecture.
-          </p>
-          <p>J'avais pour projet de créer ma propre société depuis quelque temps.</p>
-          <p>C'est en septembre 2020 que j'ai créé la société Epsitek !</p>
-          <p>J'exerce désormais mon métier d'ingénieur logiciel en tant qu'indépendant pour mettre mes compétences au profit de vos projets.</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a href="/assets/cv/20200929_THOMAS_GIRAULT_cv_fr.pdf" target="_blank" mat-fab color="warn" matTooltip="Visualiser mon CV au format .pdf" aria-label="Visualiser mon CV au format .pdf">
+    <div fxFlex="50%">
+      <article>
+        <header>
+          <h1>Thomas Girault</h1>
+          <h2>Ingénieur logiciel - Freelance</h2>
+        </header>
+        <p>
+          Diplômé de l'école <strong>Polytech'Nantes</strong> en <strong>2011</strong> après une année d'échange à l'<strong>Université Laval</strong> au Canada, j'ai intégré la division
+          <strong>Secteur Public</strong> puis <strong>Energie</strong> de <strong>Sopra Steria</strong> où j'ai participé à la réalisation de plusieurs
+          <strong>projets pour de grands comptes</strong> (Douanes et Droits Indirects, Ministère de l'intérieur, Ministère de la Justice, ENEDIS).
+        </p>
+        <p>
+          Après 8 années de riches expériences en ESN, j'ai souhaité me recentrer sur le développement d'un produit. J'ai alors intégré
+          <strong>DSIA - éditeur de logiciels en Supply Chain Managment -</strong> en tant que leader technique.
+        </p>
+        <p>
+          Au cours de mes 10 années d'expérience, j'ai pu acquérir de solides compétences en
+          <strong>conception</strong> et <strong>développement</strong>, une <strong>expertise technique</strong> sur des solutions de <strong>dématérialisation de documents</strong> et des apétences
+          en <strong>architecture</strong>.
+        </p>
+        <p>J'avais pour projet de créer ma propre société depuis quelque temps.</p>
+        <p>C'est en <strong>septembre 2020</strong> que j'ai créé la société <strong>Epsitek</strong> !</p>
+        <p>J'exerce désormais mon métier d'<strong>ingénieur logiciel</strong> en indépendant <strong>pour mettre mes compétences au profit de vos projets.</strong></p>
+        <footer>
+          <a href="/assets/cv/20201030_THOMAS_GIRAULT_cv_fr.pdf" target="_blank" mat-fab color="warn" matTooltip="Visualiser mon CV au format .pdf" aria-label="Visualiser mon CV au format .pdf">
             <mat-icon>picture_as_pdf</mat-icon>
           </a>
-        </mat-card-actions>
-      </mat-card>
+        </footer>
+      </article>
     </div>
     <!-- Deuxième colonne -->
-    <div appearance="fill" fxFlex="50%">
-      <img src="/assets/images/about-me.jpg" alt="Thomas Girault" class="wrapper-about-picture" />
+    <div fxFlex="50%" class="wrapper-responsive-image">
+      <img src="/assets/images/about-me.jpg" alt="Thomas Girault" class="resonsive-image" />
     </div>
   </div>
 </div>
 
 <app-citation
-  phrase="Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour
-garantir une expérience utilisateur optimale."
+  phrase="Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour garantir une expérience utilisateur optimale."
 ></app-citation>
