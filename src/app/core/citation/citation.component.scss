@@ -1,8 +1,9 @@
 p {
   font-family: Quicksand;
+  text-align: center;
 }
 
-@media only screen and (max-device-width: 320px) {
+@media only screen and (max-device-width: 1024px) {
   p {
     font-size: 13px;
   }

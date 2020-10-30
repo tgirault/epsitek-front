@@ -62,7 +62,6 @@ a.logo {
   align-items: center;
   max-width: 720px;
   margin: 0 auto;
-  height: 100vh;
   list-style: none;
 
   li {
@@ -93,7 +92,7 @@ a.logo {
     }
 
     &:active a {
-      color: green;
+      color: #3e8914;
     }
 
     &:not(:last-child) {
@@ -104,6 +103,6 @@ a.logo {
   li.active {
     background-color: #17365d;
     color: white;
-    border-bottom: solid 4px green;
+    border-bottom: solid 4px #3e8914;
   }
 }

@@ -3,7 +3,9 @@
 html,
 body {
   height: 100%;
+  background-color: #26272b;
 }
+
 body {
   margin: 0;
 }
@@ -45,6 +47,10 @@ body {
 }
 
 li {
+  text-align: left;
+}
+
+p {
   text-align: left;
 }
 
