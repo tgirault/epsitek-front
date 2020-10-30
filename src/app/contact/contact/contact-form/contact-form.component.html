@@ -1,70 +1,55 @@
 <form fxLayout="column" [formGroup]="contactForm" (ngSubmit)="send()">
-  <mat-card>
-    <mat-card-header>
-      <mat-card-title>Contactez-moi</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
-        <mat-form-field appearance="fill" fxFlex>
-          <mat-label>Prénom</mat-label>
-          <input matInput type="text" placeholder="Votre prénom" formControlName="firstName" maxlength="40" />
-        </mat-form-field>
+  <article class="article">
+    <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+      <mat-form-field appearance="fill" fxFlex>
+        <mat-label>Prénom</mat-label>
+        <input matInput type="text" placeholder="Votre prénom" formControlName="firstName" maxlength="40" />
+      </mat-form-field>
 
-        <mat-form-field appearance="fill" fxFlex>
-          <mat-label>Nom</mat-label>
-          <input matInput type="text" placeholder="Votre nom" formControlName="lastName" maxlength="40" />
-        </mat-form-field>
-      </div>
+      <mat-form-field appearance="fill" fxFlex>
+        <mat-label>Nom</mat-label>
+        <input matInput type="text" placeholder="Votre nom" formControlName="lastName" maxlength="40" />
+      </mat-form-field>
+    </div>
 
-      <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
-        <mat-form-field appearance="fill" fxFlex>
-          <mat-label>Société</mat-label>
-          <input matInput type="text" placeholder="Le nom de votre société" formControlName="company" maxlength="60" />
-        </mat-form-field>
-      </div>
+    <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+      <mat-form-field appearance="fill" fxFlex>
+        <mat-label>Société</mat-label>
+        <input matInput type="text" placeholder="Le nom de votre société" formControlName="company" maxlength="60" />
+      </mat-form-field>
+    </div>
 
-      <div class="input-row">
-        <mat-form-field appearance="fill" fxFlex>
-          <mat-label>Email</mat-label>
-          <input matInput placeholder="Votre adresse email" formControlName="email" maxlength="120" />
-        </mat-form-field>
-      </div>
+    <div class="input-row">
+      <mat-form-field appearance="fill" fxFlex>
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Votre adresse email" formControlName="email" maxlength="120" />
+        <mat-icon matSuffix>alternate_email</mat-icon>
+      </mat-form-field>
+    </div>
 
-      <div class="input-row">
-        <mat-form-field appearance="fill" fxFlex>
-          <mat-label>Téléphone</mat-label>
-          <span matPrefix>+33 &nbsp;</span>
-          <input type="tel" matInput placeholder="0603375938" formControlName="phone" maxlength="10" />
-          <mat-icon matSuffix>phone</mat-icon>
-        </mat-form-field>
-      </div>
+    <div class="input-row">
+      <mat-form-field appearance="fill" fxFlex>
+        <mat-label>Téléphone</mat-label>
+        <input type="tel" matInput placeholder="Votre n° de téléphone" formControlName="phone" maxlength="10" />
+        <mat-icon matSuffix>phone</mat-icon>
+      </mat-form-field>
+    </div>
 
-      <div class="input-row">
-        <mat-form-field appearance="fill" fxFlex>
-          <mat-label>Message</mat-label>
-          <textarea
-            matInput
-            cdkTextareaAutosize
-            cdkAutosizeMinRows="10"
-            cdkAutosizeMaxRows="20"
-            #message
-            type="text"
-            placeholder="Ecrivez votre message..."
-            formControlName="message"
-            maxlength="5000"
-          ></textarea>
-          <mat-hint align="end">{{ message.value?.length || 0 }}/5000</mat-hint>
-        </mat-form-field>
-      </div>
-      <div class="input-row" style="transform: scale(0.7); transform-origin: 0">
-        <re-captcha formControlName="recaptcha"></re-captcha>
-      </div>
-    </mat-card-content>
-    <mat-card-actions align="end">
+    <div class="input-row">
+      <mat-form-field appearance="fill" fxFlex>
+        <mat-label>Message</mat-label>
+        <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="10" cdkAutosizeMaxRows="20" #message type="text" placeholder="Votre message" formControlName="message" maxlength="5000"></textarea>
+        <mat-hint align="end">{{ message.value?.length || 0 }}/5000</mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="input-row" style="transform: scale(0.7); transform-origin: 0">
+      <re-captcha formControlName="recaptcha"></re-captcha>
+    </div>
+    <footer>
       <button type="submit" mat-raised-button color="primary" aria-label="Envoyer mon message" [disabled]="contactForm.invalid">
         Envoyer
         <mat-icon>send</mat-icon>
       </button>
-    </mat-card-actions>
-  </mat-card>
+    </footer>
+  </article>
 </form>

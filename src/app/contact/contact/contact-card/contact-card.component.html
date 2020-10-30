@@ -1,31 +1,30 @@
-<mat-card class="card-coordinates">
-  <mat-card-header>
-    <div mat-card-avatar class="card-coordinates-header-image"></div>
-    <mat-card-title>Thomas Girault</mat-card-title>
-    <mat-card-subtitle>Ingénieur logiciel - Freelance</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <p>Mon profil vous intéresse ? Alors n'hésitez pas à me contacter !</p>
-    <p>Prenons rendez-vous et échangeons sur vos besoins et vos projets.</p>
-    <table>
-      <tr>
-        <td><mat-icon aria-hidden="false" aria-label="Phone number icon">smartphone</mat-icon></td>
-        <td>+33 (0)6 03 37 59 38</td>
-      </tr>
-      <tr>
-        <td><mat-icon aria-hidden="false" aria-label="Email adress icon">mail</mat-icon></td>
-        <td><a href="mailto:thomas.girault@epsitek.fr">thomas.girault@epsitek.fr</a></td>
-      </tr>
-      <tr>
-        <td><mat-icon aria-hidden="false" aria-label="Place icon" color="warn">place</mat-icon></td>
-        <td>Sur Nantes et ses environs</td>
-      </tr>
-    </table>
-  </mat-card-content>
+<article>
+  <header>
+    <div class="avatar"></div>
+    <h1>Thomas Girault</h1>
+    <h2>Ingénieur logiciel - Freelance</h2>
+  </header>
+  <p>Un <strong>besoin</strong> ? Un <strong>projet</strong> ? Prenons le temps d'en discuter.</p>
+  <table>
+    <tr>
+      <td><mat-icon aria-hidden="false" aria-label="Phone number icon">smartphone</mat-icon></td>
+      <td>06 03 37 59 38</td>
+    </tr>
+    <tr>
+      <td><mat-icon aria-hidden="false" aria-label="Email adress icon">alternate_email</mat-icon></td>
+      <td>
+        <a href="mailto:thomas.girault@epsitek.fr">thomas.girault@<strong>epsitek.fr</strong></a>
+      </td>
+    </tr>
+    <tr>
+      <td><mat-icon aria-hidden="false" aria-label="Place icon">place</mat-icon></td>
+      <td>Sur <strong>Nantes</strong> et ses environs</td>
+    </tr>
+  </table>
   <a href="https://www.google.fr/maps/@47.2138452,-1.528745,12z" target="_blank">
-    <img mat-card-image src="/assets/images/google-maps-nantes.JPG" alt="Nantes et ses environs" />
+    <img src="/assets/images/google-maps-nantes.jpg" alt="Carte de Nantes et ses environs" class="responsive-image" />
   </a>
-  <mat-card-actions>
+  <footer>
     <ul class="social-icons" align="end">
       <li>
         <a class="linkedin" href="https://www.linkedin.com/in/thomasgirault/" target="_blank"><fa-icon [icon]="['fab', 'linkedin']"></fa-icon></a>
@@ -33,9 +32,6 @@
       <li>
         <a class="github" href="https://github.com/tgirault" target="_blank"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>
       </li>
-      <li>
-        <a class="twitter" href="https://twitter.com/thomas_girault" target="_blank"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
-      </li>
     </ul>
-  </mat-card-actions>
-</mat-card>
+  </footer>
+</article>
