@@ -46,18 +46,19 @@ article {
     font-weight: 400;
   }
 
-  a {
-    color: #17365d;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #0d2241;
-  }
-
   footer {
     text-align: right;
   }
+}
+
+a {
+  color: #17365d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #0d2241;
 }
 
 .responsive-image {
