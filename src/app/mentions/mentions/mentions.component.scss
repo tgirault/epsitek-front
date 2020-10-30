@@ -1,5 +1,9 @@
-.mentions-legales {
+.container {
   font-family: Quicksand;
+}
+
+h3 {
+  font-weight: 500;
 }
 
 a {
@@ -12,6 +16,6 @@ a:hover {
   text-decoration: none;
 }
 
-h3 {
-  font-weight: 500;
+strong {
+  font-weight: 600;
 }
