@@ -28,7 +28,7 @@ export class SkillsService {
             { name: 'Systèmes de Gestion de Base de Données', description: 'Oracle 12c, PostgreSQL, MySQL, MariaDB' },
             { name: 'Brokers JMS', description: 'ActiveMQ, MQSeries' },
             { name: 'Serveurs d\'application', description: 'Tomcat, JBoss' },
-            { name: 'Gestion de configuration logicielle', description: 'Git (GitLab, Bitbucket}, SVN' },
+            { name: 'Gestion de configuration logicielle', description: 'Git (GitLab, Bitbucket), SVN' },
             { name: 'DevOps', description: 'Docker, Ansible, Jenkins' }
         ];
     }
