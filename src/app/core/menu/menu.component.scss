@@ -3,25 +3,81 @@
   position: fixed;
   top: 0;
   z-index: 2;
-}
 
-.menu .btn {
-  cursor: pointer;
-  margin: 10px;
-}
+  .btn {
+    cursor: pointer;
+    margin: 10px;
+  }
 
-.menu .icon-bar {
-  width: 22px;
-  height: 2px;
-  background: white;
-  margin: 4px;
-  position: relative;
-}
+  .icon-bar {
+    width: 22px;
+    height: 2px;
+    background: white;
+    margin: 4px;
+    position: relative;
+  }
 
-.menu-nav {
-  position: fixed;
-  top: 48px;
-  z-index: 1;
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  a.logo {
+    width: 112px;
+    height: 50px;
+    background-image: url('/assets/images/logo-epsitek-112x50-dark.png');
+    cursor: pointer;
+  }
+
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 720px;
+    margin: 0 auto;
+    list-style: none;
+
+    li {
+      width: 125px;
+      height: 60px;
+      transition: background-position-x 0.9s linear;
+      border-bottom: solid 4px #17365d;
+      text-align: center;
+
+      a {
+        display: block;
+        width: 125px;
+        height: 49px;
+        padding-top: 15px;
+        font-size: 15px;
+        color: gainsboro;
+        text-decoration: none;
+        transition: all 0.45s;
+      }
+
+      &:hover {
+        border-bottom: solid 4px #0d2241;
+        background-color: #0d2241;
+      }
+
+      &:hover a {
+        color: white;
+      }
+
+      &:active a {
+        color: #3e8914;
+      }
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+
+    li.active {
+      background-color: #17365d;
+      color: white;
+      border-bottom: solid 4px #3e8914;
+    }
+  }
 }
 
 .mat-nav-list {
@@ -31,78 +87,21 @@
   background-color: #1f497d;
 }
 
-.menu-nav a {
-  background-color: #1f497d;
-  color: whitesmoke;
-}
+.menu-nav {
+  position: fixed;
+  top: 48px;
+  z-index: 1;
 
-.menu-nav a:hover {
-  background-color: #0f243e;
-  color: whitesmoke;
+  a {
+    background-color: #1f497d;
+    color: whitesmoke;
+  }
+
+  a:hover {
+    background-color: #0f243e;
+  }
 }
 
 .mat-divider {
   border-top-color: rgba(white, 10%);
-}
-
-.spacer {
-  flex: 1 1 auto;
-}
-
-a.logo {
-  width: 112px;
-  height: 50px;
-  background-image: url('/assets/images/logo-epsitek-112x50-dark.png');
-  cursor: pointer;
-}
-
-.menu-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 720px;
-  margin: 0 auto;
-  list-style: none;
-
-  li {
-    width: 125px;
-    height: 60px;
-    transition: background-position-x 0.9s linear;
-    border-bottom: solid 4px #17365d;
-    text-align: center;
-
-    a {
-      display: block;
-      width: 125px;
-      height: 49px;
-      padding-top: 15px;
-      font-size: 15px;
-      color: gainsboro;
-      text-decoration: none;
-      transition: all 0.45s;
-    }
-
-    &:hover {
-      border-bottom: solid 4px #0d2241;
-      background-color: #0d2241;
-    }
-
-    &:hover a {
-      color: white;
-    }
-
-    &:active a {
-      color: #3e8914;
-    }
-
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
-  }
-
-  li.active {
-    background-color: #17365d;
-    color: white;
-    border-bottom: solid 4px #3e8914;
-  }
 }

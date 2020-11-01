@@ -10,10 +10,10 @@ import { share } from 'rxjs/operators';
   animations: [
     trigger('openClose', [
       state('open', style({
-        transform: 'translateX(150%)'
+        transform: 'translateX(100%)'
       })),
       state('closed', style({
-        transform: 'translateX(30%)'
+        transform: 'translateX(25%)'
       })),
       transition('open => closed', animate('400ms ease-in-out')),
       transition('closed => open', animate('400ms ease-in-out'))
