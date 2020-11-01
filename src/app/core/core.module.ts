@@ -16,6 +16,7 @@ import { CitationComponent } from './citation/citation.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { ApiService } from './services/api.service';
+import { SpinnerComponent } from './spinner/spinner.component';
 import { TitleComponent } from './title/title.component';
 
 @NgModule({
@@ -25,7 +26,8 @@ import { TitleComponent } from './title/title.component';
     TypeWriterComponent,
     FooterComponent,
     TitleComponent,
-    CitationComponent
+    CitationComponent,
+    SpinnerComponent
   ],
   imports: [
     CommonModule,
@@ -45,7 +47,8 @@ import { TitleComponent } from './title/title.component';
     BannerComponent,
     FooterComponent,
     TitleComponent,
-    CitationComponent
+    CitationComponent,
+    SpinnerComponent
   ],
   providers: [ApiService]
 })
