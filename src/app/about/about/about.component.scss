@@ -36,6 +36,7 @@ article {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  visibility: visible;
 }
 
 .resonsive-image {
@@ -47,6 +48,10 @@ article {
 @media only screen and (max-device-width: 767px) {
   article {
     padding: 10px;
+  }
+
+  .wrapper-responsive-image {
+    visibility: hidden;
   }
 
   .resonsive-image {
