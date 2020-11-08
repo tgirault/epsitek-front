@@ -9,11 +9,13 @@ import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CoreModule } from '../core/core.module';
+import { ExperiencesRoutingModule } from './experiences-routing.module';
 import { ExperiencesComponent } from './experiences/experiences.component';
 
 @NgModule({
   declarations: [ExperiencesComponent],
   imports: [
+    ExperiencesRoutingModule,
     CommonModule,
     MatIconModule,
     MatCardModule,

@@ -13,6 +13,22 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   {
+    path: 'services',
+    loadChildren: () => import('./services/services.module').then(m => m.ServicesModule)
+  },
+  {
+    path: 'skills',
+    loadChildren: () => import('./skills/skills.module').then(m => m.SkillsModule)
+  },
+  {
+    path: 'experiences',
+    loadChildren: () => import('./experiences/experiences.module').then(m => m.ExperiencesModule)
+  },
+  {
+    path: 'contacts',
+    loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
+  },
+  {
     path: 'mentions-legales',
     loadChildren: () => import('./mentions/mentions.module').then(m => m.MentionsModule)
   },
