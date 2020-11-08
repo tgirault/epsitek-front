@@ -24,6 +24,12 @@
   background-image: url('/assets/images/background-contacts.jpg');
 }
 
+.background-default {
+  min-height: 140px;
+  background-color: white;
+  opacity: 1;
+}
+
 .caption {
   position: absolute;
   left: 0;
@@ -57,6 +63,10 @@
   .background-contacts {
     background-image: url('/assets/images/background-contacts-1551x1013.jpg');
   }
+
+  .background-legal-mentions {
+    background-image: url('/assets/images/background-legal-mentions-1561x977.jpg');
+  }
 }
 
 @media only screen and (max-device-width: 1024px) {
@@ -89,6 +99,10 @@
   .background-contacts {
     background-image: url('/assets/images/background-contacts-776x507.jpg');
   }
+
+  .background-legal-mentions {
+    background-image: url('/assets/images/background-legal-mentions-776x485.jpg');
+  }
 }
 
 @media only screen and (max-device-width: 396px) {
@@ -110,5 +124,9 @@
 
   .background-contacts {
     background-image: url('/assets/images/background-contacts-396x259.jpg');
+  }
+
+  .background-legal-mentions {
+    background-image: url('/assets/images/background-legal-mentions-396x248.jpg');
   }
 }

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { CoreModule } from '../core/core.module';
 import { MentionsRoutingModule } from './mentions-routing.module';
 import { MentionsComponent } from './mentions/mentions.component';
 
@@ -9,7 +10,8 @@ import { MentionsComponent } from './mentions/mentions.component';
   declarations: [MentionsComponent],
   imports: [
     MentionsRoutingModule,
-    CommonModule
+    CommonModule,
+    CoreModule
   ]
 })
 export class MentionsModule { }
