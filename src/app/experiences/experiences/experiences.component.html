@@ -10,7 +10,7 @@
               <picture>
                 <!-- <source srcset="/assets/images/{{ experience.company.logo }}.webp" type="image/webp" /> -->
                 <source srcset="/assets/images/{{ experience.company.logo }}.jp2" type="image/jp2" />
-                <img src="/assets/images/{{ experience.company.logo }}.png" alt="Logo {{ experience.company.name }}" class="experience-company-logo" />
+                <img src="/assets/images/{{ experience.company.logo }}.png" alt="Logo {{ experience.company.name }}" class="experience-company-logo lazyload" />
               </picture>
             </div>
             <div class="experience-period">
@@ -30,7 +30,7 @@
               <picture>
                 <!-- <source srcset="/assets/images/{{ experience.company.logo }}.webp" type="image/webp" /> -->
                 <source srcset="/assets/images/{{ experience.company.logo }}.jp2" type="image/jp2" />
-                <img src="/assets/images/{{ experience.company.logo }}.png" alt="Logo {{ experience.company.name }}" class="company-logo" />
+                <img src="/assets/images/{{ experience.company.logo }}.png" alt="Logo {{ experience.company.name }}" class="company-logo lazyload" />
               </picture>
             </a>
           </div>
@@ -67,13 +67,13 @@
         <picture>
           <!-- <source srcset="/assets/images/{{ customer.logo }}.webp" type="image/webp" /> -->
           <source srcset="/assets/images/{{ customer.logo }}.jp2" type="image/jp2" />
-          <img src="/assets/images/{{ customer.logo }}.png" alt="Logo {{ customer.name }}" class="customer-logo" matTooltip="{{ customer.name }}" />
+          <img src="/assets/images/{{ customer.logo }}.png" alt="Logo {{ customer.name }}" class="customer-logo lazyload" matTooltip="{{ customer.name }}" />
         </picture>
       </a>
       <picture *ngIf="!customer.website">
         <!-- <source srcset="/assets/images/{{ customer.logo }}.webp" type="image/webp" /> -->
         <source srcset="/assets/images/{{ customer.logo }}.jp2" type="image/jp2" />
-        <img src="/assets/images/{{ customer.logo }}.png" alt="Logo {{ customer.name }}" class="customer-logo" matTooltip="{{ customer.name }}" />
+        <img src="/assets/images/{{ customer.logo }}.png" alt="Logo {{ customer.name }}" class="customer-logo lazyload" matTooltip="{{ customer.name }}" />
       </picture>
     </div>
   </div>

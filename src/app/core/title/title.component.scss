@@ -31,14 +31,32 @@
   width: 100%;
   text-align: center;
   color: #000;
+
+  span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
 }
 
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+@media only screen and (max-device-width: 1551px) {
+  .background-services {
+    background-image: url('/assets/images/background-services-1551x1034.jpg');
+  }
+
+  .background-skills {
+    background-image: url('/assets/images/background-skills-1551x1034.jpg');
+  }
+
+  .background-experiences {
+    background-image: url('/assets/images/background-experiences-1551x1034.jpg');
+  }
+
+  .background-contacts {
+    background-image: url('/assets/images/background-contacts-1551x1013.jpg');
+  }
 }
 
 @media only screen and (max-device-width: 1024px) {
@@ -51,8 +69,46 @@
   }
 }
 
-@media only screen and (max-device-width: 350px) {
+@media only screen and (max-device-width: 776px) {
   .caption span.border {
     font-size: 15px;
+  }
+
+  .background-services {
+    background-image: url('/assets/images/background-services-776x517.jpg');
+  }
+
+  .background-skills {
+    background-image: url('/assets/images/background-skills-776x517.jpg');
+  }
+
+  .background-experiences {
+    background-image: url('/assets/images/background-experiences-776x517.jpg');
+  }
+
+  .background-contacts {
+    background-image: url('/assets/images/background-contacts-776x507.jpg');
+  }
+}
+
+@media only screen and (max-device-width: 396px) {
+  .caption span.border {
+    font-size: 15px;
+  }
+
+  .background-services {
+    background-image: url('/assets/images/background-services-396x264.jpg');
+  }
+
+  .background-skills {
+    background-image: url('/assets/images/background-skills-396x264.jpg');
+  }
+
+  .background-experiences {
+    background-image: url('/assets/images/background-experiences-396x264.jpg');
+  }
+
+  .background-contacts {
+    background-image: url('/assets/images/background-contacts-396x259.jpg');
   }
 }
