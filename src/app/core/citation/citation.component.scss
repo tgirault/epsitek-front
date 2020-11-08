@@ -1,6 +1,13 @@
+.dark-container {
+  background-color: #232f39;
+}
+
 p {
-  font-family: Quicksand;
+  padding: 10px 0;
   text-align: center;
+  font-family: Quicksand;
+  font-size: 15px;
+  color: whitesmoke;
 }
 
 @media only screen and (max-device-width: 1024px) {

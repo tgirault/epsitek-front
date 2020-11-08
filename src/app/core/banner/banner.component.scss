@@ -18,14 +18,14 @@
   height: 100%;
   text-align: center;
   color: #000;
-}
 
-.caption-banner span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+  span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
 }
 
 h1 {
@@ -59,5 +59,28 @@ h4 {
 @media only screen and (max-device-width: 1024px) {
   .caption-banner span.border {
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-device-width: 350px) {
+  .caption-banner span.border {
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 12px;
   }
 }

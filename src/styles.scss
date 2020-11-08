@@ -3,7 +3,7 @@
 html,
 body {
   height: 100%;
-  background-color: #26272b;
+  background-color: #232f39;
   scroll-behavior: smooth;
 }
 
@@ -20,30 +20,13 @@ body {
   background-color: white;
 }
 
-.dark-container {
-  text-align: center;
-  padding: 30px 150px;
-  font-size: 15px;
-  color: whitesmoke;
-  background-color: #282e34;
-}
-
 .blue-container {
   color: whitesmoke;
   background-color: #1d4270;
 }
 
-.grey-container {
-  color: #17365d;
-  background-color: #f4f7fb;
-}
-
 .light-container h3 {
   color: #111;
-}
-
-.dark-container h3 {
-  color: whitesmoke;
 }
 
 li {

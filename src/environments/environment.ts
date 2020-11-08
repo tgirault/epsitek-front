@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  api: 'https://www.epsitek.fr/api'
+  api: 'https://www.epsitek.fr/api',
+  ga: 'UA-179522815-1'
 };
 
 /*

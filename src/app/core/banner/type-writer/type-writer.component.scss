@@ -3,3 +3,9 @@
   font-size: 20px;
   color: white;
 }
+
+@media only screen and (max-device-width: 350px) {
+  .type-writer {
+    font-size: 15px;
+  }
+}
