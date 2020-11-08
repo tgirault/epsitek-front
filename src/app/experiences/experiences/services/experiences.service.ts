@@ -15,6 +15,52 @@ export class ExperiencesService {
     findAll(): Array<Experience> {
         return [
             {
+                startDate: 'Oct. 2020',
+                endDate: 'Décembre 2020',
+                duration: '3 mois',
+                title: 'Lead developer Java / Angular - Freelance',
+                place: 'Nantes',
+                company: {
+                    name: 'DSIA',
+                    logo: 'logo-dsia',
+                    website: 'https://logistar-dsia.com/fr/'
+                },
+                description: 'Lead developer Java / Angular au sein d\'une équipe de développement logiciel.',
+                tasks: [
+                    'Modernisation et optimisation Java / Angular',
+                ],
+                technologies: [
+                    'Angular 8',
+                    'Typescript',
+                    'Java 8',
+                    'Spring Boot',
+                    'Spring OAuth2',
+                    'Spring Data',
+                    'Spring Batch',
+                    'API REST',
+                    'Swagger',
+                    'Junit',
+                    'Flyway',
+                    'Lombok',
+                    'MapStruct',
+                    'Maven',
+                    'HTML',
+                    'CSS',
+                    'Javascript'
+                ],
+                tools: [
+                    'Git',
+                    'Bitbucket',
+                    'PostgreSQL 9/11',
+                    'MQSeries',
+                    'JIRA',
+                    'Confluence',
+                    'XRay',
+                    'XWiki'
+                ],
+                devOps: []
+            },
+            {
                 startDate: 'Juin 2019',
                 endDate: 'Sept. 2020',
                 duration: '1 an et 3 mois',
