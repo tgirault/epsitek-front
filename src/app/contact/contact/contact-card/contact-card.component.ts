@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -10,7 +9,7 @@ import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-ic
 })
 export class ContactCardComponent implements OnInit {
 
-  constructor(private library: FaIconLibrary, private fb: FormBuilder) {
+  constructor(private library: FaIconLibrary) {
     library.addIcons(faGithub, faLinkedin, faTwitter);
   }
 

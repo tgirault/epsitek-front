@@ -1,25 +1,33 @@
+import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TitleComponent } from './title.component';
 
+
 describe('TitleComponent', () => {
-  let component: TitleComponent;
-  let fixture: ComponentFixture<TitleComponent>;
+  let titleHostComponent: TitleHostComponent;
+  let titleHostfixture: ComponentFixture<TitleHostComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TitleComponent ]
+      declarations: [TitleComponent, TitleHostComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TitleComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    titleHostfixture = TestBed.createComponent(TitleHostComponent);
+    titleHostComponent = titleHostfixture.componentInstance;
+    titleHostfixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should show COMPETENCES', () => {
+    expect(titleHostfixture.nativeElement.querySelector('span').innerText).toEqual('<COMPÉTENCES/>');
   });
+
+  @Component({
+    selector: `app-title-host`,
+    template: `<app-title title="compétences" image=""></app-title>`
+  })
+  class TitleHostComponent {
+  }
 });

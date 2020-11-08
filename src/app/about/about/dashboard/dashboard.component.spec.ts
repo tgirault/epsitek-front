@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CoreModule } from 'src/app/core/core.module';
 import { DashboardComponent } from './dashboard.component';
+import { DashboardServiceMock } from './mocks/dashboard.service.mock';
+import { DashboardService } from './services/dashboard.service';
+
 
 describe('DashboardComponent', () => {
   let component: DashboardComponent;
@@ -8,9 +11,15 @@ describe('DashboardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DashboardComponent ]
+      declarations: [DashboardComponent],
+      providers: [
+        { provider: DashboardService, useClass: DashboardServiceMock }
+      ],
+      imports: [
+        CoreModule
+      ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

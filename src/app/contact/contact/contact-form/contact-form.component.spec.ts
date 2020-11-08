@@ -1,6 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
+import { CoreModule } from 'src/app/core/core.module';
 import { ContactFormComponent } from './contact-form.component';
+
 
 describe('ContactFormComponent', () => {
   let component: ContactFormComponent;
@@ -8,9 +12,16 @@ describe('ContactFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactFormComponent ]
+      declarations: [ContactFormComponent],
+      imports: [
+        ReactiveFormsModule,
+        CoreModule,
+        MatSnackBarModule,
+        RecaptchaModule,
+        RecaptchaFormsModule
+      ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

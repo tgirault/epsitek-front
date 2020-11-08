@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ActivatedRoute } from '@angular/router';
+import { of } from 'rxjs';
 import { MenuComponent } from './menu.component';
+
 
 describe('MenuComponent', () => {
   let component: MenuComponent;
@@ -8,9 +11,16 @@ describe('MenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MenuComponent ]
+      declarations: [MenuComponent],
+      imports: [
+        BrowserAnimationsModule
+      ],
+      providers: [{
+        provide: ActivatedRoute,
+        useValue: { fragment: of('about') }
+      }]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
@@ -22,4 +32,5 @@ describe('MenuComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });
