@@ -1,14 +1,21 @@
 <div class="background-banner">
-  <div class="caption-banner" appAnimate="rollIn">
-    <h1><span class="border">THOMAS GIRAULT</span></h1>
-    <h2>Leader technique Java / Angular</h2>
-    <h3>Conseil, Expertise, Développement, Architecture</h3>
-    <div fxLayout="row wrap" fxLayoutAlign="center">
-      <div>
-        <h4>#technologies &nbsp;</h4>
-      </div>
-      <div class="box">
-        <app-type-writer [words]="['Java 8+', 'Spring Boot', 'Angular 2+', 'Typescript', 'Alfresco', 'DevOps', 'Docker', 'Ansible', 'Jenkins']"></app-type-writer>
+  <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="80px" fxLayoutGap.md="40px" fxLayoutGap.sm="40px" fxLayoutGap.xs="0">
+    <div fxFlex="50%" appearance="fill" class="wrapper-responsive-image">
+      <img src="/assets/images/words-cloud-green.png" alt="banner" class="resonsive-image lazyload" />
+    </div>
+    <div fxFlex="50%" appearance="fill" fxLayoutAlign="left center">
+      <div class="contact">
+        <h1>Thomas Girault</h1>
+        <h2>Leader technique Java / Angular</h2>
+        <div fxLayout="row wrap" fxLayoutAlign="left">
+          <div>
+            <h4>#technologies &nbsp;</h4>
+          </div>
+          <div class="box">
+            <app-type-writer [words]="['Java 8+', 'Spring Boot', 'Angular 2+', 'Typescript', 'Alfresco', 'DevOps', 'Docker', 'Ansible', 'Jenkins']"></app-type-writer>
+          </div>
+        </div>
+        <a mat-flat-button [routerLink]="['/home']" fragment="contacts" color="primary" class="contact-button">Un besoin ?</a>
       </div>
     </div>
   </div>

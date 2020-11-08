@@ -1,86 +1,98 @@
 .background-banner {
-  background-attachment: fixed;
-  background-position: center;
+  // background-image: -webkit-linear-gradient(30deg, #f8f9fa 55%, #edf2f4 55%);
+  background-image: url('/assets/images/banner.png');
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #013a6b;
-  background-image: -webkit-linear-gradient(30deg, #013a6b 50%, #004e95 50%);
+  background-color: #eceef1;
+  padding-top: 50px;
   position: relative;
-  opacity: 0.9;
-  min-height: 350px;
-}
-
-.caption-banner {
-  position: absolute;
-  left: 0;
-  top: 40%;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: #000;
-
-  span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-  }
 }
 
 h1 {
-  color: white;
+  text-align: left;
+  font-weight: 300;
+  font-size: 40px;
+  color: black;
 }
 
 h2 {
-  font-size: 20px;
+  text-align: left;
+  font-size: 30px;
   font-weight: 500;
-  color: white;
-}
-
-h3 {
-  font-size: 25px;
-  font-weight: 100;
-  color: white;
+  color: black;
 }
 
 h4 {
   text-align: left;
-  color: white;
-  font-size: 15px;
+  color: #1d3557;
+  font-size: 20px;
   font-weight: 400;
 }
 
 .box {
-  width: 150px;
+  width: 200px;
   text-align: left;
+  font-size: 25px;
+  color: #1d3557;
+  font-weight: 400;
+}
+
+.contact-button {
+  color: white;
+  background-color: #3e8914;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.contact-button:hover {
+  background-color: #489c17;
+}
+
+.wrapper-responsive-image {
+  background-image: url('/assets/images/words-cloud-green.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  visibility: visible;
+}
+
+.resonsive-image {
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+}
+
+.contact {
+  padding-left: 100px;
 }
 
 @media only screen and (max-device-width: 1024px) {
-  .caption-banner span.border {
-    font-size: 20px;
+  .contact {
+    padding-left: 50px;
   }
 }
 
-@media only screen and (max-device-width: 350px) {
-  .caption-banner span.border {
-    font-size: 15px;
-    letter-spacing: 5px;
+@media only screen and (max-device-width: 450px) {
+  .contact {
+    padding-left: 10px;
+    padding-bottom: 10px;
   }
 
   h1 {
-    font-size: 15px;
+    font-size: 35px;
   }
 
   h2 {
-    font-size: 15px;
-  }
-
-  h3 {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   h4 {
-    font-size: 12px;
+    font-size: 18px;
+  }
+
+  .box {
+    width: 150px;
+    font-size: 18px;
   }
 }
