@@ -24,10 +24,8 @@
   background-image: url('/assets/images/background-contacts.jpg');
 }
 
-.background-default {
-  min-height: 140px;
-  background-color: white;
-  opacity: 1;
+.background-legal-mentions {
+  background-image: url('/assets/images/background-contacts.jpg');
 }
 
 .caption {
@@ -65,7 +63,7 @@
   }
 
   .background-legal-mentions {
-    background-image: url('/assets/images/background-legal-mentions-1561x977.jpg');
+    background-image: url('/assets/images/background-contacts-1551x1013.jpg');
   }
 }
 
@@ -101,13 +99,14 @@
   }
 
   .background-legal-mentions {
-    background-image: url('/assets/images/background-legal-mentions-776x485.jpg');
+    background-image: url('/assets/images/background-contacts-776x507.jpg');
   }
 }
 
 @media only screen and (max-device-width: 396px) {
   .caption span.border {
     font-size: 15px;
+    letter-spacing: 6px;
   }
 
   .background-services {
@@ -127,6 +126,6 @@
   }
 
   .background-legal-mentions {
-    background-image: url('/assets/images/background-legal-mentions-396x248.jpg');
+    background-image: url('/assets/images/background-contacts-396x259.jpg');
   }
 }
