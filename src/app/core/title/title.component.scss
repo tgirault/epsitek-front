@@ -104,6 +104,10 @@
 }
 
 @media only screen and (max-device-width: 396px) {
+  .background {
+    min-height: 259px;
+  }
+
   .caption span.border {
     font-size: 15px;
     letter-spacing: 6px;
