@@ -9,19 +9,19 @@
       <div fxShow="true" fxHide.lt-md>
         <ul class="menu-items">
           <li [class.active]="(activeFragment | async) === 'about'">
-            <a [routerLink]="['/home']" fragment="about">A propos</a>
+            <a [routerLink]="['/home']" fragment="about">{{ "MENU.ABOUT" | translate }}</a>
           </li>
           <li [class.active]="(activeFragment | async) === 'services'">
-            <a [routerLink]="['/home']" fragment="services">Services</a>
+            <a [routerLink]="['/home']" fragment="services">{{ "MENU.SERVICES" | translate }}</a>
           </li>
           <li [class.active]="(activeFragment | async) === 'skills'">
-            <a [routerLink]="['/home']" fragment="skills">Compétences</a>
+            <a [routerLink]="['/home']" fragment="skills">{{ "MENU.SKILLS" | translate }}</a>
           </li>
           <li [class.active]="(activeFragment | async) === 'experiences'">
-            <a [routerLink]="['/home']" fragment="experiences">Expériences</a>
+            <a [routerLink]="['/home']" fragment="experiences">{{ "MENU.EXPERIENCES" | translate }}</a>
           </li>
           <li [class.active]="(activeFragment | async) === 'contacts'">
-            <a [routerLink]="['/home']" fragment="contacts">Contacts</a>
+            <a [routerLink]="['/home']" fragment="contacts">{{ "MENU.CONTACTS" | translate }}</a>
           </li>
         </ul>
       </div>
@@ -35,15 +35,15 @@
 
   <div class="menu-nav" fxFlexFill fxHide.gt-sm [@openClose]="isOpen ? 'closed' : 'open'" (click)="toggleMenu()">
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['/home']" fragment="about">A propos</a>
+      <a mat-list-item [routerLink]="['/home']" fragment="about"><mat-icon color="accent">chevron_right</mat-icon>{{ "MENU.ABOUT" | translate }}</a>
       <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="['/home']" fragment="services">Services</a>
+      <a mat-list-item [routerLink]="['/home']" fragment="services"><mat-icon color="accent">chevron_right</mat-icon>{{ "MENU.SERVICES" | translate }}</a>
       <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="['/home']" fragment="skills">Compétences</a>
+      <a mat-list-item [routerLink]="['/home']" fragment="skills"><mat-icon color="accent">chevron_right</mat-icon>{{ "MENU.SKILLS" | translate }}</a>
       <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="['/home']" fragment="experiences">Expériences</a>
+      <a mat-list-item [routerLink]="['/home']" fragment="experiences"><mat-icon color="accent">chevron_right</mat-icon>{{ "MENU.EXPERIENCES" | translate }}</a>
       <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="['/home']" fragment="contacts">Contacts</a>
+      <a mat-list-item [routerLink]="['/home']" fragment="contacts"><mat-icon color="accent">chevron_right</mat-icon>{{ "MENU.CONTACTS" | translate }}</a>
       <mat-divider></mat-divider>
     </mat-nav-list>
   </div>

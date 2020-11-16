@@ -9,6 +9,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TranslateModule } from '@ngx-translate/core';
 import { AnimateModule } from '../animate/animate.module';
 import { BannerComponent } from './banner/banner.component';
 import { TypeWriterComponent } from './banner/type-writer/type-writer.component';
@@ -30,6 +31,7 @@ import { TitleComponent } from './title/title.component';
     SpinnerComponent
   ],
   imports: [
+    TranslateModule.forChild(),
     CommonModule,
     RouterModule,
     HttpClientModule,

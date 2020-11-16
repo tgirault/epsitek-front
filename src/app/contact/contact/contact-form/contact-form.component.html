@@ -2,43 +2,54 @@
   <article class="article">
     <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
       <mat-form-field appearance="fill" fxFlex>
-        <mat-label>Prénom</mat-label>
-        <input matInput type="text" placeholder="Votre prénom" formControlName="firstName" maxlength="40" />
+        <mat-label>{{ "LABEL.FIRSTNAME" | translate }}</mat-label>
+        <input matInput type="text" placeholder="{{ 'PLACEHOLDER.FIRSTNAME' | translate }}" formControlName="firstName" maxlength="40" required />
       </mat-form-field>
 
       <mat-form-field appearance="fill" fxFlex>
-        <mat-label>Nom</mat-label>
-        <input matInput type="text" placeholder="Votre nom" formControlName="lastName" maxlength="40" />
+        <mat-label>{{ "LABEL.LASTNAME" | translate }}</mat-label>
+        <input matInput type="text" placeholder="{{ 'PLACEHOLDER.LASTNAME' | translate }}" formControlName="lastName" maxlength="40" required />
       </mat-form-field>
     </div>
 
     <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
       <mat-form-field appearance="fill" fxFlex>
-        <mat-label>Société</mat-label>
-        <input matInput type="text" placeholder="Le nom de votre société" formControlName="company" maxlength="60" />
+        <mat-label>{{ "LABEL.COMPANY" | translate }}</mat-label>
+        <input matInput type="text" placeholder="{{ 'PLACEHOLDER.COMPANY' | translate }}" formControlName="company" maxlength="60" required />
       </mat-form-field>
     </div>
 
     <div class="input-row">
       <mat-form-field appearance="fill" fxFlex>
-        <mat-label>Email</mat-label>
-        <input matInput placeholder="Votre adresse email" formControlName="email" maxlength="120" />
+        <mat-label>{{ "LABEL.EMAIL" | translate }}</mat-label>
+        <input matInput placeholder="{{ 'PLACEHOLDER.EMAIL' | translate }}" formControlName="email" maxlength="120" required />
         <mat-icon matSuffix>alternate_email</mat-icon>
       </mat-form-field>
     </div>
 
     <div class="input-row">
       <mat-form-field appearance="fill" fxFlex>
-        <mat-label>Téléphone</mat-label>
-        <input type="tel" matInput placeholder="Votre n° de téléphone" formControlName="phone" maxlength="10" />
+        <mat-label>{{ "LABEL.PHONE" | translate }}</mat-label>
+        <app-phone-number-input placeholder="{{ 'PLACEHOLDER.PHONE' | translate }}" formControlName="phone" required></app-phone-number-input>
         <mat-icon matSuffix>phone</mat-icon>
       </mat-form-field>
     </div>
 
     <div class="input-row">
       <mat-form-field appearance="fill" fxFlex>
-        <mat-label>Message</mat-label>
-        <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="10" cdkAutosizeMaxRows="20" #message type="text" placeholder="Votre message" formControlName="message" maxlength="5000"></textarea>
+        <mat-label>{{ "LABEL.MESSAGE" | translate }}</mat-label>
+        <textarea
+          matInput
+          cdkTextareaAutosize
+          cdkAutosizeMinRows="10"
+          cdkAutosizeMaxRows="20"
+          #message
+          type="text"
+          placeholder="{{ 'PLACEHOLDER.MESSAGE' | translate }}"
+          formControlName="message"
+          maxlength="5000"
+          required
+        ></textarea>
         <mat-hint align="end">{{ message.value?.length || 0 }}/5000</mat-hint>
       </mat-form-field>
     </div>
@@ -46,8 +57,8 @@
       <re-captcha formControlName="recaptcha"></re-captcha>
     </div>
     <footer>
-      <button type="submit" mat-raised-button color="primary" aria-label="Envoyer mon message" [disabled]="contactForm.invalid">
-        Envoyer
+      <button type="submit" mat-raised-button color="primary" [attr.aria-label]="'PLACEHOLDER.SEND' | translate" [disabled]="contactForm.invalid">
+        {{ "LABEL.SEND" | translate }}
         <mat-icon>send</mat-icon>
       </button>
     </footer>

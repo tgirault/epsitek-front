@@ -1,0 +1,23 @@
+<div role="group" class="phone-input-container" [formGroup]="parts" [attr.aria-labelledby]="formField?.getLabelId()">
+  <input
+    class="phone-input-element"
+    formControlName="countryPrefix"
+    size="3"
+    maxLength="3"
+    placeholder="+33"
+    aria-label="Prefix"
+    (input)="handleInput(parts.controls.countryPrefix, phoneNumber)"
+    #countryPrefix
+  />
+  <input
+    class="phone-input-element"
+    formControlName="phoneNumber"
+    maxLength="10"
+    size="10"
+    placeholder="0601234567"
+    aria-label="Phone number"
+    (input)="handleInput(parts.controls.phoneNumber, phoneNumber)"
+    (keyup.backspace)="autoFocusPrev(parts.controls.phoneNumber, countryPrefix)"
+    #phoneNumber
+  />
+</div>

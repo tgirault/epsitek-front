@@ -80,17 +80,18 @@
   }
 }
 
-.mat-nav-list {
-  height: 100%;
-  width: 75%;
-  min-width: 200px;
-  background-color: #1f497d;
-}
-
 .menu-nav {
   position: fixed;
   top: 48px;
   z-index: 1;
+  opacity: 98%;
+
+  .mat-nav-list {
+    height: 100%;
+    width: 80%;
+    min-width: 200px;
+    background-color: #1f497d;
+  }
 
   a {
     background-color: #1f497d;

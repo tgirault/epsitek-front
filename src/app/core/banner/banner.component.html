@@ -5,17 +5,17 @@
     </div>
     <div fxFlex="50%" appearance="fill" fxLayoutAlign="left center">
       <div class="contact">
-        <h1 appAnimate="bounceIn" aos>Thomas Girault</h1>
-        <h2>Leader technique Java / Angular</h2>
+        <h1 appAnimate="bounceIn" aos>{{ "BANNER.NAME" | translate }}</h1>
+        <h2>{{ "BANNER.JOB-TITLE" | translate }}</h2>
         <div fxLayout="row wrap" fxLayoutAlign="left">
           <div appAnimate="swing" aos>
-            <h4>#technologies &nbsp;</h4>
+            <h4>#{{ "BANNER.TECHNOLOGIES" | translate }} &nbsp;</h4>
           </div>
           <div class="box">
             <app-type-writer [words]="['Java 8+', 'Spring Boot', 'Angular 2+', 'Typescript', 'Alfresco', 'DevOps', 'Docker', 'Ansible', 'Jenkins']"></app-type-writer>
           </div>
         </div>
-        <a mat-flat-button [routerLink]="['/home']" fragment="contacts" color="primary" class="contact-button">Un besoin ?</a>
+        <a mat-flat-button [routerLink]="['/home']" fragment="contacts" color="primary" class="contact-button">{{ "BANNER.NEEDS" | translate }}</a>
       </div>
     </div>
   </div>

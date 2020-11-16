@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TranslateModule } from '@ngx-translate/core';
 import {
   RecaptchaFormsModule,
   RecaptchaModule,
@@ -23,11 +24,13 @@ import { CoreModule } from '../core/core.module';
 import { ContactRoutingModule } from './contact-routing.module';
 import { ContactCardComponent } from './contact/contact-card/contact-card.component';
 import { ContactFormComponent } from './contact/contact-form/contact-form.component';
+import { PhoneComponent } from './contact/contact-form/phone/phone.component';
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [ContactComponent, ContactFormComponent, ContactCardComponent],
+  declarations: [ContactComponent, ContactFormComponent, ContactCardComponent, PhoneComponent],
   imports: [
+    TranslateModule.forChild(),
     ContactRoutingModule,
     CommonModule,
     RecaptchaModule,

@@ -1,30 +1,42 @@
 <footer>
   <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="80px" fxLayoutGap.md="40px" fxLayoutGap.sm="40px" fxLayoutGap.xs="0">
     <div appearance="fill" fxFlex="70%">
-      <h6>A propos</h6>
+      <h6>{{ "TITLE.ABOUT" | translate }}</h6>
       <fa-icon [icon]="['fas', 'quote-left']" size="2x"></fa-icon>
-      <p>Leader technique confirmé, je souhaite construire avec vous de nouvelles solutions IT ergonomiques, robustes et performantes pour garantir une expérience utilisateur optimale.</p>
+      <p>{{ "QUOTE.TECHNICAL_LEADER" | translate }}</p>
     </div>
 
     <div appearance="fill" fxFlex="30%">
-      <h6>Liens rapides</h6>
+      <h6>{{ "TITLE.QUICK_LINKS" | translate }}</h6>
       <ul class="quick-links">
-        <li><a [routerLink]="['/home']" fragment="about">A propos</a></li>
-        <li><a [routerLink]="['/home']" fragment="services">Services</a></li>
-        <li><a [routerLink]="['/home']" fragment="skills">Compétences</a></li>
-        <li><a [routerLink]="['/home']" fragment="experiences">Expériences</a></li>
-        <li><a [routerLink]="['/home']" fragment="contacts">Contacts</a></li>
-        <li><a routerLink="/mentions-legales">Mentions légales</a></li>
+        <li>
+          <a [routerLink]="['/home']" fragment="about">{{ "MENU.ABOUT" | translate }}</a>
+        </li>
+        <li>
+          <a [routerLink]="['/home']" fragment="services">{{ "MENU.SERVICES" | translate }}</a>
+        </li>
+        <li>
+          <a [routerLink]="['/home']" fragment="skills">{{ "MENU.SKILLS" | translate }}</a>
+        </li>
+        <li>
+          <a [routerLink]="['/home']" fragment="experiences">{{ "MENU.EXPERIENCES" | translate }}</a>
+        </li>
+        <li>
+          <a [routerLink]="['/home']" fragment="contacts">{{ "MENU.CONTACTS" | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/mentions-legales">{{ "MENU.LEGAL_MENTIONS" | translate }}</a>
+        </li>
       </ul>
     </div>
   </div>
   <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.xs="0">
     <div appearance="fill" fxFlex="70%">
       <p>
-        Site web développé par <a href="mailto:thomas.girault@epsitek.fr">Thomas Girault</a>. Code source disponible sur
+        {{ "FOOTER.DEVELOPED_BY" | translate }} <a href="mailto:thomas.girault@epsitek.fr">Thomas Girault</a>. {{ "FOOTER.SOURCE_CODE_AVAIABLE" | translate }}
         <a class="github" href="https://github.com/tgirault/epsitek-front" target="_blank"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>.
       </p>
-      <p class="copyright-text">Copyright &copy; 2020 <a href="#">Epsitek</a>. Tous droits réservés.</p>
+      <p class="copyright-text">{{ "FOOTER.COPYRIGHT" | translate }} <a href="#">Epsitek</a>. {{ "FOOTER.ALL_RIGHTS_RESERVED" | translate }}</p>
     </div>
 
     <div appearance="fill" fxFlex="30%">

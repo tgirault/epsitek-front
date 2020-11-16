@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-banner',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerComponent implements OnInit {
 
-  constructor() { }
+  /**
+   * Constructeur du composant.
+   * @param translate service de gestion des traductions
+   */
+  constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
   }

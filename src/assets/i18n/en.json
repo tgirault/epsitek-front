@@ -1,0 +1,56 @@
+{
+  "BANNER": {
+    "NAME": "Thomas Girault",
+    "JOB-TITLE": "Technical lead Java / Angular",
+    "TECHNOLOGIES": "technologies",
+    "NEEDS": "A need ?"
+  },
+  "MENU": {
+    "HOME": "Home",
+    "ABOUT": "About me",
+    "SERVICES": "Services",
+    "SKILLS": "Skills",
+    "EXPERIENCES": "Experiences",
+    "CONTACTS": "Contacts"
+  },
+  "TITLE": {
+    "ABOUT": "About me",
+    "QUICK_LINKS": "Quick links"
+  },
+  "QUOTE": {
+    "TECHNICAL_LEADER": "As a confirmed technical leader, i wish to build new ergonomic, robust and performing IT solutions with you, to ensure the best user experience."
+  },
+  "LABEL": {
+    "FIRSTNAME": "First name",
+    "LASTNAME": "Last name",
+    "COMPANY": "Company",
+    "EMAIL": "Email",
+    "PHONE": "Phone",
+    "MESSAGE": "Message",
+    "SEND": "Send"
+  },
+  "PLACEHOLDER": {
+    "FIRSTNAME": "Your first name",
+    "LASTNAME": "Your last name",
+    "COMPANY": "Your company",
+    "EMAIL": "Your email adress",
+    "PHONE": "Your phone number",
+    "MESSAGE": "Your message...",
+    "SEND": "Send my message"
+  },
+  "FOOTER": {
+    "DEVELOPED_BY": "Website designed by",
+    "SOURCE_CODE_AVAIABLE": "Source code available on",
+    "COPYRIGHT": "Copyright © 2020",
+    "ALL_RIGHTS_RESERVED": "All rights reserved."
+  },
+  "cookie": {
+    "header": "Cookies used on the website!",
+    "message": "This website uses cookies to analyze the traffic and to ensure you get the best experience.",
+    "dismiss": "Got it!",
+    "allow": "Allow cookies",
+    "deny": "Decline",
+    "link": "Learn more",
+    "policy": "Cookie Policy"
+  }
+}

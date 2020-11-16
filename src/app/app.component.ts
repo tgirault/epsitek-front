@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, NavigationStart, Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { NgcCookieConsentService, NgcInitializeEvent, NgcNoCookieLawEvent, NgcStatusChangeEvent } from 'ngx-cookieconsent';
 import { GoogleAnalyticsService } from 'ngx-google-analytics';
 import { Subscription } from 'rxjs';
@@ -25,14 +26,21 @@ export class AppComponent implements OnInit, OnDestroy {
   /**
    * Constructeur du composant.
    * @param route une route
+   * @param translate service de gestion des traductions
    * @param cookieConsentService service de gestion du consentement des cookies
    * @param googleAnalyticsService service Google Analytics
    */
   constructor(
     private route: Router,
+    private translate: TranslateService,
     private cookieConsentService: NgcCookieConsentService,
-    private googleAnalyticsService: GoogleAnalyticsService
-  ) { }
+    private googleAnalyticsService: GoogleAnalyticsService,
+  ) {
+    // this language will be used as a fallback when a translation isn't found in the current language
+    translate.setDefaultLang('fr');
+    // the lang to use, if the lang isn't available, it will use the current loader to get them
+    translate.use('fr');
+  }
 
   /**
    * Initialisation du composant.

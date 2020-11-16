@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { TranslateService } from '@ngx-translate/core';
 import { Message } from './model/message.data';
 import { MessagesService } from './services/messages.service';
 
@@ -20,11 +21,13 @@ export class ContactFormComponent implements OnInit, OnDestroy {
   /**
    * Constructeur du composant.
    * @param formBuilder constructeur du formulaire
+   * @param translate service de gestion des traductions
    * @param messageService service de gestion des messages
    * @param notification composant de notification
    */
   constructor(
     private formBuilder: FormBuilder,
+    private translate: TranslateService,
     private messagesService: MessagesService,
     private notification: MatSnackBar) {
     this.contactForm = formBuilder.group({

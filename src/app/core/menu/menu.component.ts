@@ -1,6 +1,7 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { share } from 'rxjs/operators';
 
 @Component({
@@ -10,10 +11,10 @@ import { share } from 'rxjs/operators';
   animations: [
     trigger('openClose', [
       state('open', style({
-        transform: 'translateX(100%)'
+        transform: 'translateX(-100%)'
       })),
       state('closed', style({
-        transform: 'translateX(25%)'
+        transform: 'translateX(0%)'
       })),
       transition('open => closed', animate('400ms ease-in-out')),
       transition('closed => open', animate('400ms ease-in-out'))
@@ -49,8 +50,9 @@ export class MenuComponent implements OnInit {
   /**
    * Constructeur du composant.
    * @param route route active
+   * @param translate service de gestion des traductions
    */
-  constructor(public route: ActivatedRoute) { }
+  constructor(public route: ActivatedRoute, private translate: TranslateService) { }
 
   ngOnInit(): void {
   }
