@@ -1,0 +1,6 @@
+RewriteEngine On 
+
+RewriteRule ^/?$ fr.json [L] 
+<Files "fr.json"> 
+    ForceType application/json 
+</Files> 
