@@ -1,6 +1,5 @@
 .background-banner {
-  // background-image: -webkit-linear-gradient(30deg, #f8f9fa 55%, #edf2f4 55%);
-  background-image: url('/assets/images/banner.png');
+  // background-image: url('/assets/images/banner.png');
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +49,7 @@ h4 {
 }
 
 .wrapper-responsive-image {
-  background-image: url('/assets/images/words-cloud-green.png');
+  background-image: url('/assets/images/words-cloud-yellow.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,7 +57,7 @@ h4 {
 }
 
 .resonsive-image {
-  width: 100%;
+  width: 80%;
   height: auto;
   visibility: hidden;
 }

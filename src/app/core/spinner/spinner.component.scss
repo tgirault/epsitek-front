@@ -1,5 +1,5 @@
 .background {
-  background-color: #1f497d;
+  background-color: #ffffff;
   width: 100%;
   height: 100%;
 }
@@ -16,7 +16,7 @@
 
   div {
     position: absolute;
-    border: 4px solid white;
+    border: 4px solid #1f497d;
     opacity: 1;
     border-radius: 50%;
     animation: spinner 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
