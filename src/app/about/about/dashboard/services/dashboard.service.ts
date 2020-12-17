@@ -25,7 +25,7 @@ export class DashboardService {
             { icon: 'business_center', title: 'Années d\'expérience', value: '10' },
             { icon: 'add_task', title: 'Projets réalisés', value: '+8' },
             { icon: 'place', title: 'Disponible sur', value: 'Nantes' },
-            { icon: 'thumb_up', title: 'A partir de', value: 'Jan. 2021' }
+            { icon: 'thumb_up', title: 'A partir de', value: 'Avril 2021' }
         ];
     }
 }
