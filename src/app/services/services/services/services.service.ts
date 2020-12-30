@@ -16,6 +16,7 @@ export class ServicesService {
         return [
             {
                 icon: 'device_hub',
+                color: 'purple',
                 title: 'Architecture',
                 description: 'Mise en place d\'une architecture adaptée à vos besoins et vos contraintes.',
                 items: [
@@ -27,6 +28,7 @@ export class ServicesService {
             },
             {
                 icon: 'create',
+                color: 'yellow',
                 title: 'Conception',
                 description: 'Concevoir des solutions maintenables et documentées.',
                 items: [
@@ -38,6 +40,7 @@ export class ServicesService {
             },
             {
                 icon: 'supervised_user_circle',
+                color: 'blue',
                 title: 'Lead d\'équipe',
                 description: 'Animer les équipes de développement.',
                 items: [
@@ -48,6 +51,7 @@ export class ServicesService {
             },
             {
                 icon: 'code',
+                color: 'cyan',
                 title: 'Développement',
                 description: 'Développer des solutions ergonomiques, robustes et performantes.',
                 items: [
@@ -58,6 +62,7 @@ export class ServicesService {
             },
             {
                 icon: 'verified',
+                color: 'green',
                 title: 'Qualité logicielle',
                 description: 'Mise en application des bonnes pratiques et des principes de qualité logicielle.',
                 items: [
@@ -70,6 +75,7 @@ export class ServicesService {
             },
             {
                 icon: 'addchart',
+                color: 'pink',
                 title: 'Performances',
                 description: 'Mesure et optimisation des performances.',
                 items: [
@@ -81,12 +87,14 @@ export class ServicesService {
             },
             {
                 icon: 'verified_user',
+                color: 'red',
                 title: 'Sécurité',
                 description: 'Sensibilisé et formé à la sécurité logicielle.',
                 items: []
             },
             {
                 icon: 'settings',
+                color: 'orange',
                 title: 'Méthodologie',
                 description: 'Familiarisé avec les méthodologies SCRUM et Agile à l\'échelle (Safe).',
                 items: [
@@ -96,6 +104,7 @@ export class ServicesService {
             },
             {
                 icon: 'published_with_changes',
+                color: 'purple',
                 title: 'DevOps',
                 description: 'Mise en place d\'un outillage industrialisé.',
                 items: [

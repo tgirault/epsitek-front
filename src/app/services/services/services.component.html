@@ -1,13 +1,11 @@
 <app-title title="services" image="services"></app-title>
 
-<div class="container light-container">
-  <div fxLayout="row wrap" fxLayout.lt-sm="column">
+<div class="container gray-container">
+  <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-between">
     <ng-container *ngFor="let prestation of prestations">
-      <div class="cell" fxFlex="33.3%" fxFlex.lt-md="50%" fxFlex.lt-sm="100%" appAnimate="bounceIn">
+      <div class="cell" fxFlex="32%" fxFlex.lt-md="48%" fxFlex.lt-sm="100%" appAnimate="bounceIn">
         <app-service-card [service]="prestation"></app-service-card>
       </div>
     </ng-container>
   </div>
 </div>
-
-<app-citation phrase="Vous avez une problématique ou un besoin ? J'ai peut-être la solution pour vous !"></app-citation>

@@ -1,17 +1,43 @@
-.dark-container {
-  background-color: #232f39;
+.gray-container {
+    background: white;
 }
 
-p {
-  padding: 10px 0 0 0;
+.citation {
+  background: white;
+  padding: 20px;
   text-align: center;
-  font-family: Quicksand;
   font-size: 15px;
-  color: whitesmoke;
+  font-style: italic;
+  font-weight: 400;
+  color: black;
+  border: 1px solid rgba(39, 25, 25, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 0.5rem 1.5rem rgba(22,28,45,.1),0 .3rem 0.5rem -.50rem rgba(22,28,45,.05) !important;
+
+  strong {
+    color: #3f51b5;
+  }
+}
+
+.icon {
+  $size: 35px;
+  font-size: $size;
+  width: $size * 1.5; // Makes sure having room to center larger icons
+  height: $size * 1.5;
+  line-height: $size * 1.5;
+  border-radius: 16px;
+  vertical-align: middle;
+  text-align: center;
 }
 
 @media only screen and (max-device-width: 1024px) {
-  p {
+  .citation {
     font-size: 13px;
+  }
+}
+
+@media only screen and (max-device-width: 400px) {
+  .citation {
+    font-size: 11px;
   }
 }

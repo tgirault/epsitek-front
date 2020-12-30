@@ -1,6 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-citation',
@@ -14,10 +12,8 @@ export class CitationComponent implements OnInit {
 
   /**
    * Constructeur du composant.
-   * @param library la librairie fontawesome
    */
-  constructor(private library: FaIconLibrary) {
-    library.addIcons(faQuoteLeft, faQuoteRight);
+  constructor() {
   }
 
   ngOnInit(): void {

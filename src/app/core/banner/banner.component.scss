@@ -1,5 +1,5 @@
 .background-banner {
-  // background-image: url('/assets/images/banner.png');
+  // background-image: -webkit-linear-gradient(-10deg, #fbfbfb 50%, white 50%);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,13 +18,14 @@ h1 {
 h2 {
   text-align: left;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
   color: black;
 }
 
 h4 {
   text-align: left;
   color: #1d3557;
+  font-family: Lato;
   font-size: 20px;
   font-weight: 400;
 }
@@ -32,9 +33,10 @@ h4 {
 .box {
   width: 200px;
   text-align: left;
-  font-size: 25px;
-  color: #1d3557;
+  font-family: Lato;
+  font-size: 20px;
   font-weight: 400;
+  color: #F8A11B;
 }
 
 .contact-button {

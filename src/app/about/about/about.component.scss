@@ -22,7 +22,7 @@ article {
     font-size: 14px;
 
     strong {
-      font-weight: 500;
+      font-weight: 700;
     }
   }
 
@@ -32,6 +32,7 @@ article {
 }
 
 .wrapper-responsive-image {
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
   background-image: url('/assets/images/about-me.jpg');
   background-position: center center;
   background-size: cover;
@@ -51,6 +52,7 @@ article {
   }
 
   .wrapper-responsive-image {
+    clip-path: none;
     visibility: hidden;
   }
 

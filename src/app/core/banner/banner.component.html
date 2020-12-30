@@ -5,14 +5,14 @@
     </div>
     <div fxFlex="50%" appearance="fill" fxLayoutAlign="left center">
       <div class="contact">
-        <h1 appAnimate="bounceIn" aos>{{ "BANNER.NAME" | translate }}</h1>
+        <h1>{{ "BANNER.NAME" | translate }}</h1>
         <h2>{{ "BANNER.JOB-TITLE" | translate }}</h2>
         <div fxLayout="row wrap" fxLayoutAlign="left">
-          <div appAnimate="swing" aos>
+          <div>
             <h4>#{{ "BANNER.TECHNOLOGIES" | translate }} &nbsp;</h4>
           </div>
           <div class="box">
-            <app-type-writer [words]="['Java 8+', 'Spring Boot', 'Angular 2+', 'Typescript', 'Alfresco', 'DevOps', 'Docker', 'Kubernetes', 'Ansible', 'Jenkins']"></app-type-writer>
+            <app-type-writer [words]="['Java 8+', 'Spring Boot', 'Angular 2+', 'React.js', 'Typescript', 'Alfresco', 'DevOps', 'Docker', 'Kubernetes', 'Ansible', 'Jenkins']"></app-type-writer>
           </div>
         </div>
         <a mat-flat-button href="/assets/cv/20201030_THOMAS_GIRAULT_cv_fr.pdf" target="_blank" aria-label="Consulter mon CV au format .pdf" color="primary" class="contact-button">{{ "BANNER.DOWNLOAD" | translate }}</a>

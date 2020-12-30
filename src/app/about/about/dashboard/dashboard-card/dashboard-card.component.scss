@@ -1,10 +1,36 @@
 .mat-card {
   background-color: white;
   min-width: 240px;
+  height: 80px;
   margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 2.5rem rgba(22,28,45,.1),0 .3rem 0.5rem -.50rem rgba(22,28,45,.05) !important;
+
+  .mat-card-avatar {
+    position: relative;
+    top: -30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 0%;
+
+    .icon {
+      $size: 35px;
+      font-size: $size;
+      width: $size * 1.5; // Makes sure having room to center larger icons
+      height: $size * 1.5;
+      line-height: $size * 1.5;
+      vertical-align: middle;
+      text-align: center;
+      border-width: 3px;
+      border-style: solid;
+      border-color: white;
+    }
+  }
 
   .mat-card-title {
-    font-size: 35px;
+    font-family: Lato;
+    font-size: 34px;
     font-weight: 300;
     text-align: center;
   }
@@ -12,25 +38,12 @@
   .mat-card-subtitle {
     font-size: 15px;
   }
-
-  .mat-icon {
-    font-size: 50px;
-  }
-
-  .mat-icon.green {
-    color: #3e8914;
-  }
 }
 
 .mat-card:hover {
   cursor: pointer;
 
   .mat-card-title {
-    font-size: 38px;
-    font-weight: 300;
-  }
-
-  .mat-icon.green {
-    color: #489c17;
+    font-size: 36px;
   }
 }

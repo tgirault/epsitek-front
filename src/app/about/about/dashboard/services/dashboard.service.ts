@@ -22,10 +22,10 @@ export class DashboardService {
      */
     findAll(): Array<Indicator> {
         return [
-            { icon: 'business_center', title: 'Années d\'expérience', value: '10' },
-            { icon: 'add_task', title: 'Projets réalisés', value: '+8' },
-            { icon: 'place', title: 'Disponible sur', value: 'Nantes' },
-            { icon: 'thumb_up', title: 'A partir de', value: 'Avril 2021' }
+            { icon: 'business_center', color: 'blue', title: 'Années d\'expérience', value: '10' },
+            { icon: 'add_task', color: 'yellow', title: 'Projets réalisés', value: '8', suffix: '+' },
+            { icon: 'place', color: 'red', title: 'Disponible sur', value: 'Nantes' },
+            { icon: 'thumb_up', color: 'green', title: 'A partir de', value: 'Avril 2021' }
         ];
     }
 }

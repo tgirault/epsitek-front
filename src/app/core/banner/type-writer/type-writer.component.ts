@@ -59,7 +59,7 @@ export class TypeWriterComponent implements OnInit {
         wordsIndex = 0;
       }
 
-    }, 180);
+    }, 150);
   }
 
 }

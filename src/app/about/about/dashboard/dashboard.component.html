@@ -1,5 +1,5 @@
 <div class="container blue-container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px">
   <div *ngFor="let indicator of indicators" appearance="fill" fxFlex>
-    <app-dashboard-card icon="{{ indicator.icon }}" title="{{ indicator.title }}" value="{{ indicator.value }}"></app-dashboard-card>
+    <app-dashboard-card icon="{{ indicator.icon }}" color="{{ indicator.color }}" title="{{ indicator.title }}" value="{{ indicator.value }}" suffix="{{ indicator.suffix }}"></app-dashboard-card>
   </div>
 </div>

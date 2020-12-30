@@ -2,11 +2,11 @@
   <mat-card>
     <mat-card-header>
       <div mat-card-avatar>
-        <mat-icon class="green">{{ icon }}</mat-icon>
+        <mat-icon class="icon {{ color }}">{{ icon }}</mat-icon>
       </div>
       <mat-card-subtitle>{{ title }}</mat-card-subtitle>
       <mat-card-title>
-        <div appAnimate="tada" aos>{{ value }}</div>
+        <div appAnimate="tada" aos>{{ value }}{{ suffix }}</div>
       </mat-card-title>
     </mat-card-header>
   </mat-card>

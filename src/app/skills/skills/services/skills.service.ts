@@ -98,7 +98,8 @@ export class SkillsService {
      */
     private initFrameworksJavascriptSkills(): Array<Skill> {
         return [
-            { name: 'Angular 2+', rate: 4 }
+            { name: 'Angular 2+', rate: 4 },
+            { name: 'React.js', rate: 2.5 }
         ];
     }
 }
