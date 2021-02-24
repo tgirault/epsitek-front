@@ -15,17 +15,71 @@ export class ExperiencesService {
     findAll(): Array<Experience> {
         return [
             {
+                startDate: 'Jan. 2021',
+                endDate: 'Mars 2021',
+                duration: '3 mois',
+                title: 'Leader technique',
+                place: 'Nantes',
+                company: {
+                    name: 'Maisons du Monde',
+                    logo: 'logo-mdm',
+                    website: 'https://www.maisonsdumonde.com/FR/fr/'
+                },
+                description: 'Leader technique au sein d\'une équipe agile en charge de l\'offre et des référentiels PIM et DAM.',
+                tasks: [
+                    'Participation à la transformation du SI vers une architecture Cloud',
+                    'Conception et développement d\'API OpenAPI / AsyncAPI',
+                    'Développement d\'un batch de reprise des médias Cloudinary (DAM)',
+                    'Modernisation et optimisation Java / React',
+                ],
+                technologies: [
+                    'Java 11',
+                    'Open API / Async API',
+                    'Spring Boot',
+                    'Spring Batch',
+                    'Junit',
+                    'Lombok',
+                    'Maven',
+                    'Node.js',
+                    'React',
+                    'PHP',
+                ],
+                tools: [
+                    'Google Cloud Plateform',
+                    'Google Pub/Sub',
+                    'Google Cloud Function',
+                    'Kubernetes',
+                    'Rancher',
+                    'Grafana',
+                    'ELK',
+                    'Cloudinary',
+                    'MaPS System',
+                    'Git',
+                    'GitLab',
+                    'Oracle',
+                    'JIRA',
+                    'Confluence',
+                    'XRay'
+                ],
+                devOps: [
+                    'Docker',
+                    'GitLab CI/CD',
+                    'Google Cloud Plateform (GCP)',
+                    'Kubernetes'
+                ]
+            },
+            {
                 startDate: 'Oct. 2020',
                 endDate: 'Décembre 2020',
                 duration: '3 mois',
-                title: 'Lead developer Java / Angular - Freelance',
+                title: 'Leader technique Java / Angular',
                 place: 'Nantes',
                 company: {
                     name: 'DSIA',
                     logo: 'logo-dsia',
                     website: 'https://logistar-dsia.com/fr/'
                 },
-                description: 'Lead developer Java / Angular au sein d\'une équipe de développement logiciel.',
+                description: 'Leader technique Java / Angular au sein d\'une équipe de développement logiciel.',
                 tasks: [
                     'Modernisation et optimisation Java / Angular',
                 ],
@@ -64,14 +118,14 @@ export class ExperiencesService {
                 startDate: 'Juin 2019',
                 endDate: 'Sept. 2020',
                 duration: '1 an et 3 mois',
-                title: 'Lead developer Java / Angular',
+                title: 'Leader technique Java / Angular',
                 place: 'Nantes',
                 company: {
                     name: 'DSIA',
                     logo: 'logo-dsia',
                     website: 'https://logistar-dsia.com/fr/'
                 },
-                description: 'Lead developer / Scrum master d\'une équipe de 5 à 8 développeurs au sein d\'un éditeur de solutions en Supply Chain Management. Développement d\'une solution logistique de gestion des entrepôts (WMS) et optimisation des processus métier de préparation des commandes Drive pour le compte de Carrefour.',
+                description: 'Leader technique / Scrum master d\'une équipe de 5 à 8 développeurs au sein d\'un éditeur de solutions en Supply Chain Management. Développement d\'une solution logistique de gestion des entrepôts (WMS) et optimisation des processus métier de préparation des commandes Drive pour le compte de Carrefour.',
                 tasks: [
                     'Développement full stack de nouvelles fonctionnalités (Java / Spring, Angular)',
                     'Migration technique d\'une solution existante sur le socle technique de l\'entreprise',

@@ -22,6 +22,8 @@ export class SkillsService {
 
     private initTechnologySkills(): Array<Skill> {
         return [
+            { name: 'Orchestrateur de conteneurs', description: 'Kubernetes' },
+            { name: 'Provider Cloud', description: 'Google Cloud Plateform' },
             { name: 'Moteurs d\'indexation', description: 'Elasticsearch, Apache Solr' },
             { name: 'Moteurs de workflow', description: 'Activiti' },
             { name: 'Bus d\'entreprise', description: 'Oracle Service Bus' },
@@ -61,10 +63,11 @@ export class SkillsService {
      */
     private initLanguagesSkills(): Array<Skill> {
         return [
-            { name: 'Java 8+', rate: 5 },
+            { name: 'Java', rate: 5 },
             { name: 'SQL', rate: 5 },
-            { name: 'Typescript', rate: 4 },
-            { name: 'HTML, CSS, JavaScript', rate: 4 }
+            { name: 'Javascript', rate: 3.5 },
+            { name: 'HTML', rate: 5 },
+            { name: 'CSS', rate: 4.5 }
         ];
     }
 
@@ -76,11 +79,11 @@ export class SkillsService {
             { name: 'JUnit / Mockito', rate: 5 },
             { name: 'Spring / Spring Boot', rate: 5 },
             { name: 'Spring Data / Hibernate', rate: 5 },
-            { name: 'Spring Security OAuth', rate: 4 },
-            { name: 'Spring Batch', rate: 4.5 },
-            { name: 'JSF2, CDI, EJB3, JPA', rate: 4.5 },
+            { name: 'Spring Batch', rate: 5 },
+            { name: 'Spring Security OAuth', rate: 4.5 },
+            { name: 'EJB3, CDI, JPA, JSF2', rate: 4 },
             { name: 'Java Batch Processing', rate: 4 },
-            { name: 'Activiti', rate: 4.5 },
+            { name: 'Activiti', rate: 5 },
         ];
     }
 

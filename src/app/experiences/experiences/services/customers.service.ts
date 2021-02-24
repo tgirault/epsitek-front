@@ -20,6 +20,11 @@ export class CustomersService {
                 website: 'https://logistar-dsia.com/fr/'
             },
             {
+                name: 'Infotel',
+                logo: 'logo-infotel',
+                website: 'https://www.infotel.com/'
+            },
+            {
                 name: 'Vous ?',
                 logo: 'logo-company',
                 website: ''

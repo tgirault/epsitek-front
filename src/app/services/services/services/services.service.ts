@@ -24,6 +24,7 @@ export class ServicesService {
                     'Rédaction de documentation technique (spécifications techniques détaillées, dossier d\'architecture logicielle, dossier d\'architecture technique)',
                     'Choix des technologies / frameworks adaptés au besoin et contraintes',
                     'Mise en place de socles techniques sécurisés et performants',
+                    'Architecture Cloud (Docker, Kubernetes, Helm, Rancher, ELK, Grafana)'
                 ]
             },
             {
@@ -110,8 +111,8 @@ export class ServicesService {
                 items: [
                     'Mise en place de la fabrique logicielle',
                     'Mise en place de l\'intégration/déploiement continue',
-                    'Dockeriser des briques logicielles',
-                    'Automatiser l\'installation de briques logicielles'
+                    'Conteneurisation de briques logicielles',
+                    'Automatisation de l\'installation de briques logicielles'
                 ]
             }
         ];
